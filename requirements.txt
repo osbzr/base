@@ -42,4 +42,5 @@ XlsxWriter==0.7.7
 xlwt==0.7.5
 xlrd==0.9.3
 xlutils==1.7.1
+python-docx==0.8.6
 docxtpl==0.2.3
