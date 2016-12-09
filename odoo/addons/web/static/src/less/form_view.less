@@ -55,8 +55,9 @@
 
             > .o_form_field {
                 .o-flex(1, 0, 100px);
+                position: initial;
                 max-width: 100%;
-                
+
                 > .o_form_input_dropdown > .o_form_input {
                     border-style: none!important;
                 }
@@ -133,6 +134,11 @@
         &.o_form_invalid {
             color: @brand-danger;
         }
+    }
+
+    // ace editor RO
+    .oe_form_field_text .oe_form_text_content {
+        white-space: pre-wrap;
     }
 
     // Tags
@@ -456,6 +462,15 @@
             }
             .o_address_zip {
                 width: 100%;
+            }
+        }
+    }
+
+    // Notebooks
+    .o_notebook {
+        .nav-tabs {
+            > .tab-pane {
+                min-height: 100px;
             }
         }
     }

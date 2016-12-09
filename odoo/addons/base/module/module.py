@@ -218,7 +218,7 @@ class Module(models.Model):
                 path_parts = module.icon.split('/')
                 path = modules.get_module_resource(path_parts[1], *path_parts[2:])
             else:
-                path = modules.get_module_icon(module.name)
+                path = modules.module.get_module_icon(module.name)
             if path:
                 with tools.file_open(path, 'rb') as image_file:
                     module.icon_image = image_file.read().encode('base64')
@@ -708,7 +708,7 @@ class Module(models.Model):
             to_install = self.search([('name', 'in', urls.keys()), ('state', '=', 'uninstalled')])
             post_install_action = to_install.button_immediate_install()
 
-            if installed:
+            if installed or to_install:
                 # in this case, force server restart to reload python code...
                 self._cr.commit()
                 odoo.service.server.restart()

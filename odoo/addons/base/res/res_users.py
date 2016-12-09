@@ -310,10 +310,9 @@ class Users(models.Model):
 
     @api.model
     def read_group(self, domain, fields, groupby, offset=0, limit=None, orderby=False, lazy=True):
-        if self._uid != SUPERUSER_ID:
-            groupby_fields = set([groupby] if isinstance(groupby, basestring) else groupby)
-            if groupby_fields.intersection(USER_PRIVATE_FIELDS):
-                raise AccessError(_("Invalid 'group by' parameter"))
+        groupby_fields = set([groupby] if isinstance(groupby, basestring) else groupby)
+        if groupby_fields.intersection(USER_PRIVATE_FIELDS):
+            raise AccessError(_("Invalid 'group by' parameter"))
         return super(Users, self).read_group(domain, fields, groupby, offset=offset, limit=limit, orderby=orderby, lazy=lazy)
 
     @api.model
@@ -357,7 +356,7 @@ class Users(models.Model):
         if 'company_id' in values:
             for user in self:
                 # if partner is global we keep it that way
-                if user.partner_id.company_id.id != values['company_id']:
+                if user.partner_id.company_id and user.partner_id.company_id.id != values['company_id']:
                     user.partner_id.write({'company_id': user.company_id.id})
             # clear default ir values when company changes
             self.env['ir.values'].get_defaults_dict.clear_cache(self.env['ir.values'])
@@ -497,6 +496,7 @@ class Users(models.Model):
         if not passwd:
             # empty passwords disallowed for obvious security reasons
             raise AccessDenied()
+        db = cls.pool.db_name
         if cls.__uid_cache[db].get(uid) == passwd:
             return
         cr = cls.pool.cursor()
@@ -877,8 +877,6 @@ class UsersView(models.Model):
     def fields_get(self, allfields=None, attributes=None):
         res = super(UsersView, self).fields_get(allfields, attributes=attributes)
         # add reified groups fields
-        if not self.env.user._is_admin():
-            return res
         for app, kind, gs in self.env['res.groups'].sudo().get_groups_by_application():
             if kind == 'selection':
                 # selection group field

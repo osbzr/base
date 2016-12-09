@@ -12,7 +12,7 @@ import urlparse
 from email.utils import formataddr
 from lxml import etree
 
-from odoo import api, fields, models, tools, _
+from odoo import api, fields, models, tools, SUPERUSER_ID, _
 from odoo.modules import get_module_resource
 from odoo.osv.expression import get_unaccent_wrapper
 from odoo.exceptions import UserError, ValidationError
@@ -213,7 +213,7 @@ class Partner(models.Model, FormatAddress):
 
     # technical field used for managing commercial fields
     commercial_partner_id = fields.Many2one('res.partner', compute='_compute_commercial_partner',
-                                             string='Commercial Entity', store=True)
+                                             string='Commercial Entity', store=True, index=True)
     commercial_company_name = fields.Char('Company Name Entity', compute='_compute_commercial_company_name',
                                           store=True)
     company_name = fields.Char('Company Name')
@@ -349,11 +349,6 @@ class Partner(models.Model, FormatAddress):
                     return value.id if isinstance(value, models.BaseModel) else value
                 result['value'] = {key: convert(self.parent_id[key]) for key in address_fields}
         return result
-
-    @api.onchange('state_id')
-    def onchange_state(self):
-        if self.state_id:
-            self.country_id = self.state_id.country_id
 
     @api.onchange('email')
     def onchange_email(self):
@@ -495,7 +490,12 @@ class Partner(models.Model, FormatAddress):
                         raise UserError(_("You can not change the company as the partner/user has multiple user linked with different companies."))
         tools.image_resize_images(vals)
 
-        result = super(Partner, self).write(vals)
+        result = True
+        # To write in SUPERUSER on field is_company and avoid access rights problems.
+        if 'is_company' in vals and self.user_has_groups('base.group_partner_manager') and not self.env.uid == SUPERUSER_ID:
+            result = super(Partner, self).sudo().write({'is_company': vals.get('is_company')})
+            del vals['is_company']
+        result = result and super(Partner, self).write(vals)
         for partner in self:
             if any(u.has_group('base.group_user') for u in partner.user_ids if u != self.env.user):
                 self.env['res.users'].check_access_rights('write')

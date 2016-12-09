@@ -334,7 +334,7 @@ class Message(models.Model):
                                 if partner.id in partner_tree]
 
             customer_email_data = []
-            for notification in message.notification_ids.filtered(lambda notif: notif.res_partner_id.partner_share):
+            for notification in message.notification_ids.filtered(lambda notif: notif.res_partner_id.partner_share and notif.res_partner_id.active):
                 customer_email_data.append((partner_tree[notification.res_partner_id.id][0], partner_tree[notification.res_partner_id.id][1], notification.email_status))
 
             attachment_ids = []
@@ -661,7 +661,6 @@ class Message(models.Model):
             document_related_ids += [mid for mid, message in message_values.iteritems()
                                      if message.get('model') == model and message.get('res_id') in mids.ids]
 
-        return   # Jeff said you needn't check access for no-sense mails
         # Calculate remaining ids: if not void, raise an error
         other_ids = other_ids.difference(set(document_related_ids))
         if not other_ids:
@@ -719,8 +718,9 @@ class Message(models.Model):
 
         message = super(Message, self).create(values)
 
-        message._notify(force_send=self.env.context.get('mail_notify_force_send', True),
-                        user_signature=self.env.context.get('mail_notify_user_signature', True))
+        if not self.env.context.get('message_create_from_mail_mail'):
+            message._notify(force_send=self.env.context.get('mail_notify_force_send', True),
+                            user_signature=self.env.context.get('mail_notify_user_signature', True))
         return message
 
     @api.multi

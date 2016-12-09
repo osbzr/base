@@ -308,7 +308,7 @@ class BaseModel(object):
         Fields = self.env['ir.model.fields']
 
         # sparse fields should be created at the end, as they depend on their serialized field
-        model_fields = sorted(self._fields.itervalues(), key=lambda field: field.type == 'sparse')
+        model_fields = sorted(self._fields.itervalues(), key=lambda field: bool(field.sparse))
         for field in model_fields:
             vals = {
                 'model_id': model.id,
@@ -332,11 +332,11 @@ class BaseModel(object):
                 'column1': field.column1 if field.type == 'many2many' else None,
                 'column2': field.column2 if field.type == 'many2many' else None,
             }
-            if getattr(field, 'serialization_field', None):
+            if field.sparse:
                 # resolve link to serialization_field if specified by name
-                serialization_field = Fields.search([('model', '=', vals['model']), ('name', '=', field.serialization_field)])
+                serialization_field = Fields.search([('model', '=', vals['model']), ('name', '=', field.sparse)])
                 if not serialization_field:
-                    raise UserError(_("Serialization field `%s` not found for sparse field `%s`!") % (field.serialization_field, field.name))
+                    raise UserError(_("Serialization field `%s` not found for sparse field `%s`!") % (field.sparse, field.name))
                 vals['serialization_field_id'] = serialization_field.id
 
             if field.name not in cols:
@@ -738,7 +738,7 @@ class BaseModel(object):
             return '__export__.' + name
 
     @api.multi
-    def __export_rows(self, fields):
+    def _export_rows(self, fields):
         """ Export fields of the records in ``self``.
 
             :param fields: list of lists of fields to traverse
@@ -785,7 +785,7 @@ class BaseModel(object):
 
                         # recursively export the fields that follow name
                         fields2 = [(p[1:] if p and p[0] == name else []) for p in fields]
-                        lines2 = value.__export_rows(fields2)
+                        lines2 = value._export_rows(fields2)
                         if lines2:
                             # merge first line with record's main line
                             for j, val in enumerate(lines2[0]):
@@ -804,6 +804,9 @@ class BaseModel(object):
 
         return lines
 
+    # backward compatibility
+    __export_rows = _export_rows
+
     @api.multi
     def export_data(self, fields_to_export, raw_data=False):
         """ Export fields for selected objects
@@ -817,7 +820,7 @@ class BaseModel(object):
         fields_to_export = map(fix_import_export_id_paths, fields_to_export)
         if raw_data:
             self = self.with_context(export_raw_data=True)
-        return {'datas': self.__export_rows(fields_to_export)}
+        return {'datas': self._export_rows(fields_to_export)}
 
     @api.model
     def load(self, fields, data):
@@ -887,6 +890,10 @@ class BaseModel(object):
         if any(message['type'] == 'error' for message in messages):
             cr.execute('ROLLBACK TO SAVEPOINT model_load')
             ids = False
+
+        if ids and self._context.get('defer_parent_store_computation'):
+            self._parent_store_compute()
+
         return {'ids': ids, 'messages': messages}
 
     def _add_fake_fields(self, fields):
@@ -1724,7 +1731,7 @@ class BaseModel(object):
         for order_part in orderby.split(','):
             order_split = order_part.split()
             order_field = order_split[0]
-            if order_field in groupby_fields:
+            if order_field == 'id' or order_field in groupby_fields:
 
                 if self._fields[order_field.split(':')[0]].type == 'many2one':
                     order_clause = self._generate_order_by(order_part, query).replace('ORDER BY ', '')
@@ -3501,8 +3508,7 @@ class BaseModel(object):
           ``(6, _, ids)``
               replaces all existing records in the set by the ``ids`` list,
               equivalent to using the command ``5`` followed by a command
-              ``4`` for each ``id`` in ``ids``. Can not be used on
-              :class:`~odoo.fields.One2many`.
+              ``4`` for each ``id`` in ``ids``.
 
           .. note:: Values marked as ``_`` in the list above are ignored and
                     can be anything, generally ``0`` or ``False``.

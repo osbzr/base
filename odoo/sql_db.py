@@ -219,7 +219,6 @@ class Cursor(object):
         except Exception:
             if self._default_log_exceptions if log_exceptions is None else log_exceptions:
                 _logger.info("bad query: %s", self._obj.query or query)
-                _logger.info("bad params: %s", params)
             raise
 
         # simple query count is always computed

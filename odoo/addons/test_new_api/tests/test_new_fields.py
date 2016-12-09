@@ -504,6 +504,14 @@ class TestFields(common.TransactionCase):
             record.write({key: False})
             self.assertEqual(record.data, dict(values[n+1:]))
 
+        # check reflection of sparse fields in 'ir.model.fields'
+        names = [name for name, _ in values]
+        domain = [('model', '=', 'test_new_api.sparse'), ('name', 'in', names)]
+        fields = self.env['ir.model.fields'].search(domain)
+        self.assertEqual(len(fields), len(names))
+        for field in fields:
+            self.assertEqual(field.serialization_field_id.name, 'data')
+
     def test_30_read(self):
         """ test computed fields as returned by read(). """
         discussion = self.env.ref('test_new_api.discussion_0')
@@ -620,6 +628,12 @@ class TestFields(common.TransactionCase):
 
         message.important = True
         self.assertIn(message, discussion.important_messages)
+
+        # writing on very_important_messages should call its domain method
+        self.assertIn(message, discussion.very_important_messages)
+        discussion.write({'very_important_messages': [(5,)]})
+        self.assertFalse(discussion.very_important_messages)
+        self.assertFalse(message.exists())
 
 
 class TestHtmlField(common.TransactionCase):
