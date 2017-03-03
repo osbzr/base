@@ -53,7 +53,9 @@
 {%- endmacro %}
 
 {% macro create_form() -%}
-  <p>GoodERP启动成功！ <br />
+  <p>GoodERP启动成功！ </p>
+  <br />
+  <p>
   填写下列信息新建数据库，
   立即开始体验GoodERP。</p>
   {{ master_input() }}
@@ -84,7 +86,7 @@
         <label for="lang" class="control-label">语言</label>
         <select id="lang" name="lang" class="form-control" required="required" autocomplete="off">
           {% for lang in langs %}
-              <option {% if lang[0] == "en_US" %}selected="selected" {% endif %}value="{{ lang[0] }}">{{ lang[1] }}</option>
+              <option {% if lang[0] == "zh_CN" %}selected="selected" {% endif %}value="{{ lang[0] }}">{{ lang[1] }}</option>
           {% endfor %}
         </select>
       </div>
@@ -93,7 +95,7 @@
           <select id="country" name="country_code" class="form-control" autocomplete="off">
               <option value=""></option>
             {% for country in countries %}
-              <option value="{{ country[0] }}">{{ country[1] }}</option>
+              <option {% if country[0] == "cn" %}selected="selected" {% endif %}value="{{ country[0] }}">{{ country[1] }}</option>
             {% endfor %}
             </select>
         </div>
