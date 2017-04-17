@@ -53,16 +53,12 @@
 {%- endmacro %}
 
 {% macro create_form() -%}
-  <p>GoodERP启动成功！ </p>
-  <br />
-  <p>
-  填写下列信息新建数据库，
-  立即开始体验GoodERP。</p>
+  <p>GoodERP启动成功！请填写下列信息新建数据库</p>
   {{ master_input() }}
   <div class="form-group">
     <div class="row">
       <div class="col-md-12">
-        <label for="name" class="control-label">数据库名</label>
+        <label for="name" class="control-label">数据库名（英文）</label>
         <input id="name" type="text" name="name" class="form-control" required="required" autocomplete="off"/>
       </div>
     </div>
@@ -70,7 +66,7 @@
   <div class="form-group">
     <div class="row">
       <div class="col-md-12">
-        <label for="login" class="control-label">手机号/邮箱/用户名</label>
+        <label for="login" class="control-label">用户名（英文）</label>
         <input id="login" type="text" name="login" class="form-control" required="required" autocomplete="off"/>
       </div>
     </div>
@@ -80,7 +76,7 @@
     <input id="password" type="password" name="password" class="form-control" required="required" autocomplete="off"/>
     <span class="fa fa-eye o_little_eye form-control-feedback" aria-hidden="true" style="cursor: pointer; pointer-events: auto"></span>
   </div>
-  <div class="form-group">
+  <div class="form-group" style="display:none;">
     <div class="row">
       <div class="col-md-6">
         <label for="lang" class="control-label">语言</label>
@@ -101,7 +97,7 @@
         </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-group" style="display:none;">
     <div class="checkbox">
       <label>
         <input name="demo" type="checkbox" class="pull-right" value="1">
@@ -116,9 +112,11 @@
   <!-- Database List -->
   <div class="row">
     <div class="col-md-6 col-md-offset-3 o_database_list">
+      <p/>
       <div class="text-center">
         <img src="/web/static/src/img/logo.png" class="img-responsive center-block"/>
       </div>
+      <p/>
       {% if insecure and databases %}
       <div class="alert alert-warning">
       请注意，尚未设置超级密码（默认值为admin）。
