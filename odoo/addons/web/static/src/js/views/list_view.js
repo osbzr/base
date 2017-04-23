@@ -1112,7 +1112,7 @@ ListView.List = Class.extend({
                     render_cell: function () {
                         return self.render_cell.apply(self, arguments); }
                 })));
-        this.pad_table_to(4);
+        this.pad_table_to(1);
     },
     pad_table_to: function (count) {
         if (this.records.length >= count ||
