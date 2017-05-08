@@ -473,6 +473,10 @@ class Home(http.Controller):
             request.uid = old_uid
             values['error'] = _("Wrong login/password")
         return request.render('web.login', values)
+    
+    @http.route('/login', type='http', auth="none")
+    def login(self, db, login, key):
+        return login_and_redirect(db, login, key)
 
 
 class WebClient(http.Controller):
