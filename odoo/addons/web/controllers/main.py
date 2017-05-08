@@ -462,7 +462,7 @@ class Home(http.Controller):
         except odoo.exceptions.AccessDenied:
             values['databases'] = None
 
-        if request.httprequest.method == 'POST':
+        if request.httprequest.method:
             old_uid = request.uid
             uid = request.session.authenticate(request.session.db, request.params['login'], request.params['password'])
             if uid is not False:
