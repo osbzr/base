@@ -856,7 +856,7 @@
             <input type="hidden" name="session_id" value="" t-if="widget.session.override_session"/>
             <input type="hidden" name="callback" t-att-value="fileupload_id"/>
             <input t-if="widget.widget!='image'" type="file" class="o_form_input_file" name="ufile"/>
-            <input t-if="widget.widget=='image'" type="file" class="o_form_input_file" name="ufile" accept="image/*"/>
+            <input t-if="widget.widget=='image'" type="file" class="o_form_input_file" name="ufile" accept="image/jpeg,image/jpg,image/png"/>
             <t t-raw="0"/>
         </form>
         <iframe t-att-id="fileupload_id" t-att-name="fileupload_id" style="display: none"/>
