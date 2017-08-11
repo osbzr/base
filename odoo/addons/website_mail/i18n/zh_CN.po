@@ -1,0 +1,1162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* website_mail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0dev-20140202-000101\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-31 16:53+0800\n"
+"PO-Revision-Date: 2016-08-01 19:52+0800\n"
+"Last-Translator: 保定-粉刷匠 <992102498@qq.com>\n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 1.8.8\n"
+
+#. module: website_mail
+#: model:mail.template,body_html:website_mail.mail_template_data_module_install_website_mail
+msgid ""
+"\n"
+"            <div style=\"margin: 10px auto;\">\n"
+"            <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:100%;"
+"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:2px;width:30%;\">\n"
+"                            <img src=\"web/static/src/img/logo.png\"/>\n"
+"                        </td>\n"
+"                        <td style=\"vertical-align: top; padding: 8px 10px;"
+"text-align: left;font-size: 14px;\">\n"
+"                            <a href=\"web/login\" style=\"float:right ;"
+"margin:15px auto;background: #a24689;border-radius: 5px;color: #ffffff;font-"
+"size: 16px;padding: 10px 20px 10px 20px;text-decoration: none;\">Auto Login</"
+"a>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <table style=\"width:100%;text-align:justify;margin:0 auto;"
+"border-collapse:collapse;border-top:1px solid lightgray\"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:15px 10px;font-size:20px\">\n"
+"                            <p style=\"color:#a24689;margin:0\" >Awesome!</"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:15px;margin-"
+"top:0pt;margin-bottom:0pt;\">\n"
+"                                <span>Your website is now online!</span></"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"margin-top:0pt;margin-"
+"bottom:8pt;\">\n"
+"                                <span style=\"font-size:13px;font-weight:"
+"bold; \">Did you know?</span></p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>From the Customize / Install "
+"Apps menu, you can install new features (forum, blog, eCommerce, jobs, ...)</"
+"span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>Customize the look of your "
+"website with the Customize menu.</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul> <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Discover "
+"the </span>\n"
+"                                <span><a href=\"/"
+"web#view_type=kanban&model=project.project&action=project."
+"open_view_project_all\">\n"
+"                                    <span style=\"font-weight:bold; text-"
+"decoration:underline;\">Website planner</span></a></span>\n"
+"                                <span> to activate extra features</span>\n"
+"                                <span style=\"color:#a24689;margin:0;font-"
+"weight:bold\">(${user.env['web.planner']."
+"get_planner_progress('planner_website')}% done)</span>\n"
+"                            </p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Grow your traffic by "
+"optimizing your referencing with our SEO tool,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Improve your conversion from "
+"visitor to customer with the Website Live support,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Broaden your audience with the "
+"multi-language support,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>Go further into the "
+"customization with our advanced HTML editor,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>And much more...</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul>\n"
+"                            <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;line-"
+"height:1.3;margin-top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Need Help?"
+"</span>\n"
+"                                <span style=\"font-style:italic;\">You’re "
+"not alone</span>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span>We would be delighted to assist you "
+"along the way. Contact us at \n"
+"                                <a href=\"mailto:help@odoo.com\"><span style="
+"\"text-decoration:underline;\">\n"
+"                                help@odoo.com</span></a> if you have any "
+"question. You can also discover \n"
+"                                how to get the best out of Odoo with our </"
+"span>\n"
+"                                <a href=\"https://www.odoo.com/documentation/"
+"user\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">User Documentation</span></a>\n"
+"                                </span><span> or with our </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation"
+"\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">API Documentation</span></a>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\"><span>Enjoy your Odoo experience,</span></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-"
+"bottom:8pt;color:grey\">\n"
+"                <span><br/>-- <br/>The Odoo Team<br/>PS: People love Odoo, "
+"check </span><a href=\"https://twitter.com/odoo/favorites\"><span style="
+"\"text-decoration:underline;\">what they say about it.</span></a></span>\n"
+"            </div>\n"
+"        </div>"
+msgstr ""
+"\n"
+"            <div style=\"margin: 10px auto;\">\n"
+"            <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:100%;"
+"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:2px;width:30%;\">\n"
+"                            <img src=\"web/static/src/img/logo.png\"/>\n"
+"                        </td>\n"
+"                        <td style=\"vertical-align: top; padding: 8px 10px;"
+"text-align: left;font-size: 14px;\">\n"
+"                            <a href=\"web/login\" style=\"float:right ;"
+"margin:15px auto;background: #a24689;border-radius: 5px;color: #ffffff;font-"
+"size: 16px;padding: 10px 20px 10px 20px;text-decoration: none;\">自动登录</"
+"a>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <table style=\"width:100%;text-align:justify;margin:0 auto;"
+"border-collapse:collapse;border-top:1px solid lightgray\"\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td style=\"padding:15px 10px;font-size:20px\">\n"
+"                            <p style=\"color:#a24689;margin:0\" >太棒了!</"
+"p><br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:15px;margin-"
+"top:0pt;margin-bottom:0pt;\">\n"
+"                                <span>你的网站现在上线了!</span></p><br>\n"
+"                            <p dir=\"ltr\" style=\"margin-top:0pt;margin-"
+"bottom:8pt;\">\n"
+"                                <span style=\"font-size:13px;font-weight:"
+"bold; \">Did you know?</span></p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>你可以从模块页面安装新的功能模"
+"块 (论坛, 博客, 电商, 招聘, ...)</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>通过\"定制\"菜单改变网站的风格"
+"</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul> <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">Discover "
+"the </span>\n"
+"                                <span><a href=\"/"
+"web#view_type=kanban&model=project.project&action=project."
+"open_view_project_all\">\n"
+"                                    <span style=\"font-weight:bold; text-"
+"decoration:underline;\">网站规划者</span></a></span>\n"
+"                                <span> 激活其他的功能模块 </span>\n"
+"                                <span style=\"color:#a24689;margin:0;font-"
+"weight:bold\">(${user.env['web.planner']."
+"get_planner_progress('planner_website')}% done)</span>\n"
+"                            </p>\n"
+"                            <ul style=\"margin-top:0pt;margin-bottom:0pt;"
+"font-size:13px;list-style-type:disc;\">\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>通过SEO工具优化搜索引擎，给网站"
+"带来更多的流量,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>通过线上客服，提升网站新用户的"
+"转化率,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>增加多语言支持，为网站吸引更多"
+"的访客,</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:0pt;\">\n"
+"                                        <span>使用高级HTML编辑器, 进一步定制"
+"您的网页，</span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                                <li dir=\"ltr\">\n"
+"                                    <p dir=\"ltr\" style=\"margin-top:0pt;"
+"margin-bottom:8pt;\">\n"
+"                                        <span>以及更多的个性化支持...</"
+"span>\n"
+"                                    </p>\n"
+"                                </li>\n"
+"                            </ul>\n"
+"                            <br>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;line-"
+"height:1.3;margin-top:0pt;margin-bottom:8pt;\">\n"
+"                                <span style=\"font-weight:bold;\">需要帮助?</"
+"span>\n"
+"                                <span style=\"font-style:italic;\">我们的服务"
+"团队，会及时解决您使用中的问题</span>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\">\n"
+"                                <span>您可以通过以下的邮件地址联系我们。我们"
+"很荣幸可以帮助您。 \n"
+"                                <a href=\"mailto:help@odoo.com\"><span style="
+"\"text-decoration:underline;\">\n"
+"                                help@odoo.com</span></a> 您也可以通过我们线上"
+"的使用文档 \n"
+"                                学习如何使用Odoo </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation/"
+"user\">\n"
+"                                <span style=\"text-decoration:underline;\">用"
+"户手册</span></a>\n"
+"                                </span><span> 以及 </span>\n"
+"                                <a href=\"https://www.odoo.com/documentation"
+"\">\n"
+"                                <span style=\"text-decoration:underline;"
+"\">API 文档</span></a>\n"
+"                            </p>\n"
+"                            <p dir=\"ltr\" style=\"font-size:13px;margin-"
+"top:0pt;margin-bottom:8pt;\"><span>希望您在使用Odoo过程中, 获得优质的使用体验"
+"</span></p>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"            <div dir=\"ltr\" style=\"font-size:13px;margin-top:0pt;margin-"
+"bottom:8pt;color:grey\">\n"
+"                <span><br/>-- <br/>Odoo 团队<br/>您也可以在Twitter上关注我们 "
+"</span><a href=\"https://twitter.com/odoo/favorites\"><span style=\"text-"
+"decoration:underline;\">和全世界的小伙伴一齐聊聊Odoo</span></a></span>\n"
+"            </div>\n"
+"        </div>"
+
+#. module: website_mail
+#: model:ir.model.fields,field_description:website_mail.field_mail_compose_message_description
+#: model:ir.model.fields,field_description:website_mail.field_mail_message_description
+#: model:ir.model.fields,field_description:website_mail.field_survey_mail_compose_message_description
+msgid "Description"
+msgstr "描述"
+
+#. module: website_mail
+#: model:mail.channel,name:website_mail.channel_public
+msgid "Discussion Group"
+msgstr "讨论组"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Email撰写向导"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_survey_mail_compose_message
+msgid "Email composition wizard for Survey"
+msgstr "调查的邮件合成向导"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Leave a comment"
+msgstr "留下一个评论"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_mail_message
+msgid "Message"
+msgstr "消息"
+
+#. module: website_mail
+#: model:ir.model.fields,help:website_mail.field_mail_compose_message_description
+#: model:ir.model.fields,help:website_mail.field_mail_message_description
+#: model:ir.model.fields,help:website_mail.field_survey_mail_compose_message_description
+msgid "Message description: either the subject, or the beginning of the body"
+msgstr "消息描述：可以选择主题或正文的开始部分作为消息的描述。"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Oops! Something went wrong. Try to reload the page and to log in."
+msgstr "哇！出了些小错误。请再次加载页面并重新登录。"
+
+#. module: website_mail
+#: model:ir.model.fields,field_description:website_mail.field_mail_compose_message_website_published
+#: model:ir.model.fields,field_description:website_mail.field_mail_message_website_published
+#: model:ir.model.fields,field_description:website_mail.field_survey_mail_compose_message_website_published
+msgid "Published"
+msgstr "已发布"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Send"
+msgstr "发送"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.follow
+msgid "Subscribe"
+msgstr "订购"
+
+#. module: website_mail
+#: code:addons/website_mail/models/mail_message.py:61
+#, python-format
+msgid ""
+"The requested operation cannot be completed due to security restrictions. "
+"Please contact your system administrator.\n"
+"\n"
+"(Document type: %s, Operation: %s)"
+msgstr ""
+"基于安全限制，要求的操作不能被完成。 请联系你的系统管理员。\n"
+"\n"
+"(文档类型: %s, 操作: %s)"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.follow
+msgid "Unsubscribe"
+msgstr "退订"
+
+#. module: website_mail
+#: model:ir.model.fields,help:website_mail.field_mail_compose_message_website_published
+#: model:ir.model.fields,help:website_mail.field_mail_message_website_published
+#: model:ir.model.fields,help:website_mail.field_survey_mail_compose_message_website_published
+msgid "Visible on the website as a comment"
+msgstr "网站评论可见"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "Write a message..."
+msgstr "撰写一个消息..."
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "You must be"
+msgstr "你必须"
+
+#. module: website_mail
+#: model:mail.template,subject:website_mail.mail_template_data_module_install_website_mail
+msgid "Your business is reachable from anywhere, anytime !"
+msgstr "您可以在任何地点，任何时间了解您的生意。"
+
+#. module: website_mail
+#. openerp-web
+#: code:addons/website_mail/static/src/xml/chatter_message.xml:8
+#, python-format
+msgid "just now"
+msgstr "刚刚"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "logged in"
+msgstr "登录"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "on"
+msgstr "在"
+
+#. module: website_mail
+#: model:ir.model,name:website_mail.model_publisher_warranty_contract
+msgid "publisher_warranty.contract"
+msgstr "publisher_warranty.contract"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.message_thread
+msgid "to post a comment."
+msgstr "发表一个评论"
+
+#. module: website_mail
+#: model:ir.ui.view,arch_db:website_mail.follow
+msgid "your email..."
+msgstr "你的电子邮件..."
+
+#~ msgid "&nbsp;"
+#~ msgstr "&nbsp;"
+
+#~ msgid "1(250)222-2232"
+#~ msgstr "1(250)222-2232"
+
+#~ msgid "123 Flower Drive"
+#~ msgstr "按步骤执行"
+
+#~ msgid "20% off!"
+#~ msgstr "20%折扣"
+
+#~ msgid "30% discount when you sign up now!"
+#~ msgstr "现在注册，享受30%的折扣！"
+
+#~ msgid "45A9E77DGW8455"
+#~ msgstr "45A9E77DGW8455"
+
+#~ msgid "ALL DAY"
+#~ msgstr "全天"
+
+#~ msgid "Airmail"
+#~ msgstr "航空件"
+
+#~ msgid "Amount"
+#~ msgstr "总数"
+
+#~ msgid "Apps That Help You Grow Your Business"
+#~ msgstr "帮助你提升业务量的应用"
+
+#~ msgid "Apps That Help You Grow Your Business!"
+#~ msgstr "帮助你提升业务量的应用！"
+
+#~ msgid "April 3, 2014"
+#~ msgstr "2014年4月3日"
+
+#~ msgid "August"
+#~ msgstr "8月"
+
+#~ msgid "Basic Theme"
+#~ msgstr "基本主题"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 30% discount on you first months subscription!"
+#~ msgstr ""
+#~ "你是我们的会员，你可以在第一个月订购时，使用以下优惠码，换取30%的折扣。"
+
+#~ msgid ""
+#~ "Because I've invited you, you can also use the below coupon code to "
+#~ "receive a 50% discount on you first months subscription!"
+#~ msgstr ""
+#~ "你是我们的会员，你可以在第一个月订购时，使用以下优惠码，换取50%的折扣。"
+
+# 人名
+#~ msgid "Bob Erlicious"
+#~ msgstr "Bob Erlicious"
+
+#~ msgid "Body"
+#~ msgstr "正文"
+
+#~ msgid "Cancel selection"
+#~ msgstr "取消选择"
+
+#~ msgid "Change Image ..."
+#~ msgstr "修改图片..."
+
+#~ msgid "Check this out!"
+#~ msgstr "退出!"
+
+#~ msgid "Choose a Template"
+#~ msgstr "选择一个电子邮件模板"
+
+#~ msgid "Choose a background image"
+#~ msgstr "选择背景图片"
+
+#~ msgid "Cleave"
+#~ msgstr "拆分"
+
+#~ msgid "Code:"
+#~ msgstr "代码："
+
+#~ msgid "Come check out my stuff!"
+#~ msgstr "查看我的资料!"
+
+#~ msgid "Come check out new Stuff!"
+#~ msgstr "查看新资料!"
+
+#~ msgid "Come check out new stuff!"
+#~ msgstr "查看新资料!"
+
+#~ msgid "Contact"
+#~ msgstr "联系人"
+
+#~ msgid "Contact Us"
+#~ msgstr "联系我们"
+
+#~ msgid "Dear Bob,"
+#~ msgstr "尊敬的Bob"
+
+#~ msgid "Dear John"
+#~ msgstr "尊敬的John"
+
+#~ msgid "Discount Code :"
+#~ msgstr "优惠码:"
+
+#~ msgid "Discount Code:"
+#~ msgstr "优惠码:"
+
+#~ msgid "Email Thread"
+#~ msgstr "邮件记录"
+
+#~ msgid "Enjoy 50% of your next purchase!"
+#~ msgstr "下次购买时享受50%的优惠!"
+
+#~ msgid "Enter"
+#~ msgstr "输入"
+
+#~ msgid "Extra"
+#~ msgstr "额外"
+
+#~ msgid "Facebook"
+#~ msgstr "Facebook"
+
+#~ msgid "Footers"
+#~ msgstr "页脚"
+
+#~ msgid "Good News!"
+#~ msgstr "好消息!"
+
+#~ msgid "Good news!"
+#~ msgstr "好消息!"
+
+#~ msgid ""
+#~ "Great stories are for everyone even when only written for just one "
+#~ "person. If you try to write with a wide general audience in mind, your "
+#~ "story will ring false and be bland. No one will be interested. Write for "
+#~ "one person. If it’s genuine for the one, it’s genuine for the rest."
+#~ msgstr ""
+#~ "好的故事是为有同样感触的人所写的。如果你试图写一个针对广泛听众的通用故事，"
+#~ "那将听起来很不可靠，而且还会很平淡，没有人会感兴趣。只为一个人写，如果对一"
+#~ "个人来说很棒，那么其他人也会觉得很棒。"
+
+#~ msgid ""
+#~ "Great stories have personality. Consider telling a great story that "
+#~ "provides personality. Writing a story with personality for potential "
+#~ "clients will assist with making a relationship connection. This shows up "
+#~ "in small quirks like word choices or phrases. Write from your point of "
+#~ "view, not from someone else's experience."
+#~ msgstr ""
+#~ "伟大的故事都是与众不同。考虑讲述一个有个性的精彩故事。针对客户个性的故事能"
+#~ "够使你跟潜在的客户建立某种联系。这会在一些小词语中体现出来。从你的角度写，"
+#~ "而不是别人的经验。"
+
+#~ msgid "Headers"
+#~ msgstr "主题"
+
+#~ msgid "Hello Bob,"
+#~ msgstr "Bob你好,"
+
+#~ msgid "Help"
+#~ msgstr "帮助"
+
+#~ msgid "Hey Bob,"
+#~ msgstr "你好Bob,"
+
+#~ msgid "Hurry Up"
+#~ msgstr "快些"
+
+#~ msgid "Hurry Up!"
+#~ msgstr "快些！"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff! So I want "
+#~ "you to follow me and see it all. Once you join us, you'll be able to do "
+#~ "all sorts of new stuff too."
+#~ msgstr ""
+#~ "我设置了一个规则使我可以做大量的非常好的资料! 所以我想让你和我一起看一下这"
+#~ "个规则。一旦你加入我们，你也可以做很多新的资料。"
+
+#~ msgid ""
+#~ "I set up a profile where I can do tons of really awesome stuff. I want "
+#~ "you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我设置了一个规则使我可以做大量的非常好的资料! 我想让你跟随我，以便我们可以"
+#~ "保持联系!"
+
+#~ msgid ""
+#~ "I set up an Odoo profile where I can do tons of really awesome stuff. I "
+#~ "want you to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我设置了一个Odoo的规则使我可以做大量的非常好的资料! 所以我想让你跟随我，以"
+#~ "便我们保持联系!"
+
+#~ msgid ""
+#~ "I set up profile where I can do tons of really awesome stuff. I want you "
+#~ "to follow me so we can keep in touch!"
+#~ msgstr ""
+#~ "我设置了一个规则使我可以做大量的非常好的资料! 所以我想让你跟随我，以便我们"
+#~ "保持联系!"
+
+#~ msgid "Info"
+#~ msgstr "信息"
+
+#~ msgid "Invoice: 00234"
+#~ msgstr "发票: 00234"
+
+#~ msgid "John Doe"
+#~ msgstr "John Doe"
+
+#~ msgid "Jul"
+#~ msgstr "七月"
+
+#~ msgid "Kind Regards,"
+#~ msgstr "<p>致敬,</p>"
+
+#~ msgid "Link"
+#~ msgstr "链接"
+
+#~ msgid "Mail Theme Colors"
+#~ msgstr "邮件主题的颜色"
+
+# 人名
+#~ msgid "Michael Fletcher"
+#~ msgstr "Michael Fletcher"
+
+#~ msgid "My Account"
+#~ msgstr "我的账户"
+
+#~ msgid "My Order"
+#~ msgstr "我的订单"
+
+#~ msgid "Narrative"
+#~ msgstr "记录"
+
+# 人名
+#~ msgid "Neopolitan"
+#~ msgstr "Neopolitan"
+
+#~ msgid "No background image"
+#~ msgstr "没有背景图片"
+
+#~ msgid ""
+#~ "Odoo is continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "Odoo不断发展，我们希望你能加入我们! 我们的营业时间已经增加，也有很多新的品"
+#~ "牌加入。欢迎你的到来，请点击下面链接可以在下次购买时优惠20%。"
+
+#~ msgid "Payment"
+#~ msgstr "支付"
+
+#~ msgid "Period"
+#~ msgstr "期间"
+
+#~ msgid "Place Order"
+#~ msgstr "提交打单"
+
+#~ msgid "Plan"
+#~ msgstr "计划"
+
+#~ msgid "Redeem Discount!"
+#~ msgstr "较大折扣!"
+
+#~ msgid "Save 20% when you upgrade now!"
+#~ msgstr "如果你现在升级，将优惠20%!"
+
+#~ msgid "See you soon!"
+#~ msgstr "再见!"
+
+#~ msgid "Select"
+#~ msgstr "选择"
+
+#~ msgid "Select a theme"
+#~ msgstr "选择一个主题"
+
+#~ msgid "Shipping"
+#~ msgstr "物流"
+
+#~ msgid "Sign up now and receive a 20% discount!"
+#~ msgstr "立即注册，优惠20%"
+
+#~ msgid "Silver Plan"
+#~ msgstr "银色计划"
+
+# Skyline是一套优秀的三维数字地球平台软件
+#~ msgid "Skyline"
+#~ msgstr "Skyline"
+
+#~ msgid "Step 1"
+#~ msgstr "第1步"
+
+#~ msgid "Step 1:"
+#~ msgstr "第1步:"
+
+#~ msgid "Step 2"
+#~ msgstr "第2步"
+
+#~ msgid "Step 2:"
+#~ msgstr "第2步:"
+
+#~ msgid "Step 3"
+#~ msgstr "第3步"
+
+#~ msgid "Step 3:"
+#~ msgstr "第3步:"
+
+#~ msgid "Sunday"
+#~ msgstr "星期天"
+
+#~ msgid "Support"
+#~ msgstr "支持"
+
+#~ msgid ""
+#~ "The amount of $50.00 CAD has been charged on the credit card ending with "
+#~ "0123."
+#~ msgstr "你的尾号0123的信息卡已被扣款50加币。"
+
+#~ msgid "Theme"
+#~ msgstr "主题风格"
+
+#~ msgid "Title"
+#~ msgstr "职位"
+
+#~ msgid ""
+#~ "To track your order or make any changes please click the button below."
+#~ msgstr "请点击以下按钮，可跟踪你的订单或修改订单。"
+
+#~ msgid "Track shipping"
+#~ msgstr "跟踪物流"
+
+#~ msgid "Twitter"
+#~ msgstr "推特（Twitter）"
+
+#~ msgid "Upgrade"
+#~ msgstr "升级"
+
+#~ msgid "Upgrade to Premium Account!"
+#~ msgstr "升级到高级帐户!"
+
+#~ msgid "User :"
+#~ msgstr "用户:"
+
+#~ msgid "User: John Doe"
+#~ msgstr "用户: John Doe"
+
+#~ msgid "V9P 2E8"
+#~ msgstr "V9P 2E8"
+
+#~ msgid "Victoria, BC"
+#~ msgstr "维多利亚商业中心"
+
+#~ msgid "Visit Now"
+#~ msgstr "访问"
+
+#~ msgid ""
+#~ "We are continuing to grow and we miss seeing you be a part of it! We've "
+#~ "increased store hours and have lot's of new brands available. To welcome "
+#~ "you back please accept this 20% discount on you next purchase by clicking "
+#~ "the button below."
+#~ msgstr ""
+#~ "我们不断发展，我们希望你能加入我们! 我们的营业时间已经增加，也有很多新的品"
+#~ "牌加入。欢迎你的到来，请点击下面链接可以在下次购买时优惠20%。"
+
+#~ msgid ""
+#~ "We need you to update your account information. If there is ever a "
+#~ "problem with your account, this information will make it easier for you "
+#~ "to log back in."
+#~ msgstr ""
+#~ "我们需要你更新你的账户信息。如果你的账户出现异常，这些信息将更容易使你重新"
+#~ "登录。"
+
+#~ msgid ""
+#~ "We would like to inform you that your order has shipped! More details "
+#~ "below."
+#~ msgstr "我们很高兴地通知你，你的订单已经发出! 更多信息如下。"
+
+#~ msgid ""
+#~ "We would like you to know that you have successfully subscribed the news "
+#~ "letter. Following are the details about your plan."
+#~ msgstr "我们很高兴通知你，新信件已经成功发送给你。下面是详细计划。"
+
+#~ msgid ""
+#~ "We would like you to know that your order has shipped! To track your "
+#~ "order or make any changes please click the \"my order\" button below."
+#~ msgstr ""
+#~ "我们很高兴地通知你，你的订单已经发出! 请你点击“我的订单”按钮，可跟踪或修改"
+#~ "订单。"
+
+#~ msgid ""
+#~ "We would like you to know that your order has shipped! To view your order "
+#~ "or make any changes please click the \"my order\" button below."
+#~ msgstr ""
+#~ "我们很高兴地通知你，你的订单已经发出! 请你点击“我的订单”按钮，可跟踪或修改"
+#~ "订单。"
+
+#~ msgid "Website communication history"
+#~ msgstr "网站社区日志"
+
+#~ msgid "XLKIJP6887F"
+#~ msgstr "XLKIJP6887F"
+
+#~ msgid "YOUR ORDER HAS SHIPPED"
+#~ msgstr "你的订单已经发货！"
+
+#~ msgid "You get a 20% discount for signing up!"
+#~ msgstr "你注册就可获得20%的优惠!"
+
+#~ msgid ""
+#~ "You'll be the first to hear about new arrivals, exclusive promotionas, "
+#~ "cool collaborations, and the latest in everything."
+#~ msgstr "你将是第一个了解到的新货上架，独家广告，互动合作及全新信息。"
+
+#~ msgid "Your Company"
+#~ msgstr "你的公司"
+
+#~ msgid "Your Event Name"
+#~ msgstr "你的事件名称"
+
+#~ msgid "Your Logo"
+#~ msgstr "你的标志"
+
+#~ msgid "Your Order"
+#~ msgstr "你的订单"
+
+#~ msgid "Your order has been shipped!"
+#~ msgstr "你的订单已经被发货！"
+
+#~ msgid "Your order has shipped!"
+#~ msgstr "你的订单已经发货！"
+
+# 专用名词
+#~ msgid "Zen-Flat"
+#~ msgstr "Zen-Flat"
+
+#~ msgid "social icon"
+#~ msgstr "社交图标"
+
+#~ msgid "template"
+#~ msgstr "模板"
+
+#~ msgid "unknown"
+#~ msgstr "未知的"
+
+#~ msgid "when you sign up!"
+#~ msgstr "当你注册!"
+
+#~ msgid "{'editor_url': '/website_mail/field/email'}"
+#~ msgstr "{'editor_url': '/website_mail/field/email'}"
+
+#~ msgid "© 2014 All Rights Reserved"
+#~ msgstr "© 2014版权所有"
+
+#~ msgid ""
+#~ "​\n"
+#~ "                                                  May - June 2014"
+#~ msgstr ""
+#~ "  \n"
+#~ "                                                    2014年5到6月"
+
+#~ msgid ""
+#~ "​\n"
+#~ "                                                $39.99"
+#~ msgstr ""
+#~ "​\n"
+#~ "                                                $39.99"
+
+#~ msgid "​$39.99"
+#~ msgstr "​$39.99"
+
+#~ msgid "​Gold Status"
+#~ msgstr "最佳状态"
+
+#~ msgid "​May - June 2014"
+#~ msgstr "2014年5-6月"
+
+#~ msgid "​Period"
+#~ msgstr "工作时间段"
+
+#~ msgid "A Great Headline"
+#~ msgstr "一个非常好的头条"
+
+#~ msgid "A Punchy Headline"
+#~ msgstr "一个有力的标题"
+
+#~ msgid "A Section Subtitle"
+#~ msgstr "小节标题"
+
+#~ msgid "A Small Subtitle"
+#~ msgstr "小字幕"
+
+#~ msgid "A good subtitle"
+#~ msgstr "一个好字幕"
+
+#~ msgid ""
+#~ "A great way to catch your reader's attention is to tell a story.\n"
+#~ "                                    Everything you consider writing can "
+#~ "be told as a story."
+#~ msgstr ""
+#~ "一个吸引你的读者注意力的方法是讲述一个故事。\n"
+#~ "                                    你想的任何东西都可以一个故事的形式写出"
+#~ "来。"
+
+#~ msgid "Access Denied"
+#~ msgstr "读取被拒绝"
+
+#~ msgid "Advanced Email Features"
+#~ msgstr "高级电子邮件功能"
+
+#~ msgid "Allows website visitors to post comments on blogs, etc."
+#~ msgstr "允许网站的访问者在博客上发表看法，等等。"
+
+#~ msgid "Back"
+#~ msgstr "返回"
+
+#~ msgid "Battery: 12 hours"
+#~ msgstr "电量：12小时"
+
+#~ msgid "Battery: 20 hours"
+#~ msgstr "电量：20小时"
+
+#~ msgid "Battery: 8 hours"
+#~ msgstr "电池：8小时"
+
+#~ msgid "Beginner"
+#~ msgstr "入门"
+
+#~ msgid "Big Message"
+#~ msgstr "大消息"
+
+#~ msgid "Big Picture"
+#~ msgstr "大图片"
+
+#~ msgid "Button"
+#~ msgstr "按钮"
+
+#~ msgid ""
+#~ "Choose a vibrant image and write an inspiring paragraph\n"
+#~ "                                about it. It does not have to be long, "
+#~ "but it should\n"
+#~ "                                reinforce your image."
+#~ msgstr ""
+#~ "选择一个充满生气的图片和写一段充满激情的文字。\n"
+#~ "                                文字不一定很长，但它应该\n"
+#~ "                                增强图片的效果。"
+
+#~ msgid "Comparisons"
+#~ msgstr "对比"
+
+#~ msgid "Design Your Email"
+#~ msgstr "设计你的电子邮件格式"
+
+#~ msgid "Email Design"
+#~ msgstr "电子邮件的设计"
+
+#~ msgid "Email Templates"
+#~ msgstr "电子邮件模板"
+
+#~ msgid "Enterprise package"
+#~ msgstr "企业包"
+
+#~ msgid "Expert"
+#~ msgstr "专家"
+
+#~ msgid "Feature One"
+#~ msgstr "特性一"
+
+#~ msgid "Feature Three"
+#~ msgstr "特性树"
+
+#~ msgid "Feature Two"
+#~ msgstr "特性二"
+
+#~ msgid "Free shipping, satisfied or reimbursed."
+#~ msgstr "免费送货,满足或补偿"
+
+#~ msgid "From:"
+#~ msgstr "来自于："
+
+#~ msgid ""
+#~ "Great stories are for everyone even when only written for\n"
+#~ "                                    just one person."
+#~ msgstr "对每个人来说，即便是只为一个人写的故事也是好故事."
+
+#~ msgid "Great stories have personality."
+#~ msgstr "好的故事通常都是有个性的."
+
+#~ msgid "Image-Text"
+#~ msgstr "图片-文本"
+
+#~ msgid "Limited support"
+#~ msgstr "有限的帮助"
+
+#~ msgid "New Template"
+#~ msgstr "新的模板"
+
+#~ msgid "Order now"
+#~ msgstr "马上订购"
+
+#~ msgid "Professional"
+#~ msgstr "专业的"
+
+#~ msgid "Save and Continue"
+#~ msgstr "保存并继续"
+
+#~ msgid "Screen: 2.5 inch"
+#~ msgstr "屏幕: 2.5英寸"
+
+#~ msgid "Screen: 2.8 inch"
+#~ msgstr "屏幕: 2.8英寸"
+
+#~ msgid "Sell Online. Easily."
+#~ msgstr "轻松的在线销售"
+
+#~ msgid "Separator"
+#~ msgstr "分隔符"
+
+#~ msgid "Starter Package"
+#~ msgstr "启动包"
+
+#~ msgid "Subject:"
+#~ msgstr "主题:"
+
+#~ msgid "Text Block"
+#~ msgstr "文本块"
+
+#~ msgid "Text-Image"
+#~ msgstr "文本-图像"
+
+#~ msgid "Thanks for your subscription!"
+#~ msgstr "感谢你的提交！"
+
+#~ msgid "The top of the top"
+#~ msgstr "顶层的顶层"
+
+#~ msgid "Two Columns"
+#~ msgstr "二栏"
+
+#~ msgid "Unlimited support"
+#~ msgstr "无限制的支持"
+
+#~ msgid "View Product"
+#~ msgstr "查看产品"
+
+#~ msgid "Website Comments"
+#~ msgstr "网站声明"
+
+#~ msgid "Weight: 1.1 ounces"
+#~ msgstr "重量：1.1盎司"
+
+#~ msgid "Weight: 1.2 ounces"
+#~ msgstr "重: 1.2 盎司"
+
+#~ msgid ""
+#~ "Write one or two paragraphs describing your product,\n"
+#~ "                                                    services or a "
+#~ "specific feature. To be successful\n"
+#~ "                                                    your content needs to "
+#~ "be useful to your readers."
+#~ msgstr ""
+#~ "写一到两端描述你的产品的文字，\n"
+#~ "                                                    服务或者一个特殊的特"
+#~ "性。 要想成功\n"
+#~ "                                                   你的内容需要对读者有"
+#~ "用。"
+
+#~ msgid "Write one sentence to convince visitor about your message."
+#~ msgstr "写一个消息来劝服你网站的访问者"
+
+#~ msgid "per month"
+#~ msgstr "每月"
+
+#~ msgid "590"
+#~ msgstr "590"
+
+#~ msgid "450"
+#~ msgstr "450"
+
+#~ msgid "Content"
+#~ msgstr "内容"
+
+#~ msgid "To (Partners)"
+#~ msgstr "给 (业务伙伴)"
+
+#~ msgid "<a href=\"website_mail/email_designer/%s\">Edit in Website</a>"
+#~ msgstr "<a href=\"website_mail/email_designer/%s\">在网站中编辑</a>"
+
+#~ msgid ".00"
+#~ msgstr ".00"
+
+#~ msgid "Website Link"
+#~ msgstr "网站链接"
+
+#~ msgid "Effects"
+#~ msgstr "效果"
+
+#~ msgid "Structure"
+#~ msgstr "构造"
+
+#~ msgid "890"
+#~ msgstr "890"
+
+#~ msgid "Email From"
+#~ msgstr "电子邮件来自"
+
+#~ msgid "Features"
+#~ msgstr "产品特征"
+
+#~ msgid "To (Email)"
+#~ msgstr "给 (电子邮件)"
+
+#~ msgid "Link to the website"
+#~ msgstr "链接到网站"
+
+#~ msgid "Reply To"
+#~ msgstr "回复给"
