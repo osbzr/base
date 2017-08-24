@@ -626,7 +626,7 @@ form: module.record_id""" % (xml_id,)
     def _tag_record(self, rec, data_node=None, mode=None):
         rec_model = rec.get("model").encode('ascii')
         model = self.env[rec_model]
-        rec_id = rec.get("id",'').encode('ascii')
+        rec_id = rec.get("id",'').encode('utf-8')
         rec_context = rec.get("context", {})
         if rec_context:
             rec_context = safe_eval(rec_context)
