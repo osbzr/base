@@ -41,6 +41,6 @@ XlsxWriter==0.9.3
 xlwt==1.1.2
 xlrd==0.9.3
 xlutils==1.7.1
-docxtpl==0.2.3
+docxtpl==0.4.6
 python-ooxml==0.13
 pdfkit==0.5.0
