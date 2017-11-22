@@ -3,15 +3,35 @@
 # * base
 # 
 # Translators:
-# Jeffery Chen Fan <jeffery9@gmail.com>, 2016
+# Jeffery CHEN <jeffery9@gmail.com>, 2016
+# liAnGjiA <liangjia@qq.com>, 2016
+# 老窦 北京 <2662059195@qq.com>, 2016
 # 卓忆科技 <zhanghao@jointd.com>, 2016
+# Yuan Xulei <hi@yxl.name>, 2016
+# Bo Cao <cao.poobo@hotmail.com>, 2017
+# Gary Wei <Gary.wei@elico-corp.com>, 2017
+# fausthuang <faust_huang@hotmail.com>, 2017
+# Eddie Lim <bhweelim@yahoo.com>, 2017
+# waveyeung <waveyeung@qq.com>, 2017
+# Wei "oldrev" Li <liwei@sandwych.com>, 2017
+# xiaobin wu <bd5dml@gmail.com>, 2017
+# Joray <13637815@qq.com>, 2017
+# 菜小蛇 <lttlsnk@gmail.com>, 2017
+# mrshelly <mrshelly@hotmail.com>, 2017
+# Connie Xiao <connie.xiao@elico-corp.com>, 2017
+# Martin Trigaux <mat@odoo.com>, 2017
+# Talway <9010446@qq.com>, 2017
+# liulixia <liu.lixia@elico-corp.com>, 2017
+# Gang LIU <liu9ang@hotmail.com>, 2017
+# 朱仁杰 <johnson19960308@gmail.com>, 2017
+# zpq001 <zpq001@live.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-14 15:54+0000\n"
-"PO-Revision-Date: 2016-11-14 15:54+0000\n"
-"Last-Translator: 卓忆科技 <zhanghao@jointd.com>, 2016\n"
+"POT-Creation-Date: 2017-10-20 07:12+0000\n"
+"PO-Revision-Date: 2017-10-20 07:12+0000\n"
+"Last-Translator: zpq001 <zpq001@live.com>, 2017\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/odoo/teams/41243/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -79,6 +99,25 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_pos_loyalty
+msgid ""
+"\n"
+"\n"
+"=======================\n"
+"\n"
+"This module allows you to define a loyalty program in\n"
+"the point of sale, where the customers earn loyalty points\n"
+"and get rewards.\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"=======================\n"
+"\n"
+"能够让你在销售点定义忠诚计划，这样客户可以赚取忠诚积分并得到奖励\n"
+"\n"
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_hu
 msgid ""
 "\n"
@@ -106,6 +145,78 @@ msgstr ""
 " "
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_do
+msgid ""
+"\n"
+"\n"
+"Localization Module for Dominican Republic\n"
+"===========================================\n"
+"\n"
+"Catálogo de Cuentas e Impuestos para República Dominicana, Compatible para\n"
+"**Internacionalización** con **NIIF** y alineado a las normas y regulaciones\n"
+"de la Dirección General de Impuestos Internos (**DGII**).\n"
+"\n"
+"**Este módulo consiste de:**\n"
+"\n"
+"- Catálogo de Cuentas Estándar (alineado a DGII y NIIF)\n"
+"- Catálogo de Impuestos con la mayoría de Impuestos Preconfigurados\n"
+"        - ITBIS para compras y ventas\n"
+"        - Retenciones de ITBIS\n"
+"        - Retenciones de ISR\n"
+"        - Grupos de Impuestos y Retenciones:\n"
+"                - Telecomunicaiones\n"
+"                - Proveedores de Materiales de Construcción\n"
+"                - Personas Físicas Proveedoras de Servicios\n"
+"        - Otros impuestos\n"
+"- Secuencias Preconfiguradas para manejo de todos los NCF\n"
+"        - Facturas con Valor Fiscal (para Ventas)\n"
+"        - Facturas para Consumidores Finales\n"
+"        - Notas de Débito y Crédito\n"
+"        - Registro de Proveedores Informales\n"
+"        - Registro de Ingreso Único\n"
+"        - Registro de Gastos Menores\n"
+"        - Gubernamentales\n"
+"- Posiciones Fiscales para automatización de impuestos y retenciones\n"
+"        - Cambios de Impuestos a Exenciones (Ej. Ventas al Estado)\n"
+"        - Cambios de Impuestos a Retenciones (Ej. Compra Servicios al Exterior)\n"
+"        - Entre otros\n"
+"\n"
+"**Nota:**\n"
+"Esta localización, aunque posee las secuencias para NCF, las mismas no pueden\n"
+"ser utilizadas sin la instalación de módulos de terceros o desarrollo\n"
+"adicional.\n"
+"\n"
+"Estructura de Codificación del Catálogo de Cuentas:\n"
+"===================================================\n"
+"\n"
+"**Un dígito** representa la categoría/tipo de cuenta del del estado financiero.\n"
+"**1** - Activo        **4** - Cuentas de Ingresos y Ganancias\n"
+"**2** - Pasivo        **5** - Costos, Gastos y Pérdidas\n"
+"**3** - Capital       **6** - Cuentas Liquidadoras de Resultados\n"
+"\n"
+"**Dos dígitos** representan los rubros de agrupación:\n"
+"11- Activo Corriente\n"
+"21- Pasivo Corriente\n"
+"31- Capital Contable\n"
+"\n"
+"**Cuatro dígitos** se asignan a las cuentas de mayor: cuentas de primer orden\n"
+"1101- Efectivo y Equivalentes de Efectivo\n"
+"2101- Cuentas y Documentos por pagar\n"
+"3101- Capital Social\n"
+"\n"
+"**Seis dígitos** se asignan a las sub-cuentas: cuentas de segundo orden\n"
+"110101 - Caja\n"
+"210101 - Proveedores locales\n"
+"\n"
+"**Ocho dígitos** son para las cuentas de tercer orden (las visualizadas\n"
+"en Odoo):\n"
+"1101- Efectivo y Equivalentes\n"
+"110101- Caja\n"
+"11010101 Caja General\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_jp
 msgid ""
 "\n"
@@ -130,14 +241,32 @@ msgstr ""
 "---------\n"
 "\n"
 "* 日本公司会计科目表和税务模板。\n"
-"* 本模板大概不会覆盖到一个公司所有必须的科目。基于模板，你需要自行增加/删除/修改科目。\n"
+"* 本模板大概不会设置到一个公司所有必须的科目。基于模板，您需要自行增加/删除/修改科目。\n"
 "\n"
 "备注:\n"
 "-----\n"
 "\n"
-"* 财政状况 '内税' 和 '外税'，用来处理POS实施中可能会碰到的一些问题。 [1] 正常情况下你不会用到这些。\n"
+"* 财政状况 '内税' 和 '外税'，用来处理POS实施中可能会碰到的一些问题。 [1] 正常情况下您不会用到这些。\n"
 "\n"
 "[1] 访问 https://github.com/odoo/odoo/pull/6470 查看更多细节。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_deferred_revenue
+msgid ""
+"\n"
+"\n"
+"Revenue recognitions\n"
+"===================\n"
+"Manage revenue recognitions on product sales.\n"
+"Keeps track of the revenue recognition installments, and creates corresponding journal entries.\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"收入确认\n"
+"=====================\n"
+"管理产品收入在产品销售上。\n"
+"跟踪收入确认分期付款，并创建相应的日记帐分录"
 
 #. module: base
 #: code:addons/base/res/res_config.py:332
@@ -152,6 +281,18 @@ msgstr ""
 "\n"
 "\n"
 "该模块已经安装到你的系统中了。"
+
+#. module: base
+#: code:addons/model.py:140
+#, python-format
+msgid ""
+"\n"
+"\n"
+"[object with reference: %s - %s]"
+msgstr ""
+"\n"
+"\n"
+"[object with reference: %s - %s]"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_invoice_bba
@@ -186,7 +327,7 @@ msgstr ""
 "\n"
 "============================================================================\n"
 "\n"
-"    - 重命名“参考”字段标签来“通信”\n"
+"    - 重命名“参照”字段标签来“通信”\n"
 "\n"
 "    - 添加支持比利时的结构化通信\n"
 "\n"
@@ -204,7 +345,7 @@ msgstr ""
 "\n"
 "        **DOY =** 年中的一天, **SSS =** 序列号, **DD =** 校验数字\n"
 "\n"
-"    3) 客户参考 : +++RRR/RRRR/SSSDDD+++\n"
+"    3) 客户参照 : +++RRR/RRRR/SSSDDD+++\n"
 "\n"
 "        **R..R =** 客户参考而非数字字符, **SSS =** 序列号, **DD =** 校验数字  \n"
 "\n"
@@ -239,6 +380,130 @@ msgstr ""
 " “Python代码”定义的税收数额。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_be_reports
+msgid ""
+"\n"
+"        Accounting reports for Belgium\n"
+"    "
+msgstr ""
+"\n"
+"比利时会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_br_reports
+msgid ""
+"\n"
+"        Accounting reports for Brazilian\n"
+"    "
+msgstr ""
+"\n"
+"巴西会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_cl_reports
+msgid ""
+"\n"
+"        Accounting reports for Chile\n"
+"    "
+msgstr ""
+"\n"
+"智利会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_hu_reports
+msgid ""
+"\n"
+"        Accounting reports for Hungarian\n"
+" "
+msgstr ""
+"\n"
+"      匈牙利会计报告\n"
+" "
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_nl_reports
+msgid ""
+"\n"
+"        Accounting reports for Netherlands\n"
+"    "
+msgstr ""
+"\n"
+"荷兰会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ro_reports
+msgid ""
+"\n"
+"        Accounting reports for Romania\n"
+"    "
+msgstr ""
+"\n"
+"罗马尼亚会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_si_reports
+msgid ""
+"\n"
+"        Accounting reports for Slovenian\n"
+"    "
+msgstr ""
+"\n"
+"斯洛文尼亚会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_es_reports
+msgid ""
+"\n"
+"        Accounting reports for Spain\n"
+"    "
+msgstr ""
+"\n"
+"西班牙会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ch_reports
+msgid ""
+"\n"
+"        Accounting reports for Switzerland\n"
+"    "
+msgstr ""
+"\n"
+"瑞典会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_uk_reports
+msgid ""
+"\n"
+"        Accounting reports for UK\n"
+"    "
+msgstr ""
+"\n"
+"英国会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_uy_reports
+msgid ""
+"\n"
+"        Accounting reports for Uruguay\n"
+"\n"
+msgstr ""
+"\n"
+"乌拉圭会计报告\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_extension
+msgid ""
+"\n"
+"        Adapt base accounting module for Enterprise Edition.\n"
+"\n"
+"        This module will be auto installed if account module and enterprise edition are present\n"
+"    "
+msgstr ""
+"\n"
+"为适应企业版基础会计模块\n"
+"这个模块将被自动安装，如果帐户模块和企业版都存在"
+
+#. module: base
 #: model:ir.module.module,summary:base.module_account_tax_python
 msgid ""
 "\n"
@@ -246,6 +511,15 @@ msgid ""
 msgstr ""
 "\n"
 "允许使用python代码定义税"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_crm_voip
+msgid ""
+"\n"
+"        Automate calls transfers, logs and emails"
+msgstr ""
+"\n"
+"自动呼叫转移，日志和电子邮件..."
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_maintenance
@@ -267,6 +541,14 @@ msgstr ""
 "POS中常见的饮料数据"
 
 #. module: base
+#: model:ir.module.module,description:base.module_account_taxcloud
+msgid ""
+"\n"
+"        Compute sales tax automatically using TaxCloud based on customer address in United States.\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_pos_cache
 msgid ""
 "\n"
@@ -274,6 +556,65 @@ msgid ""
 msgstr ""
 "\n"
 "允许产品缓存从而获得较低的POS加载时间。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_expense_sepa
+msgid ""
+"\n"
+"        Enable the SEPA features in the payments of expenses\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_sepa
+msgid ""
+"\n"
+"        Generate payment orders as recommended by the SEPA norm, thanks to pain.001 messages. Supported pain version (countries) are pain.001.001.03 (generic), pain.001.001.03.ch.02 (Switzerland) and pain.001.003.03 (Germany). The generated XML file can then be uploaded to your bank.\n"
+"\n"
+"        This module follow the implementation guidelines issued by the European Payment Council.\n"
+"        For more informations about the SEPA standards : http://www.iso20022.org/ and http://www.europeanpaymentscouncil.eu/\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_crm_voip
+msgid ""
+"\n"
+"        Long description of module's purpose\n"
+"    "
+msgstr ""
+"\n"
+"        模块目的的长描述\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_expense_check
+msgid ""
+"\n"
+"        Print amount in words on checks issued for expenses\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_voip
+msgid ""
+"\n"
+"        Technical core for all the modules using the VOIP system."
+msgstr ""
+"\n"
+"        使用VOIP系统的所有模块的技术核心."
+
+#. module: base
+#: model:ir.module.module,description:base.module_voip
+msgid ""
+"\n"
+"        Technical core for all the modules using the VOIP system. \n"
+"        Contains the library needed in order to make the VOIP usable by other modules.\n"
+"    "
+msgstr ""
+"\n"
+"技术核心都使用VOIP系统中的模块。\n"
+"包含有需要以资料库，使VOIP其它模块可用"
 
 #. module: base
 #: model:ir.module.module,description:base.module_stock_calendar
@@ -311,24 +652,60 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"stock_calendar 模块处理 最小库存规则 (=订购点 / 再订购规则) 考虑了采购日历和送货日历两种模式。\n"
+"stock_calendar模块以不同的方式处理最小库存规则（=订货点/订货规则）, 考虑采购日历和交付日历的可能性。\n"
 "\n"
-"通常情况下，调度检查所有订购点并基于当前库存和未来库存调拨（已经确定的出入库）产生补货。对于生鲜产品的公司来说，这可能有问题，因为如果你提前两个星期预订产品，但产品明天到达，产品不能在两个星期内保鲜。\n"
+"通常，调度程序将通过所有的订货点，并创建补货，补货的数量考虑当前库存和所有未来库存移动。对于生鲜产品的公司，这是一个问题，因为，如果你订购产品的是超过2周才需要的，而现在他们明天就到达，那么这些产品在两周内不会再新鲜。\n"
 "\n"
-"为了解决这个问题，我们增加了送货日历到订购点上。未来库存调拨 (也反应了当前的需求)只会考虑那些日历上第二次送货前的那些。\n"
-"因此如果我每星期周四周五送货，我在周一订货，可以在周二收到，所有的需求直到周五。\n"
+"为了解决这个问题，我们向订货点添加了交货日历。未来库存移动（它们代表需求）将被考虑, 将限于根据日历的第二次交货之前的库存移动。因此，如果我每周星期二和星期五交货，当我在星期一订购，将在星期二交付礼拜五之前所有需求。\n"
 "\n"
-"然而此方案并不完美。因为采购需求可能会变化，如果你只需要在补货前一天创建采购订单。 (除非你已经采购的足够多)。为此，我们增加了一个采购日历，订购点会基于采购日历上的采购日期计算。 (最后一次执行日期会检查这次是否需要触发)\n"
+"然而，这不够好，因为您只想在交货日期之前创建采购订单，因为未来的需求可能会改变。 （否则你可能已经订购太多了）为此，我们添加了采购日历，并且只有当调度程序在采购日历指定的时间内运行时，才会触发。（最后一个执行日期还将检查它是否在这段时间内还没有被触发）\n"
 "\n"
-"然而, 有时我们需要重复下单: 假设我们周五需要订购两次: 一个给周一的采购订单和一个给周二的采购订单。我们就需要同时下两张采购订单。\n"
-"为了解决这个问题, 我们在发货日期上和采购日期上增加了一个需求组，\n"
-"我们会检查对应的送货日期. 在相应的需求单上, 我们可以要求传递需求使得可以周一一张、周二一张。\n"
+"然而，有时我们有双重订单：假设我们需要在星期五订购两次：星期一的采购订单，和星期二的采购订单。然后我们同时需要有两个订单。\n"
+"为了处理这一点，我们在日历行放置补货组，对于采购日历行，我们需要做，我们将检查相应的交货行。\n"
 "\n"
-"普通订购点, 采购订单上的日期是基于产品/公司的交期计算的。\n"
-"这个并不对应日历上的日期计算方法，所以采购/送货日期是基于日历上设置。\n"
+"在补货组，我们可以告诉传播它自己到采购，这样才可以有一个订单是星期一，一个订单是星期二。\n"
 "\n"
-"我们使用的日历基于每周，它可以设置一个开始日期，结束日期，例如周二送货。\n"
-"也可以在不送货的日期上设置例外情况。"
+"对于正常的订货点，采购订单上的日期是基于产品/公司的系统延迟，\n"
+"这与日历所做的不一致，因此，购买/交付日期也将根据日历设置。\n"
+"\n"
+"我们使用的日历是每周一次。但是，有可能有开始日期和结束日期。例如：周二交货。也可以在没有的时候放置例外。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_stock_barcode
+msgid ""
+"\n"
+"        This module adds support for barcodes scanning to the warehouse management system.\n"
+"    "
+msgstr ""
+"\n"
+"这个模块增加了对仓库管理系统的条码扫描支持。"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_account_online_sync
+msgid ""
+"\n"
+"        This module is used for Online bank synchronization."
+msgstr ""
+"\n"
+"此模块用于同步网上银行。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_online_sync
+msgid ""
+"\n"
+"        This module is used for Online bank synchronization. It provides basic methods to synchronize bank statement.\n"
+"    "
+msgstr ""
+"\n"
+"此模块用于同步网上银行。它提供了同步银行对账单的基本方法。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_web_mobile
+msgid ""
+"\n"
+"        This module provides the core of the Odoo Mobile App.\n"
+"        "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_maintenance
@@ -340,12 +717,45 @@ msgstr ""
 "跟踪员工的设备及管理维护的要求。"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_account_plaid
+msgid ""
+"\n"
+"        Use Plaid.com to retrieve bank statements"
+msgstr ""
+"\n"
+"使用plaid.com获取银行对账单"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_plaid
+msgid ""
+"\n"
+"        Use Plaid.com to retrieve bank statements.\n"
+"    "
+msgstr ""
+"\n"
+"使用plaid.com获取银行对账单"
+
+#. module: base
 #: model:ir.module.module,description:base.module_hr_recruitment_survey
 msgid ""
 "\n"
 "        Use interview forms during recruitment process.\n"
 "        This module is integrated with the survey module\n"
 "        to allow you to define interviews for different jobs.\n"
+"    "
+msgstr ""
+"\n"
+"        在招聘过程中使用面试表格.\n"
+"        该模块与调查模块集成\n"
+"        允许您为不同的工作定义面试.\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_timesheet_grid_sale
+msgid ""
+"\n"
+"        When invoicing timesheets, allows invoicing either all timesheets\n"
+"        linked to an SO, or only the validated timesheets\n"
 "    "
 msgstr ""
 
@@ -378,6 +788,13 @@ msgstr ""
 "对税收添加一个选项允许他们基于现金，这意味着调节/核销过程中，如果有一个税基于现金，一个包含这些税款价值的新日记帐分录将被创建。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_quality_mrp
+msgid ""
+"\n"
+"    Adds workcenters to Quality Control\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_test_documentation_examples
 msgid ""
 "\n"
@@ -399,7 +816,17 @@ msgid ""
 "    Display delivery orders (picking) infos on the website\n"
 msgstr ""
 "\n"
-"在网站上检查送货单(调拨)信息。\n"
+"在网站上显示送货单(拣货)信息。\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_holidays_gantt
+msgid ""
+"\n"
+"    Gantt view for Leaves Dashboard\n"
+"    "
+msgstr ""
+"\n"
+"甘特视图请假仪表板"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_timesheet_attendance
@@ -408,6 +835,9 @@ msgid ""
 "    Module linking the attendance module to the timesheet app.\n"
 "    "
 msgstr ""
+"\n"
+"    模块连接考勤模块到工时表应用.\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_payment_payumoney
@@ -416,6 +846,31 @@ msgid ""
 "    PayuMoney Payment Acquirer for India.\n"
 "\n"
 "    PayUmoney payment gateway supports only INR currency.\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_project_forecast
+msgid ""
+"\n"
+"    Resource management for Project\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_sale_ebay
+msgid ""
+"\n"
+"  Publish your products on eBay"
+msgstr ""
+"\n"
+"在 eBay 上发布你的产品"
+
+#. module: base
+#: model:ir.module.module,description:base.module_project_forecast_sale
+msgid ""
+"\n"
+"* Automatically enables forecasting on projects created from sale orders\n"
 "    "
 msgstr ""
 
@@ -430,11 +885,11 @@ msgid ""
 "European Union."
 msgstr ""
 "\n"
-"A module that adds intrastat reports.\n"
+"本模块为添加内部通告功能。\n"
 "=====================================\n"
 "\n"
-"This module gives the details of the goods traded between the countries of\n"
-"European Union."
+"\n"
+"这个模块给出了欧盟国家间商品的交易细节。"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_accountant
@@ -447,11 +902,29 @@ msgid ""
 "It assigns manager and user access rights to the Administrator for the accounting application and only user rights to the Demo user.\n"
 msgstr ""
 "\n"
-"会计访问权限 \n"
+"会计访问权\n"
 "======================== \n"
-"它让管理员拥有所有会计功能的访问权限，如分类账项目（journal items）和会计科目（chart of accounts）等。\n"
+"它让管理员拥有所有会计功能的访问权利，如分类账项目（journal items）和会计科目（chart of accounts）等。\n"
 " \n"
-"它让管理员（Administrator）拥有会计应用模块的管理者权限及用户权限，而演示用户（Demo user）仅拥有用户的权限。\n"
+"它让管理员（Administrator）拥有会计应用模块的管理者权限及用户权利，而演示用户（Demo user）仅拥有用户的权利。\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_contract_dashboard
+msgid ""
+"\n"
+"Accounting Contract Dashboard\n"
+"========================\n"
+"It adds dashboards to :\n"
+"1) Analyse the recurrent revenue and other metrics for contracts\n"
+"2) Analyse the contracts modifications by salesman and compute their value.\n"
+"    "
+msgstr ""
+"\n"
+"会计合约仪表板\n"
+"========================\n"
+"它增加仪表板到：\n"
+"1)分析了经常性收入等指标合约，\n"
+"2)由业务员分析了合同的修改，并计算它们的价值"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll_account
@@ -465,6 +938,228 @@ msgstr ""
 "比利时薪酬规则的会计数据.\n"
 "==========================================\n"
 "    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_reports
+msgid ""
+"\n"
+"Accounting Reports\n"
+"====================\n"
+"    "
+msgstr ""
+"\n"
+"会计报告\n"
+"====================\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ar_reports
+msgid ""
+"\n"
+"Accounting reports for Argentina\n"
+"================================\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"阿根廷会计报告\n"
+"================================\n"
+"\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_bo_reports
+msgid ""
+"\n"
+"Accounting reports for Bolivia\n"
+"================================\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"玻利维亚会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_co_reports
+msgid ""
+"\n"
+"Accounting reports for Colombia\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"哥伦比亚会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_hr_reports
+msgid ""
+"\n"
+"Accounting reports for Croatia\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"克罗地亚会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_de_skr03_reports
+msgid ""
+"\n"
+"Accounting reports for Deutschland\n"
+"    "
+msgstr ""
+"\n"
+"德国会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_de_skr04_reports
+msgid ""
+"\n"
+"Accounting reports for Deutschland SKR04\n"
+"    "
+msgstr ""
+"\n"
+"德国 SKR04 会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_et_reports
+msgid ""
+"\n"
+"Accounting reports for Ethiopia\n"
+"================================\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"埃塞俄比亚会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_fr_reports
+msgid ""
+"\n"
+"Accounting reports for France\n"
+"================================\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"法国会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_gr_reports
+msgid ""
+"\n"
+"Accounting reports for Greece\n"
+"=============================\n"
+"\n"
+"    "
+msgstr ""
+"\n"
+"希腊会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_in_reports
+msgid ""
+"\n"
+"Accounting reports for India\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"印度会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_jp_reports
+msgid ""
+"\n"
+"Accounting reports for Japan\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"日本会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_lu_reports
+msgid ""
+"\n"
+"Accounting reports for Luxembourg\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"卢森堡会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_ma_reports
+msgid ""
+"\n"
+"Accounting reports for Maroc\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"摩洛哥会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_no_reports
+msgid ""
+"\n"
+"Accounting reports for Norway\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"挪威会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_pl_reports
+msgid ""
+"\n"
+"Accounting reports for Poland\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"波兰会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_sg_reports
+msgid ""
+"\n"
+"Accounting reports for Singapore\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"新加坡会计报告\n"
+"================================"
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_th_reports
+msgid ""
+"\n"
+"Accounting reports for Thailand\n"
+"================================\n"
+"    "
+msgstr ""
+"\n"
+"泰国会计报告\n"
+"================================"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_mass_mailing
@@ -495,7 +1190,7 @@ msgstr ""
 "\n"
 "你可以在销售单上添加如下额外的日期:\n"
 "------------------------------------------------------------\n"
-"    * 申请日期(在分拣单上将用作预计日期)\n"
+"    * 申请日期(在拣货单上将用作预计日期)\n"
 "    * 创建日期\n"
 "    * 有效日期\n"
 
@@ -572,7 +1267,7 @@ msgid ""
 "The wizard to launch the report has several options to help you get the data you need.\n"
 msgstr ""
 "\n"
-"在产品上添加一个报告菜单，用于按发票计算销售、采购、毛利和其他有趣的指标。\n"
+"在产品上添加一个报告菜单，基于发票计算销售、采购、毛利，以及其他有趣的指标。\n"
 "=============================================================================================================================\n"
 "\n"
 "此向导加载的报表有若干选项用来帮助你获取你需要的数据。\n"
@@ -656,8 +1351,8 @@ msgstr ""
 "允许取消会计分录\n"
 "====================================\n"
 "\n"
-"This module adds 'Allow Canceling Entries' field on form view of account journal.\n"
-"If set to true it allows user to cancel entries & invoices.\n"
+"此模块在“帐户日记”的窗体视图中添加“Allow Canceling Entries允许注销条目”字段 。\n"
+"如果设置为true，它允许用户取消条目和发票。\n"
 "    "
 
 #. module: base
@@ -700,6 +1395,16 @@ msgstr ""
 "允许你的客户从一个漂亮的WEB界面管理他的账务。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_mrp_account
+msgid ""
+"\n"
+"Analytic Accounting in MRP\n"
+"==========================\n"
+"\n"
+"* Cost structure report\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_ar
 msgid ""
 "\n"
@@ -711,7 +1416,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Argentinian accounting chart and tax localization.\n"
+"阿根廷会计科目表和税本地化。\n"
 "==================================================\n"
 "\n"
 "Plan contable argentino e impuestos de acuerdo a disposiciones vigentes\n"
@@ -799,6 +1504,17 @@ msgstr ""
 "澳大利亚会计模块==澳大利亚会计基本图表和本地化。另外： - 激活一些区域货币。 - 建立澳大利亚税。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_au_reports
+msgid ""
+"\n"
+"Australian Accounting Reports\n"
+"=============================\n"
+"\n"
+"GST Reporting for Australian Accounting.\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_base_gengo
 msgid ""
 "\n"
@@ -860,6 +1576,16 @@ msgid ""
 "    - Regional State listings\n"
 "    "
 msgstr ""
+"\n"
+"埃塞俄比亚本地化的基础模块\n"
+"======================================\n"
+"\n"
+"This is the latest Ethiopian Odoo localization and consists of:\n"
+"    - Chart of Accounts\n"
+"    - VAT tax structure\n"
+"    - Withholding tax structure\n"
+"    - Regional State listings\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_br
@@ -901,6 +1627,58 @@ msgid ""
 "2011). Those modules are also strictly licensed under AGPL V3 and today don't \n"
 "come with any additional paid permission for online use of 'private modules'.\n"
 msgstr ""
+"\n"
+"巴西本地化的基础模块\n"
+"==========================================\n"
+"\n"
+"This module consists in:\n"
+"\n"
+" - Generic Brazilian chart of accounts\n"
+" - Brazilian taxes such as:\n"
+"\n"
+"        - IPI\n"
+"        - ICMS\n"
+"        - PIS\n"
+"        - COFINS\n"
+"        - ISS\n"
+"        - IR\n"
+"        - IRPJ\n"
+"        - CSLL\n"
+"\n"
+"The field tax_discount has also been added in the account.tax.template and \n"
+"account.tax objects to allow the proper computation of some Brazilian VATs \n"
+"such as ICMS. The chart of account creation wizard has been extended to \n"
+"propagate those new data properly.\n"
+"\n"
+"It's important to note however that this module lack many implementations to \n"
+"use Odoo properly in Brazil. Those implementations (such as the electronic \n"
+"fiscal Invoicing which is already operational) are brought by more than 15 \n"
+"additional modules of the Brazilian Launchpad localization project \n"
+"https://launchpad.net/openerp.pt-br-localiz and their dependencies in the \n"
+"extra addons branch. Those modules aim at not breaking with the remarkable \n"
+"Odoo modularity, this is why they are numerous but small. One of the \n"
+"reasons for maintaining those modules apart is that Brazilian Localization \n"
+"leaders need commit rights agility to complete the localization as companies \n"
+"fund the remaining legal requirements (such as soon fiscal ledgers, \n"
+"accounting SPED, fiscal SPED and PAF ECF that are still missing as September \n"
+"2011). Those modules are also strictly licensed under AGPL V3 and today don't \n"
+"come with any additional paid permission for online use of 'private modules'.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_batch_deposit
+msgid ""
+"\n"
+"Batch Deposit\n"
+"=============\n"
+"Batch deposits allows you to group received checks before you deposit them to the bank.\n"
+"The amount deposited to your bank will then appear as a single transaction on your bank statement.\n"
+"When you proceed with the reconciliation, simply select the corresponding batch deposit to reconcile the payments.\n"
+"    "
+msgstr ""
+"\n"
+"批量存款\n"
+"=============\n"
+"批量存款允许您在将支票存入银行之前，分组收到的支票。 存入银行的总金额作为一笔交易出现在银行日记账。 在使用调节处理的时候，只需简单选择批量存款来调节付款。"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll
@@ -921,7 +1699,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Belgian Payroll Rules.\n"
+"比利时薪资规则\n"
 "======================\n"
 "\n"
 "    * Employee Details\n"
@@ -934,6 +1712,29 @@ msgstr ""
 "    * Integrated with Holiday Management\n"
 "    * Salary Maj, ONSS, Withholding Tax, Child Allowance, ...\n"
 "    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_pos_blackbox_be
+msgid ""
+"\n"
+"Belgian Registered Cash Register\n"
+"================================\n"
+"\n"
+"This module turns the Point Of Sale module into a certified Belgian cash register.\n"
+"\n"
+"More info:\n"
+"  * http://www.systemedecaisseenregistreuse.be/\n"
+"  * http://www.geregistreerdkassasysteem.be/\n"
+"\n"
+"Legal\n"
+"-----\n"
+"**The use of pos_blackbox_be sources is only certified on odoo.com SaaS platform\n"
+"for version 9.0.**\n"
+"An obfuscated and certified version of the pos_blackbox_be may be provided on\n"
+"requests for on-premise installations.\n"
+"No modified version is certified and supported by Odoo SA.\n"
+"    "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_bo
@@ -975,21 +1776,20 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"\\n\n"
-"面向商业的社交网络\\n\n"
-"===================================\\n\n"
-"社会化网络模块提供了一个统一的社交网络抽象层，通过一个完全集成电子邮件和消息管理系统，允许应用基于单据展示完整的通信记录。\\n\n"
-"\\n\n"
-"它使用户能阅读和发送消息以及电子邮件。它还提供一个组合了订阅机制的反馈页面，允许通过关注单据并不断的得到最新消息。\\n\n"
-"\\n\n"
-"主要特性\\n\n"
-"---------\\n\n"
-"* 干净和更新的沟通历史，任何Odoo单据，它可作为讨论话题； \\n\n"
-"* 订阅机制，用来得最新消息；\\n\n"
-"* 统一反馈页面，用来查看最新消息和随后文件活动；\\n\n"
-"* 用户沟通，通过反馈页面；\\n\n"
-"* 基于单据的线程讨论设计；\\n\n"
-"* 依赖于全局发送邮件服务器，一个集成的邮件管理系统，允许通过可配置调度处理引擎来发送电子邮件；\\n\n"
+"面向商业的社交网络\n"
+"===================================\n"
+"社会化网络模块提供了一个统一的社交网络抽象层，通过一个完全集成电子邮件和消息管理系统，允许应用基于单据展示完整的通信记录。\n"
+"\n"
+"它使用户能阅读和发送消息以及电子邮件。它还提供一个组合了订阅机制的反馈页面，允许通过关注单据并不断的得到最新消息。\n"
+"\n"
+"主要特性\n"
+"---------\n"
+"* 干净和更新的沟通历史，任何Odoo单据，它可作为讨论话题； \n"
+"* 订阅机制，用来得最新消息；\n"
+"* 统一反馈页面，用来查看最新消息和随后文件活动；\n"
+"* 用户沟通，通过反馈页面；\n"
+"* 基于单据的线程讨论设计；\n"
+"* 依赖于全局发送邮件服务器，一个集成的邮件管理系统，允许通过可配置调度处理引擎来发送电子邮件；\n"
 "* 包括一个可扩展的通用电子邮件撰写助手，它变为邮件群发助手，能解释简单*占位符表达式*，从而在电子邮件被真正发送时使用动态数据。"
 
 #. module: base
@@ -1024,6 +1824,34 @@ msgid ""
 "If you install this module, and select Custom chart a basic chart will be proposed, \n"
 "but you will need set manually account defaults for taxes.\n"
 msgstr ""
+"\n"
+"委内瑞拉的会计科目表\n"
+"===============================\n"
+"\n"
+"Venezuela doesn't have any chart of account by law, but the default\n"
+"proposed in Odoo should comply with some Accepted best practices in Venezuela, \n"
+"this plan comply with this practices.\n"
+"\n"
+"This module has been tested as base for more of 1000 companies, because \n"
+"it is based in a mixtures of most common software in the Venezuelan \n"
+"market what will allow for sure to accountants feel them first steps with \n"
+"Odoo more confortable.\n"
+"\n"
+"This module doesn't pretend be the total localization for Venezuela, \n"
+"but it will help you to start really quickly with Odoo in this country.\n"
+"\n"
+"This module give you.\n"
+"---------------------\n"
+"\n"
+"- Basic taxes for Venezuela.\n"
+"- Have basic data to run tests with community localization.\n"
+"- Start a company from 0 if your needs are basic from an accounting PoV.\n"
+"\n"
+"We recomend use of account_anglo_saxon if you want valued your \n"
+"stocks as Venezuela does with out invoices.\n"
+"\n"
+"If you install this module, and select Custom chart a basic chart will be proposed, \n"
+"but you will need set manually account defaults for taxes.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_th
@@ -1036,7 +1864,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Chart of Accounts for Thailand.\n"
+"泰国的会计科目表\n"
 "===============================\n"
 "\n"
 "Thai accounting chart and localization.\n"
@@ -1059,6 +1887,19 @@ msgid ""
 "please go to http://translations.launchpad.net/openerp-costa-rica.\n"
 "    "
 msgstr ""
+"\n"
+"哥斯达黎加的会计科目表\n"
+"=================================\n"
+"\n"
+"Includes:\n"
+"---------\n"
+"    * account.account.template\n"
+"    * account.tax.template\n"
+"    * account.chart.template\n"
+"\n"
+"Everything is in English with Spanish translation. Further translations are welcome,\n"
+"please go to http://translations.launchpad.net/openerp-costa-rica.\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_cl
@@ -1071,7 +1912,7 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Chilean accounting chart and tax localization.\n"
+"智利会计科目表和税本地化\n"
 "==============================================\n"
 "Plan contable chileno e impuestos de acuerdo a disposiciones vigentes\n"
 "\n"
@@ -1201,6 +2042,33 @@ msgid ""
 " https://www.rrif.hr/dok/preuzimanje/rrif-rp2012.rar\n"
 "\n"
 msgstr ""
+"\n"
+"克罗地亚本地化\n"
+"======================\n"
+"\n"
+"Author: Goran Kliska, Slobodni programi d.o.o., Zagreb\n"
+"        https://www.slobodni-programi.hr\n"
+"\n"
+"Contributions:\n"
+"  Tomislav Bošnjaković, Storm Computers: tipovi konta\n"
+"  Ivan Vađić, Slobodni programi: tipovi konta\n"
+"\n"
+"Description:\n"
+"\n"
+"Croatian Chart of Accounts (RRIF ver.2012)\n"
+"\n"
+"RRIF-ov računski plan za poduzetnike za 2012.\n"
+"Vrste konta\n"
+"Kontni plan prema RRIF-u, dorađen u smislu kraćenja naziva i dodavanja analitika\n"
+"Porezne grupe prema poreznoj prijavi\n"
+"Porezi PDV obrasca\n"
+"Ostali porezi\n"
+"Osnovne fiskalne pozicije\n"
+"\n"
+"Izvori podataka:\n"
+" https://www.rrif.hr/dok/preuzimanje/rrif-rp2011.rar\n"
+" https://www.rrif.hr/dok/preuzimanje/rrif-rp2012.rar\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_portal
@@ -1246,6 +2114,14 @@ msgstr ""
 "\n"
 "创建市场营销模块的演示数据，包括领导、营销活动以及细分市场等数据。\n"
 "    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_mass_mailing_themes
+msgid ""
+"\n"
+"Design gorgeous mails\n"
+"    "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_de
@@ -1395,22 +2271,22 @@ msgstr ""
 ". 为了简化EU的流程,迷你一站式店铺 (MOSS) 注册方案\n"
 "允许交易有一个特别的税号。\n"
 "\n"
-"这个模块能帮助你创建所需的\n"
+"这个模块能帮助您创建所需的\n"
 "欧盟财政位置和税号来自动应用和记录所需的税。\n"
 "\n"
 "这个模块安装了一个向导来帮助设置财政位置\n"
 "及在欧盟内销售电子服务税。\n"
 "\n"
-"向导让你选择:\n"
+"向导让您选择:\n"
 " - 销售电子服务所在的欧盟国家\n"
-" - 你国家的VAT服务税,对应到\n"
+" - 您国家的VAT服务税,对应到\n"
 "   目标国家的税\n"
 " - 选项: 一个财政位置模板， \n"
-"   用于复制账户映射. 也会作为你\n"
+"   用于复制账户映射. 也会作为您\n"
 "   现有的B2C Intra-EU财政位置. (默认\n"
 "   是无账户映射)\n"
 " - 选项: 用于收集税款的账户\n"
-"    (默认为你国家的VAT服务税的账户)\n"
+"    (默认为您国家的VAT服务税的账户)\n"
 "\n"
 "这创建了对应的财务位置和税，\n"
 "自动用于客户所选国家的欧盟销售。\n"
@@ -1421,7 +2297,7 @@ msgstr ""
 "查找税中的 \"欧盟MOSS VAT 图\" \n"
 "在税报表菜单 (总账报表).\n"
 "\n"
-"参考\n"
+"参照\n"
 "++++++++++\n"
 "- Directive 2008/8/EC\n"
 "- Council Implementing Regulation (EU) No 1042/2013\n"
@@ -1548,24 +2424,23 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"\\n\n"
-"法国薪资规则.\\n\n"
-"=====================\\n\n"
-"\\n\n"
-"    - 法国本地化人事薪资配置\\n\n"
-"    - 法国薪资单主要贡献计算规则,分骨干和非骨干\\n\n"
-"    - 新薪资单报告\\n\n"
-"\\n\n"
-"待办事项:\\n\n"
-"-----\\n\n"
-"    - 在补贴扣缴方面和年假模块集成\\n\n"
-"    - 在薪资单创建自动匹配科目方面和人事薪资科目集成\\n\n"
-"      \\n\n"
-"    - 继续与捐款模块集成. 现在只实施主要贡献管理功能\\n\n"
-"      \\n\n"
-"    - 在Webbit下修改报表\\n\n"
-"    - 在 payslip.line with appears_in_payslip = False 时显示薪资单交互界面，而不是薪资单报表\\n\n"
-"      \\n\n"
+"法国薪资规则\n"
+"=====================\n"
+"\n"
+"    - Configuration of hr_payroll for French localization\n"
+"    - All main contributions rules for French payslip, for 'cadre' and 'non-cadre'\n"
+"    - New payslip report\n"
+"\n"
+"TODO:\n"
+"-----\n"
+"    - Integration with holidays module for deduction and allowance\n"
+"    - Integration with hr_payroll_account for the automatic account_move_line\n"
+"      creation from the payslip\n"
+"    - Continue to integrate the contribution. Only the main contribution are\n"
+"      currently implemented\n"
+"    - Remake the report under webkit\n"
+"    - The payslip.line with appears_in_payslip = False should appears in the\n"
+"      payslip interface, but not in the payslip report\n"
 "    "
 
 #. module: base
@@ -1595,12 +2470,11 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"\\n\n"
-"账户一般图表。\\n\n"
-"========================== \\n\n"
-"\\n\n"
-"为乌拉圭提供会计科目，税表模板。\\n\n"
-"\\n\n"
+"乌拉圭会计科目表\n"
+"==========================\n"
+"\n"
+"Provide Templates for Chart of Accounts, Taxes for Uruguay.\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_intrastat
@@ -1632,8 +2506,8 @@ msgstr ""
 "================================================== \n"
 "\n"
 "    * 费用编制\n"
-"    * 支付编制\n"
-"    * 公司供款管理\n"
+"    * 付款编制\n"
+"    * 公司缴纳管理\n"
 "    "
 
 #. module: base
@@ -1668,6 +2542,19 @@ msgstr ""
 " "
 
 #. module: base
+#: model:ir.module.module,description:base.module_mail_push
+msgid ""
+"\n"
+"Google Firebase Messaging Integration\n"
+"=====================================\n"
+"This module allows to send FCM push notification on registered mobiles\n"
+"for every message in chatter.\n"
+"\n"
+"**Configure your API keys from General Setting**\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_hw_proxy
 msgid ""
 "\n"
@@ -1689,6 +2576,37 @@ msgstr ""
 "这个模块进行包含了功能框架。实际的设备驱动\n"
 "可以在必须单独安装的其它模块中找到。 \n"
 "\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_helpdesk
+msgid ""
+"\n"
+"Helpdesk - Ticket Management App\n"
+"================================\n"
+"\n"
+"Features:\n"
+"\n"
+"    - Process tickets through different stages to solve them.\n"
+"    - Add priorities, types, descriptions and tags to define your tickets.\n"
+"    - Use the chatter to communicate additional information and ping co-workers on tickets.\n"
+"    - Enjoy the use of an adapted dashboard, and an easy-to-use kanban view to handle your tickets.\n"
+"    - Make an in-depth analysis of your tickets through the pivot view in the reports menu.\n"
+"    - Create a team and define its members, use an automatic assignation method if you wish.\n"
+"    - Use a mail alias to automatically create tickets and communicate with your customers.\n"
+"    - Add Service Level Agreement deadlines automatically to your tickets.\n"
+"    - Get customer feedback by using ratings.\n"
+"    - Install additional features easily using your team form view.\n"
+"\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_timesheet_sheet_timesheet_grid
+msgid ""
+"\n"
+"Hide hr_timesheet_sheet menu items.\n"
+"    "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr
@@ -1738,6 +2656,25 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_cn_standard
+msgid ""
+"\n"
+"Including the following data in the Accounting Standards for Business Enterprises\n"
+"包含企业会计准则以下数据\n"
+"\n"
+"* Chart of Accounts\n"
+"* 科目表模板\n"
+"\n"
+"* Account templates\n"
+"* 科目模板\n"
+"\n"
+"* Tax templates\n"
+"* 税金模板\n"
+"\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_in
 msgid ""
 "\n"
@@ -1751,6 +2688,35 @@ msgid ""
 "Note: The Schedule VI has been revised by MCA and is applicable for all Balance Sheet made after\n"
 "31st March, 2011. The Format has done away with earlier two options of format of Balance\n"
 "Sheet, now only Vertical format has been permitted Which is Supported By Odoo.\n"
+"  "
+msgstr ""
+"\n"
+"印度会计科目表\n"
+"====================================\n"
+"\n"
+"Indian accounting chart and localization.\n"
+"\n"
+"Odoo allows to manage Indian Accounting by providing Two Formats Of Chart of Accounts i.e Indian Chart Of Accounts - Standard and Indian Chart Of Accounts - Schedule VI.\n"
+"\n"
+"Note: The Schedule VI has been revised by MCA and is applicable for all Balance Sheet made after\n"
+"31st March, 2011. The Format has done away with earlier two options of format of Balance\n"
+"Sheet, now only Vertical format has been permitted Which is Supported By Odoo.\n"
+"  "
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_in_schedule6
+msgid ""
+"\n"
+"Indian Accounting: Chart of Account.\n"
+"====================================\n"
+"\n"
+"Indian accounting chart and localization.\n"
+"\n"
+"Schedule VI chart of account for indian accounting.\n"
+"\n"
+"Note: The Schedule VI has been revised by MCA and is applicable for all Balance Sheet made after\n"
+"31st March, 2011. The Format has done away with earlier two options of format of Balance\n"
+"Sheet, now only Vertical format has been permitted Which is Supported By OpenERP.\n"
 "  "
 msgstr ""
 
@@ -1775,7 +2741,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"印度工资表薪资规则. ============================ - 印度本地化人事薪资配置 - 印度薪资单所有供款规则. * 新薪资单报表 * 雇员合同 * 允许配置基本工资 /总额/净工资 * 雇员薪资单 * 津贴 / 扣缴 * 与休假管理集成 * 医疗补助， 差旅津贴， 育儿津贴 ... - 薪资通知单 - 按人头年薪和按雇员年薪报告\n"
+"印度工资表薪资规则。\n"
+" ============================\n"
+" - 印度本地化人事薪资配置 - 印度薪资单所有供款规则. * 新薪资单报表 * 雇员合同 * 允许配置基本工资 /总额/净工资 * 雇员薪资单 * 津贴 / 扣缴 * 与休假管理集成 * 医疗补助， 差旅津贴， 育儿津贴 ... - 薪资通知单 - 按人头年薪和按雇员年薪报告\n"
 "    "
 
 #. module: base
@@ -1854,6 +2822,19 @@ msgstr ""
 "    "
 
 #. module: base
+#: model:ir.module.module,description:base.module_mrp_maintenance
+msgid ""
+"\n"
+"Maintenance in MRP\n"
+"==================\n"
+"* Preventive vs corrective maintenance\n"
+"* Define different stages for your maintenance requests\n"
+"* Plan maintenance requests (also recurring preventive)\n"
+"* Equipments related to workcenters\n"
+"* MTBF, MTTR, ...\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_stock_dropshipping
 msgid ""
 "\n"
@@ -1872,7 +2853,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"管理直销订单===============这个模块增加了一个预设直销分拣类型当采购路线允许配置直销产品和订单。直销被用来当产品直接从代理发往客户(直接发送)不经过销售商的仓库。在这种情况下没有内部传输文件是必须的。\n"
+"管理直销订单===============这个模块增加了一个预设直销拣货类型当采购路线允许配置直销产品和订单。直销被用来当产品直接从代理发往客户(直接发送)不经过销售商的仓库。在这种情况下没有内部传输文件是必须的。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_expense
@@ -1900,13 +2881,13 @@ msgstr ""
 "============================\n"
 "\n"
 "本应用允许管理雇员每日费用. 提供访问雇员薪酬记录、提供权限完成确认和拒绝记录.在完成确认后创建雇员发票 .\n"
-"雇员能够编码他们的费用和确认流程，由管理员确认后自动完成记账.\n"
+"雇员能够编码他们的费用和确认流程，由经理确认后自动完成记账.\n"
 "\n"
 "\n"
 "整个流程实现:\n"
 "---------------------------------\n"
 "* 费用草稿\n"
-"* 由雇员提交到他的管理员\n"
+"* 由雇员提交到他的经理\n"
 "* 经理确认\n"
 "* 会计师确认和记账条目生成\n"
 "\n"
@@ -2122,6 +3103,25 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_mrp_mps
+msgid ""
+"\n"
+"Master Production Schedule\n"
+"==========================\n"
+"\n"
+"Sometimes you need to create the purchase orders for the components of\n"
+"manufacturing orders that will only be created later.  Or for production orders\n"
+"where you will only have the sale orders later.  The solution is to predict\n"
+"your sale forecasts and based on that you will already create some production\n"
+"orders or purchase orders.\n"
+"\n"
+"You need to choose the products you want to add to the report.  You can choose\n"
+"the period for the report: day, week, month, ...  It is also possible to define\n"
+"safety stock, min/max to supply and to manually override the amount you will\n"
+"procure.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_mx
 msgid ""
 "\n"
@@ -2196,6 +3196,173 @@ msgstr ""
 "制造业订单工作中心). 这个模块可以管理相关的\n"
 "每个资源的资源日历. 同样也可以管理每个子资源.\n"
 "    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_reports_followup
+msgid ""
+"\n"
+"Module to automate letters for unpaid invoices, with multi-level recalls.\n"
+"=========================================================================\n"
+"\n"
+"You can define your multiple levels of recall through the menu:\n"
+"---------------------------------------------------------------\n"
+"    Configuration / Follow-up / Follow-up Levels\n"
+"    \n"
+"Once it is defined, you can automatically print recalls every day through simply clicking on the menu:\n"
+"------------------------------------------------------------------------------------------------------\n"
+"    Payment Follow-Up / Send Email and letters\n"
+"\n"
+"It will generate a PDF / send emails / set manual actions according to the the different levels \n"
+"of recall defined. You can define different policies for different companies. \n"
+"\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_bank_statement_import_camt
+msgid ""
+"\n"
+"Module to import CAMT bank statements.\n"
+"======================================\n"
+"\n"
+"Improve the import of bank statement feature to support the SEPA recommanded Cash Management format (CAMT.053).\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_be_coda
+msgid ""
+"\n"
+"Module to import CODA bank statements.\n"
+"======================================\n"
+"\n"
+"Supported are CODA flat files in V2 format from Belgian bank accounts.\n"
+"----------------------------------------------------------------------\n"
+"    * CODA v1 support.\n"
+"    * CODA v2.2 support.\n"
+"    * Foreign Currency support.\n"
+"    * Support for all data record types (0, 1, 2, 3, 4, 8, 9).\n"
+"    * Parsing & logging of all Transaction Codes and Structured Format\n"
+"      Communications.\n"
+"    * Automatic Financial Journal assignment via CODA configuration parameters.\n"
+"    * Support for multiple Journals per Bank Account Number.\n"
+"    * Support for multiple statements from different bank accounts in a single\n"
+"      CODA file.\n"
+"    * Support for 'parsing only' CODA Bank Accounts (defined as type='info' in\n"
+"      the CODA Bank Account configuration records).\n"
+"    * Multi-language CODA parsing, parsing configuration data provided for EN,\n"
+"      NL, FR.\n"
+"\n"
+"The machine readable CODA Files are parsed and stored in human readable format in\n"
+"CODA Bank Statements. Also Bank Statements are generated containing a subset of\n"
+"the CODA information (only those transaction lines that are required for the\n"
+"creation of the Financial Accounting records). The CODA Bank Statement is a\n"
+"'read-only' object, hence remaining a reliable representation of the original\n"
+"CODA file whereas the Bank Statement will get modified as required by accounting\n"
+"business processes.\n"
+"\n"
+"CODA Bank Accounts configured as type 'Info' will only generate CODA Bank Statements.\n"
+"\n"
+"A removal of one object in the CODA processing results in the removal of the\n"
+"associated objects. The removal of a CODA File containing multiple Bank\n"
+"Statements will also remove those associated statements.\n"
+"\n"
+"Instead of a manual adjustment of the generated Bank Statements, you can also\n"
+"re-import the CODA after updating the OpenERP database with the information that\n"
+"was missing to allow automatic reconciliation.\n"
+"\n"
+"Remark on CODA V1 support:\n"
+"~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+"In some cases a transaction code, transaction category or structured\n"
+"communication code has been given a new or clearer description in CODA V2.The\n"
+"description provided by the CODA configuration tables is based upon the CODA\n"
+"V2.2 specifications.\n"
+"If required, you can manually adjust the descriptions via the CODA configuration menu.\n"
+msgstr ""
+"\n"
+"导入CODA银行报表模块.\n"
+"======================================\n"
+"\n"
+"支持来自比利时的银行账户在CODA平面文件V2格式.\n"
+"----------------------------------------------------------------------\n"
+"    *支持CODA v1格式.\n"
+"    * 支持CODA v2.2格式.\n"
+"    * 支持外国货币.\n"
+"    * 支持所有数据记录类型 (0, 1, 2, 3, 4, 8, 9).\n"
+"    * 分析和记录所有的交易代码和结构化的格式\n"
+"      通信 .\n"
+"    * 通过CODA配置参数自动分配财务报告作业.\n"
+"    * 支持每个银行账户的多个会计日记账.\n"
+"    * 支持在单一的Coda文件从不同的银行帐户计算出不同的结算单\n"
+"    * 支持“仅分析”CODA的银行帐户（在CODA银行帐户配置表中定义 type= 'info’）.\n"
+"    * 多语言CODA的解析，为英语地区，荷兰，法国 配置数据解析.\n"
+"\n"
+"机器可读的CODA 文件被解析和存储为人类可读的CODA银行报表。同时银行报表生成含有Coda信息的一个子集（只包含那些财务会计记录创建时要求的交易记录）。CODA银行的报表是“只读”对象，因此剩余可靠表达的原始Coda文件而非银行的声明将被修改为所需的会计业务流程.\n"
+"\n"
+"CODA银行帐户配置为类型“Info”只会产生CODA银行报表.\n"
+"\n"
+"在CODA处理的结果中移除一个对象将导致相关对象的移除。 一个包含多个银行报表的CODA文件的移除，也将删除与此文件相关的报表.\n"
+"\n"
+"取而代之的是产生银行对帐单手动调节，也可以重新导入CODA与信息更新的OpenERP数据库后失踪允许自动调节.\n"
+"\n"
+"下面的逻辑已经在CODA处理实现：\n"
+"~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+" 在某些情况下，在CODA V2中交易代码，交易类别或结构化通信代码已经被赋予了新的或更清楚地说明。这一说明由基于的CODA V2.2规格的CODA配置表提供.\n"
+" 如果需要，您可以通过CODA配置菜单的描述手动调整.\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_bank_statement_import_csv
+msgid ""
+"\n"
+"Module to import CSV bank statements.\n"
+"======================================\n"
+"\n"
+"This module allows you to import CSV Files in Odoo: they are parsed and stored in human readable format in\n"
+"Accounting \\ Bank and Cash \\ Bank Statements.\n"
+"\n"
+"Important Note\n"
+"---------------------------------------------\n"
+"Because of the CSV format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
+"Whenever possible, you should use a more appropriate file format like OFX.\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_bank_statement_import_ofx
+msgid ""
+"\n"
+"Module to import OFX bank statements.\n"
+"======================================\n"
+"\n"
+"This module allows you to import the machine readable OFX Files in Odoo: they are parsed and stored in human readable format in\n"
+"Accounting \\ Bank and Cash \\ Bank Statements.\n"
+"\n"
+"Bank Statements may be generated containing a subset of the OFX information (only those transaction lines that are required for the\n"
+"creation of the Financial Accounting records).\n"
+"    "
+msgstr ""
+"\n"
+"导入OFX银行对账单的模块.\n"
+"======================================\n"
+"\n"
+"这个模块可以允许你在Odoo里导入机器可读的OFX文件：它们被解析并存储在人们可读的格式在会计\\银行存款及现金\\银行对账单中。.\n"
+"\n"
+"银行对账单可以生成包含OFX信息(只需要为创建的财务会计记录的交易行)的一个子集。\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_bank_statement_import_qif
+msgid ""
+"\n"
+"Module to import QIF bank statements.\n"
+"======================================\n"
+"\n"
+"This module allows you to import the machine readable QIF Files in Odoo: they are parsed and stored in human readable format in\n"
+"Accounting \\ Bank and Cash \\ Bank Statements.\n"
+"\n"
+"Important Note\n"
+"---------------------------------------------\n"
+"Because of the QIF format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
+"Whenever possible, you should use a more appropriate file format like OFX.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_expense
@@ -2312,7 +3479,7 @@ msgid ""
 "===========================\n"
 msgstr ""
 "\n"
-"Odoo 客户参考\n"
+"Odoo 客户参照\n"
 "===========================\n"
 
 #. module: base
@@ -2329,6 +3496,34 @@ msgstr ""
 "Odoo 电子商务\n"
 "==================\n"
 "\n"
+"        "
+
+#. module: base
+#: model:ir.module.module,description:base.module_web_enterprise
+msgid ""
+"\n"
+"Odoo Enterprise Web Client.\n"
+"===========================\n"
+"\n"
+"This module modifies the web addon to provide Enterprise design and responsiveness.\n"
+"        "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_form_editor
+msgid ""
+"\n"
+"Odoo Form Editor\n"
+"====================\n"
+"\n"
+"Allows you to build web forms on the website using the website builder.\n"
+"        "
+msgstr ""
+"\n"
+"Odoo 界面编辑\n"
+"====================\n"
+"\n"
+"允许你在网站上用网站编辑器建设网站.\n"
 "        "
 
 #. module: base
@@ -2369,7 +3564,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Odoo Web 编辑部件\n"
+"Odoo Web编辑器挂件\n"
 "==========================\n"
 
 #. module: base
@@ -2382,6 +3577,12 @@ msgid ""
 "This module provides the core of the Odoo Web Client.\n"
 "        "
 msgstr ""
+"\n"
+"核心模块。\n"
+"========================\n"
+"\n"
+"该模块提供网页客户端的核心功能\n"
+"                "
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_kanban
@@ -2391,6 +3592,10 @@ msgid ""
 "========================\n"
 "\n"
 msgstr ""
+"\n"
+"看板视图。\n"
+"========================\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_tour
@@ -2400,6 +3605,10 @@ msgid ""
 "========================\n"
 "\n"
 msgstr ""
+"\n"
+"系统的web教程\n"
+"========================\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website
@@ -2410,6 +3619,11 @@ msgid ""
 "\n"
 "        "
 msgstr ""
+"\n"
+"系统的网站CMS\n"
+"===================\n"
+"\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_google_map
@@ -2420,6 +3634,11 @@ msgid ""
 "\n"
 "        "
 msgstr ""
+"\n"
+"网站地图\n"
+"==========================\n"
+"\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_livechat
@@ -2506,6 +3725,34 @@ msgstr ""
 "在线活动"
 
 #. module: base
+#: model:ir.module.module,description:base.module_web_gantt
+msgid ""
+"\n"
+"OpenERP Web Gantt chart view.\n"
+"=============================\n"
+"\n"
+msgstr ""
+"\n"
+"OpenERP Web 甘特图。\n"
+"=============================\n"
+"\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_version
+msgid ""
+"\n"
+"OpenERP Website CMS\n"
+"===================\n"
+"\n"
+"        "
+msgstr ""
+"\n"
+"OpenERP的CMS网站\n"
+"========================== \n"
+"\n"
+"  "
+
+#. module: base
 #: model:ir.module.module,description:base.module_web_diagram
 msgid ""
 "\n"
@@ -2548,6 +3795,17 @@ msgstr ""
 "================"
 
 #. module: base
+#: model:ir.module.module,description:base.module_website_enterprise
+msgid ""
+"\n"
+"Override community website features\n"
+"    "
+msgstr ""
+"\n"
+"覆盖社区网站功能\n"
+"    "
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
 msgid ""
 "\n"
@@ -2568,6 +3826,31 @@ msgid ""
 "Partners Geolocation\n"
 "========================\n"
 "    "
+msgstr ""
+"\n"
+"合作伙伴地理定位\n"
+"========================\n"
+"    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_hr_appraisal
+msgid ""
+"\n"
+"Periodical Employees appraisal\n"
+"==============================================\n"
+"\n"
+"By using this application you can maintain the motivational process by doing periodical appraisals of your employees performance. The regular assessment of human resources can benefit your people as well your organization.\n"
+"\n"
+"An appraisal plan can be assigned to each employee. These plans define the frequency and the way you manage your periodic personal appraisal.\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Ability to create employee's appraisal(s).\n"
+"* An appraisal can be created by an employee's manager or automatically based on schedule which is defined in the employee form.\n"
+"* The appraisal is done according to a plan in which various surveys can be created. Each survey can be answered by a particular level in the employees hierarchy. The final review and appraisal is done by the manager.\n"
+"* Manager, colleague, collaborator, and employee himself/herself receives email to perform a periodical appraisal.\n"
+"* Every Appraisal Form filled by employees, colleague, collaborator, can be viewed in a PDF form.\n"
+"* Meeting Requests are created manually according to employees appraisals.\n"
 msgstr ""
 
 #. module: base
@@ -2653,6 +3936,18 @@ msgstr ""
 "\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_mrp_plm
+msgid ""
+"\n"
+"Product Life Management\n"
+"=======================\n"
+"\n"
+"* Versioning of Bill of Materials and Routings\n"
+"* Different approval flows possible depending on the type of change order\n"
+"\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_product_extended
 msgid ""
 "\n"
@@ -2662,7 +3957,7 @@ msgid ""
 msgstr ""
 "\n"
 "产品扩展。这个模块增加：\n"
-"  * 使用产品变型表单上的一个按钮，从产品的物料清单计算标准价格，基于BOM里面的材料以及工作中心。 必要时，它会创建相应的会计分录。\n"
+"  * 在产品变体表单上增加一个按钮，用于从产品的物料清单, 基于BOM里面的材料以及工作中心计算标准价格。 必要时，它会创建相应的会计分录。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_crm_partner_assign
@@ -2677,6 +3972,51 @@ msgstr ""
 "========================== \n"
 "\n"
 "  "
+
+#. module: base
+#: model:ir.module.module,description:base.module_sale_ebay
+msgid ""
+"\n"
+"Publish your products on eBay\n"
+"==============================================================\n"
+"\n"
+"The eBay integrator gives you the opportunity to manage your Odoo's products on eBay.\n"
+"\n"
+"Key Features\n"
+"------------\n"
+"* Publish products on eBay\n"
+"* Revise, relist, end items on eBay\n"
+"* Integration with the stock moves\n"
+"* Automatic creation of sales order and invoices\n"
+"\n"
+"  "
+msgstr ""
+"\n"
+"在eBay上发布你的产品.\n"
+"\n"
+"eBay 的集成器提供在eBay上管理你的Odoo 产品的机会.\n"
+"\n"
+"关键功能\n"
+"-------------------\n"
+"在eBay 上发布产品\n"
+"在eBay上修改，重新提交，结束事项\n"
+"和仓储整合\n"
+"自动生成订单和发票"
+
+#. module: base
+#: model:ir.module.module,description:base.module_quality
+msgid ""
+"\n"
+"Quality Control\n"
+"===============\n"
+"\n"
+"* Define quality points that will generate quality checks on pickings,\n"
+"  manufacturing orders or work orders (quality_mrp)\n"
+"* Quality alerts can be created independently or related to quality checks\n"
+"* Possibility to add a measure to the quality check with a min/max tolerance\n"
+"* Define your stages for the quality alerts\n"
+"\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_point_of_sale
@@ -2719,7 +4059,7 @@ msgstr ""
 "*计算找零金额总数\n"
 "*自动生成并确认拣货单\n"
 "*允许用户自动生成发票\n"
-"*退货的退款"
+"*退回退款"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_timesheet_sheet
@@ -2787,6 +4127,18 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_hw_screen
+msgid ""
+"\n"
+"Screen Driver\n"
+"=============\n"
+"\n"
+"This module allows the POS client to send rendered HTML to a remotely\n"
+"installed screen. This module then displays this HTML using a web\n"
+"browser.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_website_sale_digital
 msgid ""
 "\n"
@@ -2847,6 +4199,20 @@ msgstr ""
 "*演示统计\n"
 "*频道订阅\n"
 "*支持的文档类型:PDF, images, YouTube 视频和Google Drive 文档)\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_sign
+msgid ""
+"\n"
+"Sign and complete your documents easily. Customize your documents with text and signature fields and send them to your recipients.\n"
+"\n"
+"Let your customers follow the signature process easily.\n"
+"    "
+msgstr ""
+"\n"
+"简单签署和完成你的文档.使用文本和签名档自定义你的文档并发送给你的的接收者.\n"
+"\n"
+"使你的客户简单地循序签名流程"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_sg
@@ -2910,6 +4276,22 @@ msgstr ""
 "* Defines templates for sale and purchase VAT\n"
 "* Defines tax code templates\n"
 "* Defines fiscal positions for spanish fiscal legislation\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_web_studio
+msgid ""
+"\n"
+"Studio - Customize Odoo\n"
+"=======================\n"
+"\n"
+"This addon allows the user to customize most element of the user interface, in a\n"
+"simple and graphical way. It has two main features:\n"
+"\n"
+"* create a new application (add module, top level menu item, and default action)\n"
+"* customize an existing application (edit menus, actions, views, translations, ...)\n"
+"\n"
+"Note: Only the admin user is allowed to make those customizations.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_survey_crm
@@ -2988,6 +4370,35 @@ msgstr ""
 "\n"
 "``l10n_ch`` is located in the core Odoo modules. The other modules are in:\n"
 "https://github.com/OCA/l10n-switzerland\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_account_yodlee
+msgid ""
+"\n"
+"Sync your bank feeds with Yodlee\n"
+"================================\n"
+"\n"
+"Yodlee interface.\n"
+msgstr ""
+"\n"
+"使用Yodlee 和你的银行同步\n"
+"================\n"
+"Yodlee 接口\n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_project_timesheet_synchro
+msgid ""
+"\n"
+"Synchronization of timesheet entries with the external timesheet application.\n"
+"====================================================================\n"
+"\n"
+"If you use the external timesheet application, this module alows you to synchronize timesheet entries between Odoo and the application.\n"
+"    "
+msgstr ""
+"\n"
+"和外部工单程序同步工单输入\n"
+"==============================\n"
+"如果你使用外部工单程序，这个模块允许你同步工单在Odoo和该应用之间。"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_voucher
@@ -3203,7 +4614,7 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_do
+#: model:ir.module.module,description:base.module_l10n_do_reports
 msgid ""
 "\n"
 "This is the base module to manage the accounting chart for Dominican Republic.\n"
@@ -3506,6 +4917,21 @@ msgid ""
 "This is the module to manage the accounting chart for Vietnam in Odoo.\n"
 "=========================================================================\n"
 "\n"
+"This module applies to companies based in Vietnamese Accounting Standard (VAS)\n"
+"with Chart of account under Circular No. 200/2014/TT-BTC\n"
+"\n"
+"**Credits:**\n"
+"    - General Solutions.\n"
+"    - Trobz\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_l10n_vn_reports
+msgid ""
+"\n"
+"This is the module to manage the accounting reports for Vietnam in Odoo.\n"
+"=========================================================================\n"
+"\n"
 "This module applies to companies based in Vietnamese Accounting Standard (VAS).\n"
 "\n"
 "**Credits:** General Solutions.\n"
@@ -3568,6 +4994,19 @@ msgstr ""
 "\n"
 "如果在线支付已设定收款方，门户用户也有可以在线支付他尚未结帐的销售订单和发票。\n"
 "预设已经包含了Paypal支付，你只需要在会计中的设定，简单的设置Paypal帐号。"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_portal_followup
+msgid ""
+"\n"
+"This module adds a followup menu and features to your portal if followup and portal are installed.\n"
+"==================================================================================================\n"
+"    "
+msgstr ""
+"\n"
+"如果已经安装跟踪和门户模块，本模块在门户上添加跟踪菜单和特性.\n"
+"==================================================================================================\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_crm
@@ -3648,6 +5087,16 @@ msgid ""
 "- Patterns to identify barcodes containing a numerical value (e.g. weight, price)\n"
 "- Definition of barcode aliases that allow to identify the same product with different barcodes\n"
 "- Support for encodings EAN-13, EAN-8 and UPC-A\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_event_barcode
+msgid ""
+"\n"
+"This module adds support for barcodes scanning to the Event management system.\n"
+"A barcode is generated for each attendee and printed on the badge. When scanned,\n"
+"the registration is confirmed.\n"
+"    "
 msgstr ""
 
 #. module: base
@@ -3783,6 +5232,22 @@ msgstr ""
 "    "
 
 #. module: base
+#: model:ir.module.module,description:base.module_l10n_us_check_printing
+msgid ""
+"\n"
+"This module allows to print your payments on pre-printed check paper.\n"
+"You can configure the output (layout, stubs informations, etc.) in company settings, and manage the\n"
+"checks numbering (if you use pre-printed checks without numbers) in journal settings.\n"
+"\n"
+"Supported formats\n"
+"-----------------\n"
+"- Check on top : Quicken / QuickBooks standard\n"
+"- Check on middle: Peachtree standard\n"
+"- Check on bottom: ADP standard\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_note
 msgid ""
 "\n"
@@ -3858,6 +5323,17 @@ msgstr ""
 "此模块与销售和会计模块集成，允许你自动发出收据和续费通知。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_sale_contract
+msgid ""
+"\n"
+"This module allows you to manage subscriptions.\n"
+"Features:\n"
+"    - Create & edit subscriptions\n"
+"    - Modify subscriptions with sales orders\n"
+"    - Generate invoice automatically at fixed intervals\n"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_purchase_requisition
 msgid ""
 "\n"
@@ -3869,10 +5345,10 @@ msgid ""
 "keep track and order all your purchase orders.\n"
 msgstr ""
 "\n"
-"该模块用于管理采购请求。\n"
+"该模块用于管理采购申请。\n"
 "==================================\n"
 "\n"
-"采购订单生成时，可以保存相关请求。\n"
+"采购订单生成时，可以保存相关申请。\n"
 "新项目将重组，使得跟踪很容易，并\n"
 "可统筹按照所有采购订单。\n"
 
@@ -3908,6 +5384,22 @@ msgstr ""
 "-----------------\n"
 "    A + B + C -> D + E\n"
 "    "
+
+#. module: base
+#: model:ir.module.module,description:base.module_print_docsaway
+msgid ""
+"\n"
+"This module allows you to send your documents through postal mail, thanks to Docsaway.\n"
+"======================================================================================\n"
+"    "
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_sale_contract_asset
+msgid ""
+"\n"
+"This module allows you to set a deferred revenue on your subscription contracts.\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_rating_project_issue
@@ -4120,6 +5612,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_at
+#: model:ir.module.module,description:base.module_l10n_at_reports
 msgid ""
 "\n"
 "This module provides the standard Accounting Chart for Austria which is based on the Template from BMF.gv.at.\n"
@@ -4161,6 +5654,18 @@ msgid ""
 "still unreserve a picking.\n"
 "    "
 msgstr ""
+"\n"
+"当销售订单确认此模块会自动从库存预留拣货\n"
+"============================================================================================\n"
+"在销售订单确认或数量增加后，\n"
+"如果需要的数量可用，此分拣就会从库存中被预留。\n"
+"\n"
+"\n"
+"通过最简单的配置, 这个模块就可以工作：\n"
+"先来的，先服务。 并且, 当未安装时\n"
+"您可以手动保留或在考虑预期日期和优先级的情况下运行计划。\n"
+"\n"
+"如果此自动预留会预留太多，您可以只保留一个拣货。"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web_kanban_gauge
@@ -4286,6 +5791,18 @@ msgstr ""
 "    "
 
 #. module: base
+#: model:ir.module.module,description:base.module_website_contract
+msgid ""
+"\n"
+"Use this app to manage Subscriptions:\n"
+"Features:\n"
+"    - Create & edit susbcriptions with sales orders (automatic creation on confirmation)\n"
+"    - Generate invoice and credit card payments automatically at fixed intervals\n"
+"    - Let your customer edit their subscriptions themselves (options, close their contract) with granular control\n"
+"        "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_sales_team
 msgid ""
 "\n"
@@ -4355,18 +5872,17 @@ msgstr ""
 "\n"
 "车辆、租赁、保险、花费\n"
 "==================================\n"
-"使用此模块，Odoo帮助你管理你的车辆，\n"
-"包括与车辆相关的合同，服务，加油记录，以及其它管理车辆\n"
-"服务，加油记录，以及其它管理车辆\n"
-"或车队所必须的要素。\n"
+"使用此模块，Odoo帮助您管理您的所有车辆，\n"
+"包括与车辆相关的合同，保养服务，加油记录，里程表，花费，\n"
+"以及其它车辆管理的必要功能。\n"
 "\n"
 "主要特性\n"
 "-------------\n"
 "* 为车队增加车辆\n"
 "* 管理车辆合同\n"
 "* 车辆合同到期提醒\n"
-"* 为所有车辆增加服务、加油记录、里程表\n"
-"* 显示某一车辆或某一种服务的所有费用\n"
+"* 为所有车辆增加保养、加油记录、里程表\n"
+"* 显示某一车辆或某种服务类型的所有费用\n"
 "* 费用图表分析\n"
 
 #. module: base
@@ -4395,11 +5911,24 @@ msgstr ""
 "关键特征\n"
 "------------ \n"
 "*库存计价（定期或自动）\n"
-"*从分拣开票\n"
+"*从拣货开票\n"
 "\n"
 "仓库管理仪表板/报告包括：\n"
 "------------------------------------------------------ \n"
 "*对给定的日期（在过去的日期）的库存计价"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_helpdesk_forum
+msgid ""
+"\n"
+"Website Forum integration for the helpdesk module\n"
+"===============================================\n"
+"\n"
+"    Allow your teams to have a related forum to answer customer questions.\n"
+"    Transform tickets into questions on the forum with a single click.\n"
+"\n"
+"    "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_gengo
@@ -4417,6 +5946,21 @@ msgstr ""
 "一键翻译你的网站\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_website_helpdesk_livechat
+msgid ""
+"\n"
+"Website IM Livechat integration for the helpdesk module\n"
+"====================================================\n"
+"\n"
+"Features:\n"
+"\n"
+"    - Have a team-related livechat channel to answer your customer's questions.\n"
+"    - Create new tickets with ease using commands in the channel.\n"
+"\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_im_livechat
 msgid ""
 "\n"
@@ -4432,6 +5976,18 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,description:base.module_website_helpdesk_slides
+msgid ""
+"\n"
+"Website Slides integration for the helpdesk module\n"
+"===============================================\n"
+"\n"
+"    Add slide presentations to your team so customers seeking help can see them those before submitting new tickets.\n"
+"\n"
+"    "
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_website_membership
 msgid ""
 "\n"
@@ -4441,6 +5997,18 @@ msgstr ""
 "\n"
 "查找协会、组和成员的网站\n"
 "=============================================== \n"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_helpdesk_form
+msgid ""
+"\n"
+"Website form integration for the helpdesk module\n"
+"===============================================\n"
+"\n"
+"    Allow customers to easily submit tickets through a form on your website.\n"
+"\n"
+"    "
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_links
@@ -4488,14 +6056,35 @@ msgstr ""
 "基于源讯 Worldline keys  2.0版本, 包含了源讯 SIPS的收支电子支付。"
 
 #. module: base
+#: model:ir.module.module,description:base.module_website_crm_score
+msgid ""
+"    Lead Scoring\n"
+"===================\n"
+"\n"
+"This module allows you to...\n"
+"    - Track specific page view on your website.\n"
+"    - Assign score on lead: sort your lead automatically and consider the more important at first.\n"
+"    - Assign lead to salesteams: define your own filters and sort automatically your leads by saleteam.\n"
+"    - Assign lead to salesmen: define filter by saleman and dispatch automatically your leads to the right saleman.\n"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_inter_company_rules
+msgid ""
+" Module for synchronization of Documents between several companies. For example, this allow you to have a Sale Order created automatically when a Purchase Order is validated with another company of the system as vendor, and inversely.\n"
+"\n"
+"    Supported documents are SO, PO and invoices/refunds.\n"
+msgstr ""
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%A - Full weekday name."
-msgstr "%A - 工作日全称"
+msgstr "%A - 星期几全称。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%B - Full month name.\""
-msgstr "%B - 完整月份名称.\""
+msgstr "%B - 完整月份名称。\""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
@@ -4520,17 +6109,17 @@ msgstr "%S - 秒[00,61].\""
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%Y - Year with century.\""
-msgstr "%Y - 4位数的年份"
+msgstr "%Y - 4位数的年份。\""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%a - Abbreviated weekday name."
-msgstr "%a - 缩写的工作日名称"
+msgstr "%a - 星期几缩写。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%b - Abbreviated month name."
-msgstr "%b - 缩写的月份名称。"
+msgstr "%b - 月份名称缩写。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
@@ -4545,12 +6134,12 @@ msgstr "%j - 年中的第几天 [001,366].“"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%m - Month number [01,12].\""
-msgstr "%m - 月份数 [01,12]."
+msgstr "%m - 月份数 [01,12].\""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%p - Equivalent of either AM or PM.\""
-msgstr "%p - 等价于 AM 或 PM"
+msgstr "%p - 等价于 AM 或 PM。\""
 
 #. module: base
 #: code:addons/base/ir/ir_filters.py:36
@@ -4572,7 +6161,7 @@ msgstr "模型 %s 可能在当前的 '%s'中，又或者在o2m中的相同字段
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%w - Weekday number [0(Sunday),6].\""
-msgstr "%w - 星期 [0(周日),6]."
+msgstr "%w - 星期 [0(周日),6].\""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
@@ -4585,7 +6174,7 @@ msgstr "%y - 两位数年份[00,99]。\""
 msgid ""
 "'%s' contains too many dots. XML ids should not contain dots ! These are "
 "used to refer to other modules data, as in module.reference_id"
-msgstr "'%s'包含太多点。XML 标识符不应该包括点！其作用是引用到其他模块数据，如module.reference_id"
+msgstr "'%s'包含太多小圆点。XML 标识符不应该包括小圆点！其作用是引用到其他模块数据，如module.reference_id"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:187
@@ -4698,7 +6287,7 @@ msgstr "-这个模块不依赖于任何其他模块。"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "1. %b, %B         ==&gt; Dec, December"
-msgstr "1.  %b, %B ==> 十二, 十二月"
+msgstr "1.  %b, %B ==&gt; 十二, 十二月"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
@@ -4710,7 +6299,7 @@ msgstr "1. 全局规则使用逻辑与AND操作符组合在一起，以及下面
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "2. %a ,%A         ==&gt; Fri, Friday"
-msgstr ""
+msgstr "2.  %a ,%A ==&gt; 周五, 星期五"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
@@ -4721,7 +6310,7 @@ msgstr "2. 指定了群组的规则使用逻辑操作符或 OR组合在一起"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "3. %y, %Y         ==&gt; 08, 2008"
-msgstr ""
+msgstr "3. %y, %Y         ==&gt; 08, 2008"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
@@ -4733,32 +6322,32 @@ msgstr "3. 如果用户属于多个群组，那么第2步的结果将使用逻�
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "4. %d, %m         ==&gt; 05, 12"
-msgstr ""
+msgstr "4. %d, %m         ==&gt; 05, 12"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "5. %H:%M:%S      ==&gt; 18:25:20"
-msgstr ""
+msgstr "5. %H:%M:%S      ==&gt; 18:25:20"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "6. %I:%M:%S %p  ==&gt; 06:25:20 PM"
-msgstr ""
+msgstr "6. %I:%M:%S %p  ==&gt; 06:25:20 PM"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "7. %j              ==&gt; 340"
-msgstr ""
+msgstr "7. %j              ==&gt; 340"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "8. %S              ==&gt; 20"
-msgstr ""
+msgstr "8. %S              ==&gt; 20"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "9. %w              ==&gt; 5 ( Friday is the 6th day)"
-msgstr ""
+msgstr "9. %w              ==&gt; 5 ( 星期五是第6天)"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.open_module_tree
@@ -4768,10 +6357,10 @@ msgstr "<b>没发现模块!</b>"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"<code>\n"
-"                                                partner_name = obj.name + '_code'\n"
-"                                                env[\"res.partner\"].create({\"name\": partner_name})\n"
-"                                            </code>"
+"<code style=\"white-space: pre-wrap\">\n"
+"partner_name = record.name + '_code'\n"
+"env[\"res.partner\"].create({\"name\": partner_name})\n"
+"</code>"
 msgstr ""
 
 #. module: base
@@ -4790,7 +6379,7 @@ msgstr "<code>dateutil</code> (Python模块)"
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
 #: model:ir.ui.view,arch_db:base.view_model_form
 msgid "<code>self</code> (the set of records to compute)"
-msgstr "<code>self</code> (the set of records to compute)"
+msgstr "<code>自己</code> (要计算的记录集)"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
@@ -4851,17 +6440,17 @@ msgstr "<strong>报告：</strong>"
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "<strong>Ro</strong>"
-msgstr ""
+msgstr "<strong>Ro</strong>"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "<strong>Rq</strong>"
-msgstr ""
+msgstr "<strong>Rq</strong>"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "<strong>Seq</strong>"
-msgstr ""
+msgstr "<strong>Seq</strong>"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
@@ -4873,7 +6462,7 @@ msgstr "<strong>此操作将永久删除目前由模块存储的所有数据！<
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
 msgid "<strong>Tr</strong>"
-msgstr ""
+msgstr "<strong>Tr</strong>"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -4921,7 +6510,7 @@ msgid ""
 "to see. Whether they can have a read, write, create and delete access right "
 "can be managed from here."
 msgstr ""
-"用户组用于把一系列功能分配给用户，使其能够访问特定的模块和功能。可以新建或修改现有的用户组，这样就可以自定义该组用户的菜单，或者对某个对象的插删改查权限。"
+"用户组用于把一系列功能分配给用户，使其能够访问特定的模块和功能。可以新建或修改现有的用户组，这样就可以自定义该组用户的菜单，或者对某个对象的增删改查权利。"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_posbox_homepage
@@ -4983,7 +6572,7 @@ msgstr "具有仿真方法的模块"
 #: code:addons/base/ir/ir_qweb/fields.py:377
 #, python-format
 msgid "A unit must be provided to duration widgets"
-msgstr "对期间挂件必须提供一个单位"
+msgstr "必须提供一个单位给时长挂件"
 
 #. module: base
 #: selection:res.company,rml_paper_format:0
@@ -5052,7 +6641,7 @@ msgstr "访问菜单"
 #: model:ir.ui.view,arch_db:base.view_view_form
 #: model:res.groups,name:base.group_erp_manager
 msgid "Access Rights"
-msgstr "访问权限"
+msgstr "访问权"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_groups_form
@@ -5074,6 +6663,16 @@ msgstr "会计银行对账单导入"
 #: model:ir.module.category,name:base.module_category_localization_account_charts
 msgid "Account Charts"
 msgstr "科目表"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_contract_dashboard
+msgid "Account Contract Dashboard"
+msgstr "会计合约仪表板"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_extension
+msgid "Account Extension"
+msgstr "会计扩展"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_bank_partner_id
@@ -5098,12 +6697,27 @@ msgstr "账户号码"
 #. module: base
 #: sql_constraint:res.partner.bank:0
 msgid "Account Number must be unique"
-msgstr "账户号码必须唯一。"
+msgstr "账户号码必须唯一"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_tax_cash_basis
 msgid "Account Tax Cash Basis"
 msgstr "会计税现金基础"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_taxcloud
+msgid "Account TaxCloud"
+msgstr "账户TaxCloud"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_sale_account_taxcloud
+msgid "Account TaxCloud - Ecommerce"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_account_taxcloud
+msgid "Account TaxCloud - Sale"
+msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_accounting
@@ -5116,9 +6730,24 @@ msgid "Accounting & Finance"
 msgstr "会计及财务"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_accounting_andamp;_finance
+msgid "Accounting &amp; Finance"
+msgstr "会计 & 财务"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_account
+msgid "Accounting - MRP"
+msgstr "会计 - MRP"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_account_test
 msgid "Accounting Consistency Tests"
 msgstr "会计一致性测试"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_reports
+msgid "Accounting Reports"
+msgstr "会计报告"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_accountant
@@ -5149,6 +6778,26 @@ msgid ""
 "\n"
 "Note: total digits configured by default are 6.\n"
 msgstr ""
+"荷兰会计科目表\n"
+"================================\n"
+"\n"
+"This module is specially made to manage the accounting functionality\n"
+"according to the Dutch best practice.\n"
+"\n"
+"This module contains the Dutch Chart of Accounts and the VAT schema.\n"
+"This schema is made for the most common Companies and therefore suitable\n"
+"to be used for almost every Company.\n"
+"\n"
+"The VAT accounts are linked promptly to generate the required reports. Examples\n"
+"of this reports intercommunitaire transactions.\n"
+"\n"
+"After installation of this module the configuration will be activated.\n"
+"Select the Chart of Accounts named \"Netherlands - Accounting\".\n"
+"\n"
+"Hereafter entering the name of the Company, total digits of Chart of Accounts,\n"
+"Bank Account Number and the default Currency.\n"
+"\n"
+"Note: total digits configured by default are 6.\n"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_act_window_id
@@ -5202,7 +6851,7 @@ msgstr "动作名称"
 #. module: base
 #: model:ir.ui.view,arch_db:base.values_view_form_action
 msgid "Action Reference"
-msgstr "动作参考"
+msgstr "动作参照"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_url_target
@@ -5310,9 +6959,29 @@ msgid "Add Delivery Costs to Online Sales"
 msgstr "添加交货成本到在线销售"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_project_forecast_grid
+msgid "Add Grid view on Project Forecasts"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_header
 msgid "Add RML Header"
 msgstr "添加RML 页首"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_stock_barcode
+msgid "Add barcode scanning facilities to Warehouse Management."
+msgstr "增加条码扫描功能到仓库管理"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mrp_barcode
+msgid "Add barcode scanning facilities to manufacturing"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_event_barcode
+msgid "Add barcode scanning feature to event management."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -5339,7 +7008,7 @@ msgstr "在“网站生成器”中 添加推特滚卷条的代码段"
 msgid ""
 "Add your sales document in the frontend portal (sales order, quotations, "
 "invoices)"
-msgstr "在前端门户添加销售单据（销售订单，报价，发票）"
+msgstr "在前端门户添加销售单据(销售订单，报价，发票)"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_company_form
@@ -5470,7 +7139,7 @@ msgstr "高级属性"
 #: model:ir.module.module,description:base.module_payment_adyen
 #: model:ir.module.module,shortdesc:base.module_payment_adyen
 msgid "Adyen Payment Acquirer"
-msgstr "Adyen付款收单方"
+msgstr "Adyen付款"
 
 #. module: base
 #: selection:ir.module.module,license:0
@@ -5498,6 +7167,11 @@ msgid "Algeria"
 msgstr "阿尔及利亚"
 
 #. module: base
+#: model:ir.ui.view,arch_db:base.ir_cron_view_search
+msgid "All"
+msgstr "全部"
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_configuration_form
 msgid ""
 "All pending configuration wizards have been executed. You may restart "
@@ -5513,6 +7187,18 @@ msgstr "允许收银员再次打印收据"
 #: model:ir.module.module,summary:base.module_account_tax_cash_basis
 msgid "Allow to have cash basis on tax"
 msgstr "允许在税金使用现金收付制"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_version
+msgid ""
+"Allow to save all the versions of your website and allow to perform AB "
+"testing."
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_helpdesk_form
+msgid "Allow website visitors to submit tickets through a form"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_form
@@ -5532,12 +7218,19 @@ msgid ""
 msgstr "允许你创建发票，以及跟踪付款。这是为不是会计师的管理人员准备的简化版会计模块。"
 
 #. module: base
+#: model:ir.actions.act_window,help:base.action_attachment
+msgid ""
+"Also you will find here all the related documents and download it by "
+"clicking on any individual document."
+msgstr ""
+
+#. module: base
 #: code:addons/base/ir/ir_fields.py:378
 #, python-format
 msgid ""
 "Ambiguous specification for field '%(field)s', only provide one of name, "
 "external id or database id"
-msgstr "field '%(field)s' 的描述模糊，只要提供 名称， external id 或者database id之一。"
+msgstr "field '%(field)s' 的描述模糊，只要提供 名称， external id 或者database id之一"
 
 #. module: base
 #: model:res.country,name:base.as
@@ -5563,6 +7256,11 @@ msgstr "自动安装模块是指当它的所有依赖满足时系统会自动安
 #: model:ir.module.module,shortdesc:base.module_analytic
 msgid "Analytic Accounting"
 msgstr "分析会计"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mrp_account
+msgid "Analytic accounting in Manufacturing"
+msgstr "制造分析会计"
 
 #. module: base
 #: selection:workflow.activity,join_mode:0
@@ -5611,7 +7309,7 @@ msgstr "应用切换器"
 msgid ""
 "Appears by default on the top right corner of your printed documents (report"
 " header)."
-msgstr "将出现在打印的报表的右上角（报表页眉）"
+msgstr "将出现在打印的报表的右上角(报表页眉)。"
 
 #. module: base
 #: code:addons/base/res/res_users.py:714
@@ -5644,7 +7342,7 @@ msgstr "应用"
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 #, python-format
 msgid "Apply Schedule Upgrade"
-msgstr "应用计划升级。"
+msgstr "执行已安排的升级"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_view_base_module_upgrade
@@ -5704,12 +7402,12 @@ msgstr "应用："
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view_arch_db
 msgid "Arch Blob"
-msgstr ""
+msgstr "Arch Blob"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view_arch_fs
 msgid "Arch Filename"
-msgstr ""
+msgstr "Arch 文件名"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_view_form
@@ -5719,7 +7417,7 @@ msgstr "结构"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Archived"
-msgstr "已存档"
+msgstr "归档"
 
 #. module: base
 #: model:res.country,name:base.ar
@@ -5730,6 +7428,11 @@ msgstr "阿根廷"
 #: model:ir.module.module,shortdesc:base.module_l10n_ar
 msgid "Argentina - Accounting"
 msgstr "阿根廷 - 会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ar_reports
+msgid "Argentina - Accounting Reports"
+msgstr "阿根廷 - 会计报表"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_args
@@ -5837,14 +7540,20 @@ msgid "Australian - Accounting"
 msgstr "澳大利亚 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_au_reports
+msgid "Australian - Accounting Reports"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.at
 msgid "Austria"
 msgstr "奥地利"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_at
+#: model:ir.module.module,shortdesc:base.module_l10n_at_reports
 msgid "Austria - Accounting"
-msgstr "Austria - Accounting"
+msgstr "奥地利 - 会计"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_ldap
@@ -5866,7 +7575,7 @@ msgstr "作者名字"
 #: model:ir.module.module,description:base.module_payment_authorize
 #: model:ir.module.module,shortdesc:base.module_payment_authorize
 msgid "Authorize.Net Payment Acquirer"
-msgstr "Authorize.Net付款收单方"
+msgstr "Authorize.Net付款"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_window_auto_search
@@ -5889,6 +7598,12 @@ msgid "Automatic Installation"
 msgstr "自动安装"
 
 #. module: base
+#: code:addons/base/module/module.py:650
+#, python-format
+msgid "Automatic install of downloaded Apps is currently disabled."
+msgstr "自动安装下载的APP，当前不可用"
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_translation_state
 msgid ""
 "Automatically set to let administators find new terms that might need to be "
@@ -5904,6 +7619,12 @@ msgstr "自动化"
 #: model:res.country,name:base.az
 msgid "Azerbaijan"
 msgstr "阿塞拜疆"
+
+#. module: base
+#: code:addons/translate.py:1069
+#, python-format
+msgid "Bad file format: %s"
+msgstr "错误的文件格式: %s"
 
 #. module: base
 #: model:res.country,name:base.bs
@@ -5969,12 +7690,6 @@ msgstr "与本公司相关的银行账户"
 #: model:ir.ui.view,arch_db:base.view_res_bank_tree
 msgid "Banks"
 msgstr "银行"
-
-#. module: base
-#: model:ir.model.fields,help:base.field_res_partner_barcode
-#: model:ir.model.fields,help:base.field_res_users_barcode
-msgid "BarCode"
-msgstr "条码"
 
 #. module: base
 #: model:res.country,name:base.bb
@@ -6068,6 +7783,16 @@ msgid "Base view"
 msgstr "基础视图"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_grid
+msgid "Basic 2D Grid view for odoo"
+msgstr "基本的2D网格视图"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_batch_deposit
+msgid "Batch Deposit"
+msgstr "批量存款"
+
+#. module: base
 #: selection:res.currency,position:0
 msgid "Before Amount"
 msgstr "金额前面"
@@ -6083,6 +7808,11 @@ msgid "Belgian Intrastat Declaration"
 msgstr "比利时国际间组织申报"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_blackbox_be
+msgid "Belgian Registered Cash Register"
+msgstr ""
+
+#. module: base
 #: model:res.country,name:base.be
 msgid "Belgium"
 msgstr "比利时"
@@ -6090,22 +7820,32 @@ msgstr "比利时"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be
 msgid "Belgium - Accounting"
-msgstr "Belgium - Accounting"
+msgstr "比利时-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_reports
+msgid "Belgium - Accounting Reports"
+msgstr "比利时 - 会计报告"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_be_coda
+msgid "Belgium - Import Bank CODA Statements"
+msgstr "比利时进口银行尾报表"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll
 msgid "Belgium - Payroll"
-msgstr "Belgium - Payroll"
+msgstr "比利时-工资"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_hr_payroll_account
 msgid "Belgium - Payroll with Accounting"
-msgstr "Belgium - Payroll with Accounting"
+msgstr "比利时-工资会计"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_invoice_bba
 msgid "Belgium - Structured Communication"
-msgstr "比利时 - 结构化 沟通"
+msgstr "比利时 - 沟通"
 
 #. module: base
 #: model:res.country,name:base.bz
@@ -6126,6 +7866,11 @@ msgstr "百慕大群岛"
 #: model:res.country,name:base.bt
 msgid "Bhutan"
 msgstr "不丹"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mrp_plm
+msgid "Bill of Materials, Routings, Versions, Engineering Change Orders"
+msgstr ""
 
 #. module: base
 #: selection:ir.property,type:0
@@ -6154,9 +7899,14 @@ msgid "Bolivia - Accounting"
 msgstr "玻利维亚 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_bo_reports
+msgid "Bolivia - Accounting Reports"
+msgstr "玻利维亚 - 会计报告"
+
+#. module: base
 #: model:res.country,name:base.bq
 msgid "Bonaire, Sint Eustatius and Saba"
-msgstr "Bonaire, Sint Eustatius and Saba"
+msgstr "博内尔岛，圣尤斯特歇斯岛和萨巴"
 
 #. module: base
 #: selection:ir.property,type:0
@@ -6166,7 +7916,7 @@ msgstr "布尔值"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_theme_bootswatch
 msgid "Bootswatch Theme"
-msgstr "Bootswatch Theme"
+msgstr "Bootswatch 主题"
 
 #. module: base
 #: model:res.country,name:base.ba
@@ -6191,12 +7941,28 @@ msgstr "巴西"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br
 msgid "Brazilian - Accounting"
-msgstr "Brazilian - Accounting"
+msgstr "巴西-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_br_reports
+msgid "Brazilian - Accounting Reports"
+msgstr "巴西 - 会计报告"
+
+#. module: base
+#: model:ir.module.module,description:base.module_project_forecast_grid
+msgid "Bridge module between Project Forecast and Grid View\n"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_payment
 msgid "Bridge module for acquirers and website."
 msgstr "收单方和网站之间的桥接模块"
+
+#. module: base
+#: model:ir.module.module,description:base.module_website_helpdesk
+#: model:ir.module.module,summary:base.module_website_helpdesk
+msgid "Bridge module for helpdesk modules using the website."
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.io
@@ -6217,7 +7983,7 @@ msgstr "文莱达鲁萨兰"
 #: model:ir.module.module,description:base.module_payment_buckaroo
 #: model:ir.module.module,shortdesc:base.module_payment_buckaroo
 msgid "Buckaroo Payment Acquirer"
-msgstr "Buckaroo付款收单方"
+msgstr "Buckaroo付款"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_budget
@@ -6228,6 +7994,11 @@ msgstr "预算管理"
 #: model:ir.module.module,summary:base.module_website
 msgid "Build Your Enterprise Website"
 msgstr "构建你的企业网站"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_form_editor
+msgid "Build custom web forms using the website builder"
+msgstr "使用网站构建器搭建客制化网页表单"
 
 #. module: base
 #: model:res.country,name:base.bg
@@ -6315,7 +8086,7 @@ msgstr "不能升级模块 “%s“，因为它尚未安装。"
 #: code:addons/base/ir/ir_model.py:547
 #, python-format
 msgid "Can only rename one field at a time!"
-msgstr "一次只能给一个字段改名"
+msgstr "字段改名只能一次一个!"
 
 #. module: base
 #: model:res.country,name:base.ca
@@ -6325,7 +8096,7 @@ msgstr "加拿大"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ca
 msgid "Canada - Accounting"
-msgstr "Canada - Accounting"
+msgstr "加拿大-会计"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.change_password_wizard_view
@@ -6371,8 +8142,8 @@ msgstr "不能复制配置信息！"
 #. module: base
 #: code:addons/base/ir/ir_model.py:549
 #, python-format
-msgid "Cannot rename field to %s, because that field already exists!"
-msgstr "不能重命名字段为 %s，因为已经存在同名字段。"
+msgid "Cannot rename/delete fields that are still present in views:"
+msgstr "无法重命名/删除还在视图中使用的字段："
 
 #. module: base
 #: code:addons/base/res/res_lang.py:219
@@ -6490,6 +8261,11 @@ msgid "Check Printing Base"
 msgstr "支票打印基础"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_expense_check
+msgid "Check Printing in Expenses"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,help:base.field_res_partner_is_company
 #: model:ir.model.fields,help:base.field_res_users_is_company
 msgid "Check if the contact is a company, otherwise it is a person"
@@ -6504,7 +8280,7 @@ msgstr "支票打印备注"
 #: model:ir.model.fields,help:base.field_res_partner_customer
 #: model:ir.model.fields,help:base.field_res_users_customer
 msgid "Check this box if this contact is a customer."
-msgstr "如果该联系人是客户就选择这个框"
+msgstr "如果该联系人是客户就选择这个框。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner_supplier
@@ -6594,6 +8370,11 @@ msgid "Chile - Accounting"
 msgstr "智利 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_cl_reports
+msgid "Chile - Accounting Reports"
+msgstr "智利 - 财务报告"
+
+#. module: base
 #: model:res.country,name:base.cn
 msgid "China"
 msgstr "中国"
@@ -6639,14 +8420,14 @@ msgid "City"
 msgstr "城市"
 
 #. module: base
-#: model:ir.actions.act_window,help:base.action_attachment
-msgid "Click here to attach a new document."
-msgstr "单击此处附加新文档。"
-
-#. module: base
 #: model:ir.actions.act_window,help:base.action_ui_view_custom
 msgid "Click here to create a customized view"
 msgstr "单击此处创建自定义视图"
+
+#. module: base
+#: model:ir.actions.act_window,help:base.action_attachment
+msgid "Click here to create new documents."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_update
@@ -6658,7 +8439,7 @@ msgstr "单击下面的“更新”开始启动过程..."
 #: model:ir.actions.act_window,help:base.action_partner_form
 #: model:ir.actions.act_window,help:base.action_partner_supplier_form
 msgid "Click to add a contact in your address book."
-msgstr "点击在你的地址簿添加联系人"
+msgstr "点击在你的地址簿添加联系人。"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_res_partner_bank_account_form
@@ -6731,7 +8512,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pad
 msgid "Collaborative Pads"
-msgstr "Collaborative Pads"
+msgstr "协作pad"
 
 #. module: base
 #: model:res.country,name:base.co
@@ -6741,12 +8522,17 @@ msgstr "哥伦比亚"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co
 msgid "Colombian - Accounting"
-msgstr "Colombian - Accounting"
+msgstr "哥伦比亚-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_co_reports
+msgid "Colombian - Accounting Reports"
+msgstr "哥伦比亚 - 会计报告"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_co
 msgid "Colombian Accounting and Tax Preconfiguration"
-msgstr "Colombian Accounting and Tax Preconfiguration"
+msgstr "哥伦比亚-会计和税预配置"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_groups_color
@@ -6769,12 +8555,12 @@ msgstr "列 2"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_column2
 msgid "Column referring to the record in the comodel table"
-msgstr "指向在comodel表中的记录的栏位"
+msgstr "栏位指向在comodel表中的记录"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_column1
 msgid "Column referring to the record in the model table"
-msgstr "指向在model表中的记录的栏位"
+msgstr "栏位指向在model表中的记录"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_window_view_mode
@@ -6802,7 +8588,7 @@ msgstr "商业实体"
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_data_drinks
 msgid "Common Drinks data for points of sale"
-msgstr ""
+msgstr "POS中常见的饮料数据"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
@@ -6941,11 +8727,9 @@ msgstr "条件"
 msgid ""
 "Condition verified before executing the server action. If it is not "
 "verified, the action will not be executed. The condition is a Python "
-"expression, like 'object.list_price > 5000'. A void condition is considered "
+"expression, like 'record.list_price > 5000'. A void condition is considered "
 "as always True. Help about python expression is given in the help tab."
 msgstr ""
-"在执行服务器商的动作前条件验证。若为未经验证的服务端的动作则不响应该动作。验证条件就是一个Python表达式，类似于'object.list_price"
-" > 5000'这样的表达式，条件中的值为空则被认为是True真值.关于python表达式的更多帮助信息请参考帮助列表。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_workflow_activity_form
@@ -6975,6 +8759,11 @@ msgstr "配置安装程序"
 #: model:ir.ui.menu,name:base.menu_ir_actions_todo_form
 msgid "Configuration Wizards"
 msgstr "配置向导"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_timesheet_grid_sale
+msgid "Configure timesheet invoicing"
+msgstr "配置工时单开票"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
@@ -7158,7 +8947,7 @@ msgstr "哥斯达黎加"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_cr
 msgid "Costa Rica - Accounting"
-msgstr "Costa Rica - Accounting"
+msgstr "哥斯达黎加-会计"
 
 #. module: base
 #: code:addons/base/res/res_partner.py:601
@@ -7219,7 +9008,7 @@ msgstr "国家名称"
 #. module: base
 #: model:ir.model,name:base.model_res_country_state
 msgid "Country state"
-msgstr "国家的州"
+msgstr "国家州/省"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -7235,11 +9024,6 @@ msgstr "创建访问"
 #: model:ir.ui.view,arch_db:base.view_rule_search
 msgid "Create Access Right"
 msgstr "创建访问权限"
-
-#. module: base
-#: model:ir.model.fields,field_description:base.field_res_users_create_date
-msgid "Create Date"
-msgstr "创建日期"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_issue
@@ -7265,7 +9049,7 @@ msgstr "创建菜单"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_menu_create
 msgid "Create _Menu"
-msgstr "创建菜单(_M)"
+msgstr "Create _Menu"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_form
@@ -7275,7 +9059,7 @@ msgstr "创建菜单"
 #. module: base
 #: selection:ir.actions.server,use_create:0
 msgid "Create a new record in another model"
-msgstr "在其他模型里创建一条新记录。"
+msgstr "在其他模型里创建一条新记录"
 
 #. module: base
 #: selection:ir.actions.server,use_create:0
@@ -7296,7 +9080,7 @@ msgid ""
 "deactivated should there be a period of time during which they will/should "
 "not connect to the system. You can assign them groups in order to give them "
 "specific access to the applications they need to use in the system."
-msgstr "为系统创建和管理用户。在一段时间内用该系统的用户可以暂不激活。你还可以给用户分配某一个组，以便他们能用到系统的指定功能"
+msgstr "为系统创建和管理用户。在一段时间内用该系统的用户可以暂不激活。你还可以给用户分配某一个组，以便他们能用到系统的指定功能。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
@@ -7469,6 +9253,7 @@ msgstr "创建人"
 #: model:ir.model.fields,field_description:base.field_res_partner_create_date
 #: model:ir.model.fields,field_description:base.field_res_partner_title_create_date
 #: model:ir.model.fields,field_description:base.field_res_request_link_create_date
+#: model:ir.model.fields,field_description:base.field_res_users_create_date
 #: model:ir.model.fields,field_description:base.field_res_users_log_create_date
 #: model:ir.model.fields,field_description:base.field_wizard_ir_model_menu_create_create_date
 #: model:ir.model.fields,field_description:base.field_wkf_activity_create_date
@@ -7511,6 +9296,11 @@ msgstr "克罗地亚"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hr
 msgid "Croatia - Accounting (RRIF 2012)"
+msgstr "克罗地亚-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_hr_reports
+msgid "Croatia - RRIF 2012 COA - Accounting Reports"
 msgstr ""
 
 #. module: base
@@ -7552,14 +9342,14 @@ msgstr "货币代码（ISO 4217）"
 #: model:ir.model,name:base.model_res_currency_rate
 #: model:ir.ui.view,arch_db:base.view_currency_rate_form
 msgid "Currency Rate"
-msgstr "汇率"
+msgstr "货币比率"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.act_view_currency_rates
 #: model:ir.ui.view,arch_db:base.view_currency_rate_search
 #: model:ir.ui.view,arch_db:base.view_currency_rate_tree
 msgid "Currency Rates"
-msgstr "汇率"
+msgstr "货币比率"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency_symbol
@@ -7574,7 +9364,7 @@ msgstr "当前公司"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rate
 msgid "Current Rate"
-msgstr "当前汇率"
+msgstr "当前比率"
 
 #. module: base
 #: selection:ir.actions.act_window,target:0
@@ -7642,7 +9432,7 @@ msgstr "客户点评"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_customer
 msgid "Customer References"
-msgstr "客户参考"
+msgstr "客户参照"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_customer_form
@@ -7681,6 +9471,11 @@ msgstr "塞浦路斯"
 #: model:res.country,name:base.cz
 msgid "Czech Republic"
 msgstr "捷克共和国"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_dhl
+msgid "DHL Shipping"
+msgstr "DHL 送货"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_board
@@ -7783,38 +9578,17 @@ msgstr "一周的第几天 (0:星期一):%(weekday)s"
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
 msgid "Day of the Year: %(doy)s"
-msgstr "年内天数: %(doy)s"
+msgstr "年内天数：%(doy)s"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
 msgid "Day: %(day)s"
-msgstr "日: %(day)s"
+msgstr "日：%(day)s"
 
 #. module: base
 #: selection:ir.cron,interval_type:0
 msgid "Days"
 msgstr "天数"
-
-#. module: base
-#: model:res.company,overdue_msg:base.main_company
-msgid ""
-"Dear Sir/Madam,\n"
-"\n"
-"Our records indicate that some payments on your account are still due. Please find details below.\n"
-"If the amount has already been paid, please disregard this notice. Otherwise, please forward us the total amount stated below.\n"
-"If you have any queries regarding your account, Please contact us.\n"
-"\n"
-"Thank you in advance for your cooperation.\n"
-"Best Regards,"
-msgstr ""
-"尊敬的先生/女士,\n"
-"    我们的记录表明，你的账户仍有到期的付款。请查找下面的明细。\n"
-"    如果款项已经支付，请忽略此通知。否则，请按如下所述的总金额转交给我们。\n"
-"    如果有任何关于账户的疑问，请联系我们。\n"
-"\n"
-"    谢谢你的合作。\n"
-"    此致  \n"
-"           敬礼"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_debug
@@ -7859,18 +9633,23 @@ msgstr "列表视图的默认限制"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_values_value
 msgid "Default value (pickled) or reference to an action"
-msgstr "默认值(pickled)，或者引用某个动作"
+msgstr "默认值(pickled)或者引用某个动作"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_values_value_unpickle
 #: model:ir.ui.view,arch_db:base.values_view_form_defaults
 msgid "Default value or action reference"
-msgstr "默认值，或动作引用"
+msgstr "默认值或动作引用"
 
 #. module: base
 #: model:ir.module.module,description:base.module_theme_default
 msgid "Default website theme to showcase customization possibilities."
 msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_contract_asset
+msgid "Deferred revenue management for contracts"
+msgstr "合同的递延收入管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_tax_python
@@ -7954,6 +9733,11 @@ msgid "Description HTML"
 msgstr "说明HTML"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_mass_mailing_themes
+msgid "Design gorgeous mails"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_mass_mailing
 msgid "Design, send and track emails"
 msgstr "生成、发送和跟踪电子邮件"
@@ -7997,14 +9781,29 @@ msgid "Deutschland SKR03 - Accounting"
 msgstr "德国SKR03 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_de_skr03_reports
+msgid "Deutschland SKR03 - Accounting Reports"
+msgstr "德国SKR03 - 会计报告"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_de_skr04
 msgid "Deutschland SKR04 - Accounting"
 msgstr "德国SKR04 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_de_skr04_reports
+msgid "Deutschland SKR04 - Accounting Reports"
+msgstr "德国SKR04 - 会计报告"
+
+#. module: base
 #: selection:ir.ui.view,type:0
 msgid "Diagram"
 msgstr "图表"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_sign
+msgid "Digital Signatures"
+msgstr "数字化签名"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang_direction
@@ -8227,6 +10026,7 @@ msgstr "多米尼加共和国"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_do
+#: model:ir.module.module,shortdesc:base.module_l10n_do_reports
 msgid "Dominican Republic - Accounting"
 msgstr "多米尼加共和国 - 会计"
 
@@ -8364,6 +10164,11 @@ msgid "Employee"
 msgstr "员工"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_appraisal
+msgid "Employee Appraisals"
+msgstr "员工评价"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_contract
 msgid "Employee Contracts"
 msgstr "员工合同"
@@ -8391,6 +10196,16 @@ msgid ""
 "Enter Python code here. Help about Python expression is available in the "
 "help tab of this document."
 msgstr "在这里键入Python代码。关于Python表达式的帮助在这个文档的帮助表中找到"
+
+#. module: base
+#: model:ir.module.module,description:base.module_mrp_workorder
+msgid ""
+"Enterprise extension for MRP\n"
+"\n"
+"* Work order planning.  Check planning by Gantt views grouped by production order / work center\n"
+"* Traceability report\n"
+"* Cost Structure report (mrp_account)"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gq
@@ -8469,9 +10284,19 @@ msgid "Ethiopia - Accounting"
 msgstr "埃塞俄比亚-会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_et_reports
+msgid "Ethiopia - Accounting Reports"
+msgstr "埃塞俄比亚-会计报表"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_server_object_lines_type
 msgid "Evaluation Type"
 msgstr "估算类型"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_event_barcode
+msgid "Event Barcode Scanning"
+msgstr "活动条码扫描"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_event_management
@@ -8481,7 +10306,7 @@ msgstr "活动"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event
 msgid "Events Organization"
-msgstr ""
+msgstr "活动组织"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_event_sale
@@ -8582,6 +10407,16 @@ msgid "Export Translations"
 msgstr "导出翻译"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_hr_expense_sepa
+msgid "Export expenses payments as SEPA Credit Transfer files"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_account_sepa
+msgid "Export payments as SEPA Credit Transfer files"
+msgstr "导出用SEPA信用转账的付款"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_write_expression
 msgid "Expression"
 msgstr "表达式"
@@ -8659,7 +10494,7 @@ msgstr "额外的"
 #: model:ir.module.category,name:base.module_category_usability
 #: model:ir.ui.view,arch_db:base.user_groups_view
 msgid "Extra Rights"
-msgstr "额外的权限"
+msgstr "额外的权利"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_extra_tools
@@ -8695,12 +10530,17 @@ msgstr "传真："
 #: model:ir.model.fields,field_description:base.field_res_bank_state
 #: model:ir.model.fields,field_description:base.field_res_company_state_id
 msgid "Fed. State"
-msgstr "省/州"
+msgstr "状态"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_country_state
 msgid "Fed. States"
-msgstr "省/州"
+msgstr "状态"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_fedex
+msgid "Fedex Shipping"
+msgstr "联邦航运"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_fr_fec
@@ -8751,6 +10591,46 @@ msgid ""
 "* Alexis de Lattre <alexis.delattre@akretion.com>\n"
 "\n"
 msgstr ""
+"Fichier d'Échange Informatisé (FEC) pour la France\n"
+"==================================================\n"
+"\n"
+"Ce module permet de générer le fichier FEC tel que définit par `l'arrêté du 29\n"
+"Juillet 2013 <http://legifrance.gouv.fr/eli/arrete/2013/7/29/BUDE1315492A/jo/texte>`\n"
+"portant modification des dispositions de l'article A. 47 A-1 du\n"
+"livre des procédures fiscales.\n"
+"\n"
+"Cet arrêté prévoit l'obligation pour les sociétés ayant une comptabilité\n"
+"informatisée de pouvoir fournir à l'administration fiscale un fichier\n"
+"regroupant l'ensemble des écritures comptables de l'exercice. Le format de ce\n"
+"fichier, appelé *FEC*, est définit dans l'arrêté.\n"
+"\n"
+"Le détail du format du FEC est spécifié dans le bulletin officiel des finances publiques `BOI-CF-IOR-60-40-20-20131213 <http://bofip.impots.gouv.fr/bofip/ext/pdf/createPdfWithAnnexePermalien/BOI-CF-IOR-60-40-20-20131213.pdf?doc=9028-PGP&identifiant=BOI-CF-IOR-60-40-20-20131213>` du 13 Décembre 2013. Ce module implémente le fichier\n"
+"FEC au format texte et non au format XML, car le format texte sera facilement\n"
+"lisible et vérifiable par le comptable en utilisant un tableur.\n"
+"\n"
+"La structure du fichier FEC généré par ce module a été vérifiée avec le logiciel\n"
+"*Test Compta Demat* version 1_00_05 disponible sur\n"
+"`le site de la direction générale des finances publiques <http://www.economie.gouv.fr/dgfip/outil-test-des-fichiers-des-ecritures-comptables-fec>`\n"
+"en utilisant une base de donnée Odoo réelle.\n"
+"\n"
+"Configuration\n"
+"=============\n"
+"\n"
+"Aucune configuration n'est nécessaire.\n"
+"\n"
+"Utilisation\n"
+"===========\n"
+"\n"
+"Pour générer le *FEC*, allez dans le menu *Accounting > Reporting > French Statements > FEC* qui va démarrer l'assistant de génération du FEC.\n"
+"\n"
+"Credits\n"
+"=======\n"
+"\n"
+"Contributors\n"
+"------------\n"
+"\n"
+"* Alexis de Lattre <alexis.delattre@akretion.com>\n"
+"\n"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_model_object_field
@@ -8765,19 +10645,19 @@ msgstr "字段"
 #: code:addons/base/ir/ir_model.py:156
 #, python-format
 msgid "Field \"Model\" cannot be modified on models."
-msgstr "字段\"Model\" 不能在模型上更改 "
+msgstr "字段\"Model\" 不能在模型上更改 。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:160
 #, python-format
 msgid "Field \"Transient Model\" cannot be modified on models."
-msgstr "字段\"Transient  Model\" 不能在模型上更改 "
+msgstr "字段\"Transient  Model\" 不能在模型上更改 。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:158
 #, python-format
 msgid "Field \"Type\" cannot be modified on models."
-msgstr "字段\"Type\" 不能在模型上更改 "
+msgstr "字段\"Type\" 不能在模型上更改 。"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_help
@@ -8817,6 +10697,19 @@ msgid "Field `%(field_name)s` does not exist"
 msgstr "字段`%(field_name)s`不存在"
 
 #. module: base
+#: code:addons/base/ir/ir_model.py:298
+#, python-format
+msgid ""
+"Field names can only contain characters, digits and underscores (up to 63)."
+msgstr "字段名称只能包含字符、数字和下划线（最多63字符）"
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:307
+#, python-format
+msgid "Field names must be unique per model."
+msgstr "每个模型的字段名必须唯一"
+
+#. module: base
 #: model:ir.actions.act_window,name:base.action_model_fields
 #: model:ir.model,name:base.model_ir_model_fields
 #: model:ir.model.fields,field_description:base.field_ir_model_field_id
@@ -8832,6 +10725,12 @@ msgstr "字段"
 #: model:ir.ui.view,arch_db:base.view_model_form
 msgid "Fields Description"
 msgstr "字段说明"
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:487
+#, python-format
+msgid "Fields:"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.fj
@@ -8946,6 +10845,11 @@ msgid "Finland"
 msgstr "芬兰"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_mail_push
+msgid "Firebase Cloud Messaging"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_fleet
 msgid "Fleet Management"
 msgstr "车队管理"
@@ -9039,13 +10943,13 @@ msgid "For relationship fields, the technical name of the target model"
 msgstr "对于关系字段，目标模型的技术名称。"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:477
+#: code:addons/base/ir/ir_model.py:531
 #, python-format
 msgid "For selection fields, the Selection Options must be given!"
 msgstr "对于选择字段，必须给出选择选项！"
 
 #. module: base
-#: code:addons/models.py:3294
+#: code:addons/models.py:3309
 #, python-format
 msgid ""
 "For this kind of document, you may only access records you created yourself.\n"
@@ -9055,6 +10959,11 @@ msgstr ""
 "对这种类型的单据，你只能访问你自己创建的记录。\n"
 "\n"
 " (单据类型：%s)"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_project_forecast_grid
+msgid "Forecast Grid View"
+msgstr "预测网格视图"
 
 #. module: base
 #: selection:ir.actions.act_window,view_type:0
@@ -9067,13 +10976,13 @@ msgstr "表单"
 #: model:ir.model.fields,help:base.field_res_partner_email_formatted
 #: model:ir.model.fields,help:base.field_res_users_email_formatted
 msgid "Format email address \"Name <email@domain>\""
-msgstr ""
+msgstr "邮箱格式“名称<email@domain>”"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_email_formatted
 #: model:ir.model.fields,field_description:base.field_res_users_email_formatted
 msgid "Formatted Email"
-msgstr ""
+msgstr "格式化的邮件"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_forum
@@ -9088,7 +10997,7 @@ msgstr "论坛，文档"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_forum
 msgid "Forum, FAQ, Q&A"
-msgstr "论坛、常见问题解答、问答"
+msgstr "论坛, 常见问题解答, 问&答"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:343
@@ -9107,9 +11016,19 @@ msgid "France - Accounting"
 msgstr "法国-会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_certification
+msgid "France - Accounting - Certified CGI 286 I-3 bis"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_fr_reports
+msgid "France - Accounting Reports"
+msgstr "法国-会计报表"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_fec
 msgid "France - FEC"
-msgstr ""
+msgstr "法国-FEC"
 
 #. module: base
 #: model:res.country,name:base.gf
@@ -9198,12 +11117,17 @@ msgstr "游戏化"
 #: selection:ir.actions.act_window.view,view_mode:0
 #: selection:ir.ui.view,type:0
 msgid "Gantt"
-msgstr "甘特"
+msgstr "甘特图"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_hr_holidays_gantt
+msgid "Gantt view for Leaves Dashboard"
+msgstr "休假仪表板的甘特视图"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_kanban_gauge
 msgid "Gauge Widget for Kanban"
-msgstr "看板视图的计量工具"
+msgstr "看板的测量挂件"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
@@ -9284,7 +11208,7 @@ msgid ""
 "global rules, but any additional group rule will add more permissions"
 msgstr ""
 "全局规则 "
-"(没有指定组)是强制的，不能被旁路。群组规则授予额外的权限，但是约束在全局规则的范围内。第一个群组规则进一步限制了全局规则，但是任何附加组规则将增加更多权限"
+"(没有指定组)是强制的，不能被旁路。群组规则授予额外的许可，但是约束在全局规则的范围内。第一个群组规则进一步限制了全局规则，但是任何附加组规则将增加更多权限"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_mail
@@ -9339,6 +11263,11 @@ msgid "Greece - Accounting"
 msgstr "希腊-会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_gr_reports
+msgid "Greece - Accounting Reports"
+msgstr "Greece-会计报表"
+
+#. module: base
 #: model:res.country,name:base.gl
 msgid "Greenland"
 msgstr "格陵兰岛"
@@ -9347,6 +11276,22 @@ msgstr "格陵兰岛"
 #: model:res.country,name:base.gd
 msgid "Grenada"
 msgstr "格林纳达"
+
+#. module: base
+#: selection:ir.actions.act_window.view,view_mode:0
+#: selection:ir.ui.view,type:0
+msgid "Grid"
+msgstr "网络"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_grid
+msgid "Grid View"
+msgstr "网格视图"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_timesheet_grid
+msgid "Grid View for Timesheets"
+msgstr "工时单的网格视图"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access_group_id
@@ -9387,7 +11332,7 @@ msgstr "必填群组 "
 #. module: base
 #: model:ir.model.fields,help:base.field_res_groups_share
 msgid "Group created to set access rights for sharing data with some users."
-msgstr "为设置一些用户的共享数据访问权限所建立的用户群组"
+msgstr "为设置一些用户的共享数据访问权所建立的用户群组"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_country_group_form
@@ -9513,6 +11458,11 @@ msgid "Hardware Driver for Weighing Scales"
 msgstr "电子称的硬件驱动"
 
 #. module: base
+#: model:ir.module.category,name:base.module_category_hardware_drivers
+msgid "Hardware Drivers"
+msgstr "硬件驱动"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_proxy
 msgid "Hardware Proxy"
 msgstr "硬件代理"
@@ -9537,7 +11487,18 @@ msgstr "协助配置应用程序"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid "Help with Python expressions."
-msgstr "用Python表达式帮助"
+msgstr "用Python表达式帮助。"
+
+#. module: base
+#: model:ir.module.category,name:base.module_category_helpdesk
+#: model:ir.module.module,shortdesc:base.module_helpdesk
+msgid "Helpdesk"
+msgstr "服务台"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk_forum
+msgid "Helpdesk: Knowledge Base"
+msgstr ""
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_point_of_sale
@@ -9557,59 +11518,59 @@ msgstr "帮你处理记账需要，如果你不是会计师，我们建议你只
 #. module: base
 #: model:ir.module.category,description:base.module_category_sales_management
 msgid "Helps you handle your quotations, sale orders and invoicing."
-msgstr "帮你处理报价单，销售订单以及开票."
+msgstr "帮你处理报价单，销售订单以及开票。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_lead_automation
 msgid "Helps you manage lead of your marketing campaigns step by step."
-msgstr "帮助你逐步管理市场营销的线索."
+msgstr "帮助你逐步管理市场营销的线索。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_attendance
 msgid "Helps you manage the attendances."
-msgstr "帮你管理出勤"
+msgstr "帮你管理出勤。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_gamification
 msgid "Helps you manage the gamification process."
-msgstr "帮你管理游戏化过程"
+msgstr "帮你管理游戏化过程。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_timesheet
 msgid "Helps you manage the timesheets."
-msgstr "帮你管理工时表"
+msgstr "帮你管理工时表。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_event_management
 msgid "Helps you manage your Events."
-msgstr "帮你管理活动"
+msgstr "帮你管理活动。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_appraisal
 msgid "Helps you manage your appraisals."
-msgstr "帮你管理你的评价"
+msgstr "帮你管理你的评价。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_human_resources
 msgid "Helps you manage your employees."
-msgstr "帮你管理你的员工"
+msgstr "帮你管理你的员工。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_expense
 msgid "Helps you manage your expenses."
-msgstr "帮助你管理费用"
+msgstr "帮助你管理费用。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_holidays
 msgid "Helps you manage your holidays."
-msgstr "帮你管理你的假期"
+msgstr "帮你管理你的假期。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_warehouse_management
 msgid ""
 "Helps you manage your inventory and main stock operations: delivery orders, "
 "receptions, etc."
-msgstr "帮助你管理你的库存以及主要的仓储作业：发货单、收货单等"
+msgstr "帮助你管理你的库存以及主要的仓储作业：发货单、收货单等。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_manufacturing
@@ -9628,14 +11589,14 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_payroll
 msgid "Helps you manage your payrolls."
-msgstr "帮你管理你的工资表"
+msgstr "帮你管理你的工资表。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_project_management
 msgid ""
 "Helps you manage your projects and tasks by tracking them, generating "
 "plannings, etc..."
-msgstr "帮助你管理你的项目和任务，通过跟踪它们，生成计划等"
+msgstr "帮助你管理你的项目和任务，通过跟踪它们，生成规划等。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_purchase_management
@@ -9647,7 +11608,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,description:base.module_category_hr_recruitment
 msgid "Helps you manage your recruitments."
-msgstr "帮你管理你的招聘"
+msgstr "帮你管理你的招聘。"
 
 #. module: base
 #: model:ir.module.category,description:base.module_category_survey
@@ -9708,7 +11669,7 @@ msgstr "香港"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server_smtp_host
 msgid "Hostname or IP of SMTP server"
-msgstr "SMTP服务器名或IP"
+msgstr "主机名或SMTP服务器IP地址"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
@@ -9746,12 +11707,17 @@ msgstr "HR招聘面试表单"
 #. module: base
 #: model:ir.module.category,name:base.module_category_human_resources_survey
 msgid "Human Resources Survey"
-msgstr ""
+msgstr "人力资源调查"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hu
 msgid "Hungarian - Accounting"
 msgstr "匈牙利-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_hu_reports
+msgid "Hungarian - Accounting Reports"
+msgstr "匈牙利-会计报表"
 
 #. module: base
 #: model:res.country,name:base.hu
@@ -9863,11 +11829,6 @@ msgid "ID"
 msgstr "ID"
 
 #. module: base
-#: model:ir.model.fields,help:base.field_ir_act_server_xml_id
-msgid "ID of the action if defined in a XML file"
-msgstr "在XML文件中定义的动作的ID"
-
-#. module: base
 #: model:ir.model.fields,help:base.field_ir_model_data_res_id
 msgid "ID of the target record in the database"
 msgstr "在数据库中目标记录的ID"
@@ -9922,7 +11883,7 @@ msgstr "图标网址"
 msgid ""
 "If checked and the action is bound to a model, it will only appear in the "
 "More menu on list views"
-msgstr "如果选中，并且该动作被绑定到一个模型，它只会出现在列表视图的’更多‘菜单里。"
+msgstr "如果选中，并且该动作被绑定到一个模型，它只会出现在列表视图的更多菜单里"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_mail_server_smtp_debug
@@ -9936,7 +11897,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_rule_global
 msgid "If no group is specified the rule is global and applied to everyone"
-msgstr "如果不指定群组，规则是全局的并应用于每个用户."
+msgstr "如果不指定群组，规则是全局的并应用于每个用户"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_property_res_id
@@ -9954,7 +11915,7 @@ msgstr "如果设为真，该动作将不会显示于表单右侧的工具栏中
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_values_company_id
 msgid "If set, action binding only applies for this company"
-msgstr "如果设置， 动作绑定只用于这个公司。"
+msgstr "如果设置， 动作绑定只用于这个公司"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_values_user_id
@@ -9983,7 +11944,7 @@ msgstr ""
 msgid ""
 "If specified, this action will be opened at log on for this user, in "
 "addition to the standard menu."
-msgstr "如果指定的话，这个动作将在该用户账号登录后与标准的菜单一起执行。就是说登录第一画面将看到指定的菜单页面，懂吗"
+msgstr "如果指定的话，这个动作将在该用户账号登录后与标准的菜单一起执行。就是说登录第一画面将看到指定的菜单页面。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner_lang
@@ -10038,7 +11999,7 @@ msgstr "如果你选中此处，当下次用户使用相同的附件名称打印
 msgid ""
 "If you enable this option, existing translations (including custom ones) "
 "will be overwritten and replaced by those in this file"
-msgstr "选中此项时, 上传文件中的翻译项会替换掉系统中对应的翻译项(包括用户自定义的)."
+msgstr "选中此项时, 上传文件中的翻译项会替换掉系统中对应的翻译项(包括用户自定义的)"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_ui_menu_groups_id
@@ -10088,9 +12049,36 @@ msgid "Implementation"
 msgstr "实现"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_pos_blackbox_be
+msgid ""
+"Implements the registered cash system, adhering to guidelines by FPS "
+"Finance."
+msgstr ""
+
+#. module: base
 #: model:ir.ui.menu,name:base.menu_translation_export
 msgid "Import / Export"
 msgstr "导入/导出"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_camt
+msgid "Import CAMT Bank Statement"
+msgstr "导入CAMT银行对账单"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_csv
+msgid "Import CSV Bank Statement"
+msgstr "导入CSV银行对账单"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_ofx
+msgid "Import OFX Bank Statement"
+msgstr "导入OFX银行对账单"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_qif
+msgid "Import QIF Bank Statement"
+msgstr "导入QIF银行对账单"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_view_base_import_language
@@ -10098,6 +12086,11 @@ msgstr "导入/导出"
 #: model:ir.ui.view,arch_db:base.view_base_import_language
 msgid "Import Translation"
 msgstr "导入翻译"
+
+#. module: base
+#: model:ir.module.module,description:base.module_currency_rate_live
+msgid "Import exchange rates from the Internet.\n"
+msgstr "从互联网导入汇率。\n"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_modules
@@ -10114,13 +12107,13 @@ msgstr "无效"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_search
 msgid "Inactive Users"
-msgstr "未激活的用户"
+msgstr "无效用户"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_wkf_activity_in_transitions
 #: model:ir.ui.view,arch_db:base.view_workflow_activity_form
 msgid "Incoming Transitions"
-msgstr "进来的转换"
+msgstr "入向转换"
 
 #. module: base
 #: code:addons/base/ir/ir_actions.py:607
@@ -10154,6 +12147,16 @@ msgstr "印度"
 #: model:ir.module.module,shortdesc:base.module_l10n_in
 msgid "Indian - Accounting"
 msgstr "印度-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_in_reports
+msgid "Indian - Accounting Reports"
+msgstr "印度-会计报表"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_in_schedule6
+msgid "Indian - Schedule VI Accounting"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_hr_payroll
@@ -10300,9 +12303,19 @@ msgid "Integer"
 msgstr "整数"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_inter_company_rules
+msgid "Inter Company Module for Sale/Purchase Orders and Invoices"
+msgstr ""
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_form
 msgid "Interaction between rules"
 msgstr "规则间的互动"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_inter_company_rules
+msgid "Intercompany SO/PO/INV rules"
+msgstr "公司间 SO/PO/INV 规则"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_groups_search
@@ -10318,7 +12331,7 @@ msgstr "内部备注"
 #: model:ir.model.fields,field_description:base.field_res_partner_ref
 #: model:ir.model.fields,field_description:base.field_res_users_ref
 msgid "Internal Reference"
-msgstr "内部参考"
+msgstr "内部参照"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_translation_src
@@ -10368,7 +12381,7 @@ msgstr "指定了无效的“顺序”。一个有效的“顺序”是用逗号
 #: code:addons/base/res/res_users.py:315
 #, python-format
 msgid "Invalid 'group by' parameter"
-msgstr ""
+msgstr "无效的“分组”参数"
 
 #. module: base
 #: code:addons/base/ir/ir_cron.py:70
@@ -10493,19 +12506,19 @@ msgstr "爱尔兰"
 #: model:ir.model.fields,field_description:base.field_res_partner_is_company
 #: model:ir.model.fields,field_description:base.field_res_users_is_company
 msgid "Is a Company"
-msgstr "是公司"
+msgstr "公司"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_customer
 #: model:ir.model.fields,field_description:base.field_res_users_customer
 msgid "Is a Customer"
-msgstr "是客户"
+msgstr "客户"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_supplier
 #: model:ir.model.fields,field_description:base.field_res_users_supplier
 msgid "Is a Vendor"
-msgstr "是供应商"
+msgstr "供应商"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment_public
@@ -10568,6 +12581,11 @@ msgid "Japan - Accounting"
 msgstr "日本- 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_jp_reports
+msgid "Japan - Accounting Reports"
+msgstr "日本 - 会计报告"
+
+#. module: base
 #: model:res.country,name:base.je
 msgid "Jersey"
 msgstr "泽西岛"
@@ -10586,7 +12604,7 @@ msgstr "工作岗位"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr
 msgid "Jobs, Departments, Employees Details"
-msgstr "职位，部门，员工信息"
+msgstr "工作，部门，员工详情"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_recruitment
@@ -10623,7 +12641,7 @@ msgstr "哈萨克斯坦"
 #: model:ir.model.fields,help:base.field_res_users_password
 msgid ""
 "Keep empty if you don't want the user to be able to connect on the system."
-msgstr ""
+msgstr "如果不希望用户连接到系统，则不勾选"
 
 #. module: base
 #: model:res.country,name:base.ke
@@ -10653,9 +12671,14 @@ msgid "Kiribati"
 msgstr "基里巴斯"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_website_helpdesk_forum
+msgid "Knowledge base for helpdesk based on Odoo Forum"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,description:base.module_l10n_si
 msgid "Kontni načrt za gospodarske družbe"
-msgstr "Kontni načrt za gospodarske družbe"
+msgstr "公司科目表"
 
 #. module: base
 #: model:res.country,name:base.kw
@@ -11030,6 +13053,11 @@ msgid "Lead Automation"
 msgstr "线索自动化"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_website_crm_score
+msgid "Lead Scoring"
+msgstr "线索评分"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_project_issue
 msgid "Lead to Issue"
 msgstr "线索转为问题"
@@ -11043,6 +13071,11 @@ msgstr "线索，商机，活动"
 #: model:ir.module.module,shortdesc:base.module_hr_holidays
 msgid "Leave Management"
 msgstr "休假管理"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_holidays_gantt
+msgid "Leaves Gantt"
+msgstr "休假甘特图"
 
 #. module: base
 #: model:res.country,name:base.lb
@@ -11108,12 +13141,17 @@ msgstr "限制"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_logging_line
 msgid "Line"
-msgstr "行"
+msgstr "明细行"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_link_tracker
 msgid "Link Tracker"
 msgstr "链接跟踪"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_project_forecast_sale
+msgid "Link module between project_forecast and sale(_timesheet)"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_link_field_id
@@ -11144,6 +13182,11 @@ msgstr ""
 #: model:res.country,name:base.lt
 msgid "Lithuania"
 msgstr "立陶宛"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_currency_rate_live
+msgid "Live Currency Exchange Rate"
+msgstr "实时汇率"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_language_install
@@ -11177,7 +13220,7 @@ msgstr "日志"
 #: model:ir.actions.act_window,name:base.ir_logging_all_act
 #: model:ir.ui.menu,name:base.ir_logging_all_menu
 msgid "Logging"
-msgstr "日志"
+msgstr "记录"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_login
@@ -11196,9 +13239,19 @@ msgid "Logs"
 msgstr "日志"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_pos_loyalty
+msgid "Loyalty Program"
+msgstr "忠诚计划"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_pos_loyalty
+msgid "Loyalty Program for the Point of Sale "
+msgstr "POS忠诚度计划"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_lunch
 msgid "Lunch"
-msgstr "工作餐"
+msgstr "午餐管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_lunch
@@ -11216,9 +13269,19 @@ msgid "Luxembourg - Accounting"
 msgstr "卢森堡 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_lu_reports
+msgid "Luxembourg - Accounting Reports"
+msgstr "卢森堡 - 会计报告"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_byproduct
 msgid "MRP Byproducts"
 msgstr "MRP副产品"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_quality_mrp
+msgid "MRP features for Quality Control"
+msgstr "质量管理的MRP功能"
 
 #. module: base
 #: model:res.country,name:base.mo
@@ -11283,6 +13346,11 @@ msgid "Maintainer"
 msgstr "维护者"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_maintenance
+msgid "Maintenance - MRP"
+msgstr "保养 - MRP"
+
+#. module: base
 #: model:res.country,name:base.mw
 msgid "Malawi"
 msgstr "马拉维"
@@ -11315,7 +13383,7 @@ msgid ""
 " line and then delete it through the button that appeared. Items can be "
 "assigned to specific groups in order to make them accessible to some users "
 "within the system."
-msgstr "管理和自定义用户的菜单项。你可以用勾选一些菜单项，然后删除。菜单项可以分配给某些特定的用户群组，以便他们使用系统的某些特定的功能"
+msgstr "管理和自定义用户的菜单项。你可以用勾选一些菜单项，然后删除。菜单项可以分配给某些特定的用户群组，以便他们使用系统的某些特定的功能。"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_res_bank_form
@@ -11367,9 +13435,14 @@ msgid "Manufacturing"
 msgstr "制造"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_barcode
+msgid "Manufacturing Barcode Scanning"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,summary:base.module_mrp
 msgid "Manufacturing Orders, Bill of Materials, Routings"
-msgstr "制造订单，物料清单，工艺"
+msgstr "制造订单，物料清单，工艺路线"
 
 #. module: base
 #: selection:ir.property,type:0
@@ -11399,12 +13472,12 @@ msgstr "多对多 关系"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_margin
 msgid "Margins by Products"
-msgstr "利润 按产品"
+msgstr "毛利，按产品"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_margin
 msgid "Margins in Sales Orders"
-msgstr "销售订单利润"
+msgstr "销售订单的毛利"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing
@@ -11427,6 +13500,11 @@ msgid "Maroc - Accounting"
 msgstr "摩洛哥 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ma_reports
+msgid "Maroc - Accounting Reports"
+msgstr "摩洛哥 - 会计报告"
+
+#. module: base
 #: model:res.country,name:base.mh
 msgid "Marshall Islands"
 msgstr "马绍尔群岛"
@@ -11445,6 +13523,17 @@ msgstr "群发邮件"
 #: model:ir.module.module,shortdesc:base.module_mass_mailing
 msgid "Mass Mailing Campaigns"
 msgstr "群发邮件营销"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mass_mailing_themes
+msgid "Mass Mailing Themes"
+msgstr "群发邮件主题"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_mps
+#: model:ir.module.module,summary:base.module_mrp_mps
+msgid "Master Production Schedule"
+msgstr "主生产排程"
 
 #. module: base
 #: model:res.country,name:base.mr
@@ -11474,7 +13563,7 @@ msgid ""
 "Medium-sized image of this contact. It is automatically resized as a "
 "128x128px image, with aspect ratio preserved. Use this field in form views "
 "or some kanban views."
-msgstr "该联系人的中等尺寸照片，它自动缩放为128x128px，保存纵横比。表单视图和一些看板视图使用这个字段"
+msgstr "该联系人的中等尺寸照片，它自动缩放为128x128px，保存纵横比。表单视图和一些看板视图使用这个字段。"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_membership
@@ -11591,22 +13680,28 @@ msgid "Missing SMTP Server"
 msgstr "缺少 SMTP 服务器"
 
 #. module: base
-#: code:addons/models.py:3263
+#: code:addons/models.py:3282
 #, python-format
 msgid "Missing document(s)"
 msgstr "缺失单据"
 
 #. module: base
-#: code:addons/models.py:5619
+#: code:addons/models.py:5655
 #, python-format
 msgid "Missing required value for the field '%s' (%s)"
 msgstr "找不到字段 '%s' (%s)所需的值"
 
 #. module: base
-#: code:addons/models.py:5616
+#: code:addons/models.py:5652
 #, python-format
 msgid "Missing required value for the field '%s'."
 msgstr "找不到字段 '%s' 所需的值"
+
+#. module: base
+#: code:addons/base/ir/ir_ui_view.py:345
+#, python-format
+msgid "Missing view architecture."
+msgstr ""
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_mister
@@ -11616,13 +13711,15 @@ msgstr "先生"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_mobile
 #: model:ir.model.fields,field_description:base.field_res_users_mobile
+#: model:ir.module.category,name:base.module_category_mobile
+#: model:ir.module.module,shortdesc:base.module_web_mobile
 msgid "Mobile"
 msgstr "手机"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Mobile:"
-msgstr "手机"
+msgstr "手机："
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_font_mode
@@ -11801,6 +13898,16 @@ msgid "Module dependency"
 msgstr "模块依赖"
 
 #. module: base
+#: code:addons/convert.py:895
+#, python-format
+msgid ""
+"Module loading %s failed: file %s could not be processed:\n"
+" %s"
+msgstr ""
+"模块加载 %s 失败: 文件 %s 无法处理:\n"
+" %s"
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_translation_module
 msgid "Module this term belongs to"
 msgstr "模块这个项属于"
@@ -11833,17 +13940,17 @@ msgstr "黑山共和国"
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_logging_search_view
 msgid "Month"
-msgstr "月份"
+msgstr "月"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
 msgid "Month: %(month)s"
-msgstr "月份：%(month)s"
+msgstr "月：%(month)s"
 
 #. module: base
 #: selection:ir.cron,interval_type:0
 msgid "Months"
-msgstr "月份"
+msgstr "月"
 
 #. module: base
 #: model:res.country,name:base.ms
@@ -11876,6 +13983,11 @@ msgstr "莫桑比克"
 #: model:res.partner.title,shortcut:base.res_partner_title_mister
 msgid "Mr."
 msgstr "Mr."
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_workorder
+msgid "Mrp Workorder"
+msgstr "Mrp 工单"
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
@@ -11986,6 +14098,11 @@ msgid "Netherlands - Accounting"
 msgstr "荷兰 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_nl_reports
+msgid "Netherlands - Accounting Reports"
+msgstr "荷兰 - 会计报告"
+
+#. module: base
 #: model:res.country,name:base.an
 msgid "Netherlands Antilles"
 msgstr "荷属安德列斯岛"
@@ -12026,14 +14143,7 @@ msgstr "新西兰"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nz
 msgid "New Zealand - Accounting"
-msgstr ""
-
-#. module: base
-#: code:addons/base/ir/ir_model.py:551
-#, python-format
-msgid ""
-"New field name must still start with x_ , because it is a custom field!"
-msgstr "新字段必须以 x_ 开头，因为它是自定义字段！"
+msgstr "新西兰-会计"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_blog
@@ -12107,7 +14217,7 @@ msgstr "无间隔"
 #: code:addons/fields.py:2132
 #, python-format
 msgid "No inverse field %r found for %r"
-msgstr ""
+msgstr "未找到%r对应的字段%r"
 
 #. module: base
 #: code:addons/base/module/wizard/base_update_translations.py:33
@@ -12132,7 +14242,7 @@ msgstr "不可更新"
 #: code:addons/base/ir/ir_model.py:340
 #, python-format
 msgid "Non-relational field %r in dependency %r"
-msgstr ""
+msgstr "依赖%r中无相关的字段%r"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:297
@@ -12169,6 +14279,11 @@ msgstr "挪威"
 #: model:ir.module.module,shortdesc:base.module_l10n_no
 msgid "Norway - Accounting"
 msgstr "挪威 - 会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_no_reports
+msgid "Norway - Accounting Reports"
+msgstr "挪威 - 会计报告"
 
 #. module: base
 #: selection:ir.module.module,state:0
@@ -12236,6 +14351,12 @@ msgid "Object"
 msgstr "对象"
 
 #. module: base
+#: code:addons/model.py:152
+#, python-format
+msgid "Object %s doesn't exist"
+msgstr "对象%s 不存在"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_model
 msgid "Object Name"
 msgstr "对象名"
@@ -12257,9 +14378,14 @@ msgid "Odoo Enterprise Edition License v1.0"
 msgstr "Odoo 企业版授权协议 v1.0"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_web_mobile
+msgid "Odoo Mobile Core module"
+msgstr ""
+
+#. module: base
 #: selection:ir.module.module,license:0
 msgid "Odoo Proprietary License v1.0"
-msgstr ""
+msgstr "专业版授权协议 v1.0"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_settings_dashboard
@@ -12267,9 +14393,14 @@ msgid "Odoo Settings Dashboard"
 msgstr "Odoo设置仪表板"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_crm_voip
+msgid "Odoo VOIP"
+msgstr "Odoo VOIP"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_web_diagram
 msgid "Odoo Web Diagram"
-msgstr ""
+msgstr "图表"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_partner_customer_form
@@ -12304,7 +14435,7 @@ msgstr "办公用品"
 #: model:ir.module.module,description:base.module_payment_ogone
 #: model:ir.module.module,shortdesc:base.module_payment_ogone
 msgid "Ogone Payment Acquirer"
-msgstr "Ogone付款收单方"
+msgstr "Ogone付款"
 
 #. module: base
 #: model:res.country,name:base.om
@@ -12325,7 +14456,7 @@ msgstr "在删除时"
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_multi
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_multi
 msgid "On Multiple Doc."
-msgstr "多单据"
+msgstr "在多个文档。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_on_delete
@@ -12458,7 +14589,7 @@ msgstr "可选的帮助文本，目标视图的说明，比如用途和目的。
 #: model:ir.model.fields,help:base.field_ir_act_window_src_model
 msgid ""
 "Optional model name of the objects on which this action should be visible"
-msgstr "可选的对象模型名称，此动作在该对象可见。"
+msgstr "对象的可选模型名称，此动作在该对象可见。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_client_res_model
@@ -12495,12 +14626,12 @@ msgstr "其他"
 #: model:ir.module.category,name:base.module_category_extra
 #: model:ir.ui.view,arch_db:base.user_groups_view
 msgid "Other Extra Rights"
-msgstr "其它额外权限"
+msgstr "其它额外权利"
 
 #. module: base
 #: selection:ir.module.module,license:0
 msgid "Other OSI Approved Licence"
-msgstr "其他 OSI 认可的授权协议"
+msgstr "其他 OSI 批准的授权协议"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_other_form
@@ -12523,6 +14654,8 @@ msgid ""
 "Other features are accessible through <code>self</code>, like\n"
 "                                                <code>self.env</code>, etc."
 msgstr ""
+"其他功能可以通过<code>self</code>访问, 例如\n"
+"                                                <code>self.env</code>, 等。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
@@ -12530,11 +14663,13 @@ msgid ""
 "Other features are accessible through <code>self</code>, like\n"
 "                                    <code>self.env</code>, etc."
 msgstr ""
+"其他功能可以通过<code>self</code>访问, 例如\n"
+"                                                <code>self.env</code>, 等。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_ir_mail_server_search
 msgid "Outgoing Mail Server"
-msgstr "发信邮件服务器"
+msgstr "出向邮件服务器"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ir_mail_server_list
@@ -12543,13 +14678,13 @@ msgstr "发信邮件服务器"
 #: model:ir.ui.view,arch_db:base.ir_mail_server_list
 #: model:ir.ui.view,arch_db:base.view_ir_mail_server_search
 msgid "Outgoing Mail Servers"
-msgstr "发信邮件服务器"
+msgstr "出向邮件服务器"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_wkf_activity_out_transitions
 #: model:ir.ui.view,arch_db:base.view_workflow_activity_form
 msgid "Outgoing Transitions"
-msgstr "出去的转换"
+msgstr "出向转换"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_language_import_overwrite
@@ -12670,7 +14805,7 @@ msgstr "上级菜单"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_menu_parent_left
 msgid "Parent left"
-msgstr ""
+msgstr "左父项"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_parent_name
@@ -12681,7 +14816,7 @@ msgstr "上级名称"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_menu_parent_right
 msgid "Parent right"
-msgstr ""
+msgstr "右父项"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_parser
@@ -12716,7 +14851,7 @@ msgstr "业务伙伴称谓"
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users_partner_id
 msgid "Partner-related data of the user"
-msgstr "用户的业务伙伴相关数据。"
+msgstr "用户的业务伙伴相关数据"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_category_partner_ids
@@ -12756,53 +14891,58 @@ msgstr "路径"
 #: model:ir.module.category,name:base.module_category_payment_acquirer
 #: model:ir.module.module,shortdesc:base.module_payment
 msgid "Payment Acquirer"
-msgstr "付款方式"
+msgstr "收单"
 
 #. module: base
 #: model:ir.module.module,description:base.module_payment
 #: model:ir.module.module,summary:base.module_payment
 msgid "Payment Acquirer Base Module"
-msgstr "付款收单方基础模块"
+msgstr "付款收单基础模块"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_adyen
 msgid "Payment Acquirer: Adyen Implementation"
-msgstr "付款收单方：Adyen实现"
+msgstr "收单：Adyen实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_authorize
 msgid "Payment Acquirer: Authorize.net Implementation"
-msgstr "付款收单方：Authorize.net实现"
+msgstr "收单：Authorize.net实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_buckaroo
 msgid "Payment Acquirer: Buckaroo Implementation"
-msgstr "付款收单方：Buckaroo实现"
+msgstr "收单：Buckaroo实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_ogone
 msgid "Payment Acquirer: Ogone Implementation"
-msgstr "付款收单方：Ogone实现"
+msgstr "收单：Ogone实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_paypal
 msgid "Payment Acquirer: Paypal Implementation"
-msgstr "付款收单方：Paypal实现"
+msgstr "收单：Paypal实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_payumoney
 msgid "Payment Acquirer: PayuMoney Implementation"
-msgstr ""
+msgstr "收单：PayuMoney 实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_stripe
 msgid "Payment Acquirer: Stripe Implementation"
-msgstr ""
+msgstr "收单：Stripe 实现"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_payment_transfer
 msgid "Payment Acquirer: Transfer Implementation"
-msgstr "付款收单方：转账实现"
+msgstr "收单：转账实现"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_reports_followup
+msgid "Payment Follow-up Management"
+msgstr "付款催收管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_payment
@@ -12814,7 +14954,7 @@ msgstr "付款：网站集成"
 #: model:ir.module.module,description:base.module_payment_paypal
 #: model:ir.module.module,shortdesc:base.module_payment_paypal
 msgid "Paypal Payment Acquirer"
-msgstr "Paypal付款收单方"
+msgstr "Paypal付款"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hr_payroll
@@ -12830,7 +14970,12 @@ msgstr "工资表会计"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_payumoney
 msgid "PayuMoney Payment Acquirer"
-msgstr ""
+msgstr "PayuMoney 收单"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_hr_appraisal
+msgid "Periodical Appraisal"
+msgstr "定期评价"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_calendar
@@ -12917,7 +15062,7 @@ msgstr "请定义至少一个SMTP服务器，或者明确提供SMTP参数。"
 #: code:addons/base/workflow/workflow.py:81
 #, python-format
 msgid "Please make sure no workitems refer to an activity before deleting it!"
-msgstr "在删除之前，请确信没有工作项目参考了这个活动。"
+msgstr "在删除之前，请确信没有工作项目参考了这个活动！"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -12954,7 +15099,7 @@ msgstr "POS"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_data_drinks
 msgid "Point of Sale Common Data Drinks"
-msgstr ""
+msgstr "POS中常见的饮料数据"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_discount
@@ -12975,6 +15120,11 @@ msgstr "波兰"
 #: model:ir.module.module,shortdesc:base.module_l10n_pl
 msgid "Poland - Accounting"
 msgstr "波兰-会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_pl_reports
+msgid "Poland - Accounting Reports"
+msgstr "波兰 - 会计报告"
 
 #. module: base
 #: model:res.country,name:base.pf
@@ -13008,7 +15158,7 @@ msgid ""
 "Portal members have specific access rights (such as record rules and restricted menus).\n"
 "                They usually do not belong to the usual Odoo groups."
 msgstr ""
-"门户成员有特定的访问权限 (如记录规则和限制菜单)。\n"
+"门户成员有特定的访问权(如记录规则和限制菜单)。\n"
 "他们通常不属于普通的Odoo群组。"
 
 #. module: base
@@ -13049,7 +15199,7 @@ msgstr "实现多对多关系的 PostgreSQL 表名"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_form
 msgid "Preferences"
-msgstr "个人资料"
+msgstr "首选项"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence_prefix
@@ -13077,6 +15227,58 @@ msgid "Price Accuracy"
 msgstr "价格准确性"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_print
+msgid "Print Invoice"
+msgstr "打印发票"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_print_docsaway
+msgid "Print Provider : DocsAway"
+msgstr "打印服务商：DocsAway"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_print_sale
+msgid "Print Sale"
+msgstr "打印销售订单"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_l10n_us_check_printing
+msgid "Print US Checks"
+msgstr "打印美国支票"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_hr_expense_check
+msgid "Print amount in words on checks issued for expenses"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_print_docsaway
+msgid "Print and Send Invoices with DocsAway.com"
+msgstr "通过DocsAway.com打印和发送发票"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_print
+msgid "Print and Send Provider Base Module"
+msgstr "打印和发送供应商的基本模块"
+
+#. module: base
+#: model:ir.module.module,description:base.module_print
+msgid ""
+"Print and Send Provider Base Module. Print and send your invoice with a "
+"Postal Provider. This required to install a module implementing a provider."
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_print_sale
+msgid "Print and Send Sale Orders"
+msgstr "打印并发送订单"
+
+#. module: base
+#: model:ir.module.module,description:base.module_print_sale
+msgid "Print and Send your Sale Order by Post"
+msgstr "打印和邮寄你的销售订单"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_priority
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_sequence
 #: model:ir.model.fields,field_description:base.field_res_request_link_priority
@@ -13098,6 +15300,11 @@ msgstr "补货"
 #: model:ir.module.module,shortdesc:base.module_product_email_template
 msgid "Product Email Template"
 msgstr "产品 Email 模板"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_mrp_plm
+msgid "Product Lifecycle Management (PLM)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_extended
@@ -13138,6 +15345,11 @@ msgid "Project"
 msgstr "项目"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_project_forecast
+msgid "Project Forecast"
+msgstr "项目预测"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_rating_project
 msgid "Project Rating"
 msgstr "项目点评"
@@ -13165,7 +15377,7 @@ msgstr "基本字段的属性不能这样修改，请通过 Python 代码来修�
 #. module: base
 #: model:ir.module.module,description:base.module_website_theme_install
 msgid "Propose to install a theme on website installation"
-msgstr ""
+msgstr "建议安装一个网站主题"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_2
@@ -13185,6 +15397,11 @@ msgid "Provide the field where the record id is stored after the operations."
 msgstr "在操作后提供保存记录的id的字段。"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_hw_screen
+msgid "Provides support for customer facing displays"
+msgstr ""
+
+#. module: base
 #: model:res.groups,name:base.group_public
 msgid "Public"
 msgstr "公开"
@@ -13194,7 +15411,7 @@ msgstr "公开"
 msgid ""
 "Public users have specific access rights (such as record rules and restricted menus).\n"
 "                They usually do not belong to the usual Odoo groups."
-msgstr "公众用户有特定的访问权限 (如记录规则和限制菜单)。 他们通常不属于通常的Odoo群组"
+msgstr "公众用户有特定的访问权(如记录规则和限制菜单)。 他们通常不属于通常的Odoo组"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_membership
@@ -13239,7 +15456,7 @@ msgstr "采购单、入库单、采购发票"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_requisition
 msgid "Purchase Requisitions"
-msgstr "采购请求"
+msgstr "采购申请"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_mrp
@@ -13251,6 +15468,11 @@ msgstr "销售与 MRP 管理"
 #: model:ir.module.category,name:base.module_category_purchases
 msgid "Purchases"
 msgstr "采购"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mail_push
+msgid "Push notification for mobile app"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_wkf_activity_action
@@ -13282,6 +15504,21 @@ msgstr "卡塔尔"
 #: model:ir.model.fields,field_description:base.field_ir_values_key2
 msgid "Qualifier"
 msgstr "限定"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_quality
+msgid "Quality Alerts and Control Points"
+msgstr "质量警报及控制点"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_quality
+msgid "Quality Control"
+msgstr "质量管理"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_quality_mrp
+msgid "Quality Management with MRP"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_event_questions
@@ -13359,18 +15596,18 @@ msgstr "比率"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rate_ids
 msgid "Rates"
-msgstr "汇率"
+msgstr "比率"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access_perm_read
 #: model:ir.ui.view,arch_db:base.ir_access_view_search
 msgid "Read Access"
-msgstr "读取访问"
+msgstr "读访问"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_search
 msgid "Read Access Right"
-msgstr "读取访问权限"
+msgstr "读访问权限"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_readonly
@@ -13461,18 +15698,18 @@ msgstr "检测到循环。"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_data_reference
 msgid "Reference"
-msgstr "参考"
+msgstr "参照"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_ref_object
 msgid "Reference record"
-msgstr "参考记录"
+msgstr "参照记录"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.res_request_link-act
 #: model:ir.ui.menu,name:base.menu_res_request_link_act
 msgid "Referenceable Models"
-msgstr "可引用的模型"
+msgstr "可参照的模型"
 
 #. module: base
 #: code:addons/base/res/res_company.py:219
@@ -13577,7 +15814,7 @@ msgstr "修理破损以及毁坏的产品"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_repair
 msgid "Repairs Management"
-msgstr "修理管理"
+msgstr "维修管理"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_doall
@@ -13587,7 +15824,7 @@ msgstr "重做错过的"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_cron_interval_number
 msgid "Repeat every x."
-msgstr "重复每次 x."
+msgstr "重复每"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_report
@@ -13704,6 +15941,11 @@ msgid "Resource Object"
 msgstr "资源对象"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_project_forecast
+msgid "Resource management for Project"
+msgstr "项目的资源管理"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_restaurant
 msgid "Restaurant"
 msgstr "餐馆"
@@ -13734,6 +15976,11 @@ msgid "Reunion (French)"
 msgstr "法属留尼旺岛"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_account_deferred_revenue
+msgid "Revenue Recognitions Management"
+msgstr "收入识别管理"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_category_parent_right
 msgid "Right parent"
 msgstr "右父项"
@@ -13757,6 +16004,11 @@ msgstr "罗马尼亚"
 #: model:ir.module.module,shortdesc:base.module_l10n_ro
 msgid "Romania - Accounting"
 msgstr "罗马尼亚 - 会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ro_reports
+msgid "Romania - Accounting Reports"
+msgstr "罗马尼亚 - 会计报表"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rounding
@@ -13816,6 +16068,16 @@ msgstr "俄罗斯联邦"
 #: model:res.country,name:base.rw
 msgid "Rwanda"
 msgstr "卢旺达"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_account_sepa
+msgid "SEPA Credit Transfer"
+msgstr "SEPA 信用转账"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hr_expense_sepa
+msgid "SEPA Credit Transfer in Expenses"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_port
@@ -13901,7 +16163,12 @@ msgstr "销售"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_voucher
 msgid "Sale & Purchase Vouchers"
-msgstr "销售&采购 凭证"
+msgstr "销售和采购 凭证"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_ebay
+msgid "Sale Ebay"
+msgstr "Ebay 销售"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_service_rating
@@ -13940,6 +16207,11 @@ msgstr "销售团队"
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet
 msgid "Sales Timesheet"
 msgstr "销售工时表"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_timesheet_grid_sale
+msgid "Sales Timesheet: Grid Support"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_mrp
@@ -13981,7 +16253,7 @@ msgstr "沙特阿拉伯"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sa
 msgid "Saudi Arabia - Accounting"
-msgstr "Saudi Arabia - Accounting"
+msgstr "沙特阿拉伯-会计"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_form_simple_modif
@@ -13992,6 +16264,11 @@ msgstr "保存"
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_attachment
 msgid "Save as Attachment Prefix"
 msgstr "保存附件的前缀"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mrp_maintenance
+msgid "Schedule and manage maintenance on machine and tools."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event
@@ -14012,6 +16289,11 @@ msgstr "安排的动作"
 #: model:ir.ui.view,arch_db:base.ir_cron_view_tree
 msgid "Scheduled Actions"
 msgstr "安排的动作"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_hw_screen
+msgid "Screen Driver"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_view_search selection:ir.ui.view,type:0
@@ -14046,7 +16328,7 @@ msgstr "搜索视图"
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
 msgid "Second: %(sec)s"
-msgstr "秒: %(sec)s"
+msgstr "秒：%(sec)s"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_security
@@ -14064,7 +16346,13 @@ msgstr "安全与身份验证"
 #: code:addons/base/ir/ir_fields.py:305
 #, python-format
 msgid "See all possible values"
-msgstr "查看所有可能的值"
+msgstr "查看所有的可能值"
+
+#. module: base
+#: code:addons/common.py:42
+#, python-format
+msgid "See http://openerp.com"
+msgstr "见 http://openerp.com"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_server_model_object_field
@@ -14099,7 +16387,7 @@ msgid ""
 "block the flow. The Message has to be written in the next field."
 msgstr ""
 "选择此“警告“选项，将通知用户此消息。\n"
-"选择“受阻消息“选项，将在流程受阻时将抛出一个消息。\n"
+"选择“阻止消息“选项，将在流程受阻时将抛出一个消息。\n"
 "消息写入下一个字段。"
 
 #. module: base
@@ -14116,7 +16404,7 @@ msgstr "选择项目"
 #: model:ir.model.fields,field_description:base.field_res_partner_self
 #: model:ir.model.fields,field_description:base.field_res_users_self
 msgid "Self"
-msgstr "Self"
+msgstr "自己"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_sale
@@ -14137,6 +16425,37 @@ msgstr "基于工时表销售"
 #: model:ir.module.module,summary:base.module_account
 msgid "Send Invoices and Track Payments"
 msgstr "发送发票并跟踪付款"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_sign
+msgid ""
+"Send documents to sign online, receive and archive filled copies (esign)"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_dhl
+msgid "Send your shippings through DHL and track them online"
+msgstr "通过DHL运输货物并在线跟踪物流信息"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_fedex
+msgid "Send your shippings through Fedex and track them online"
+msgstr "通过 Fedex 运输货物并在线跟踪物流信息"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_temando
+msgid "Send your shippings through Temando and track them online"
+msgstr "通过Temando运输货物并在线跟踪物流信息"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_ups
+msgid "Send your shippings through UPS and track them online"
+msgstr "通过UPS运输货物并在线跟踪物流信息"
+
+#. module: base
+#: model:ir.module.module,description:base.module_delivery_usps
+msgid "Send your shippings through USPS and track them online"
+msgstr "通过USPS运输货物并在线跟踪物流信息"
 
 #. module: base
 #: model:res.country,name:base.sn
@@ -14204,7 +16523,7 @@ msgstr "序列化字段"
 #: code:addons/models.py:339
 #, python-format
 msgid "Serialization field `%s` not found for sparse field `%s`!"
-msgstr "序列化字段`%s`未找到，用于分散字段`%s` ，!"
+msgstr "用于分散字段`%s` 序列化字段`%s`未找到!"
 
 #. module: base
 #: selection:ir.logging,type:0
@@ -14285,7 +16604,7 @@ msgstr "共享用户组"
 #: model:ir.model.fields,field_description:base.field_res_partner_partner_share
 #: model:ir.model.fields,field_description:base.field_res_users_partner_share
 msgid "Share Partner"
-msgstr ""
+msgstr "共享合作伙伴"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_share
@@ -14300,7 +16619,7 @@ msgstr "分享和发布视频、演示和文档"
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_filters_view_search
 msgid "Shared"
-msgstr "共享的"
+msgstr "分享"
 
 #. module: base
 #: selection:res.partner,type:0
@@ -14368,6 +16687,11 @@ msgid "Singapore - Accounting"
 msgstr "新加坡－会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_sg_reports
+msgid "Singapore - Accounting Reports"
+msgstr "新加坡－会计报表"
+
+#. module: base
 #: model:res.country,name:base.sx
 msgid "Sint Maarten (Dutch part)"
 msgstr "荷属圣马丁(荷)"
@@ -14375,12 +16699,12 @@ msgstr "荷属圣马丁(荷)"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_size
 msgid "Size"
-msgstr "尺寸："
+msgstr "尺寸"
 
 #. module: base
 #: sql_constraint:ir.model.fields:0
 msgid "Size of the field cannot be negative."
-msgstr "字段的长度不能是负数."
+msgstr "字段的长度不能是负数。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_installer
@@ -14408,6 +16732,11 @@ msgid "Slovenian - Accounting"
 msgstr "斯洛文尼亚语－会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_si_reports
+msgid "Slovenian - Accounting Reports"
+msgstr "斯洛文尼亚语－会计报表"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_image_small
 #: model:ir.model.fields,field_description:base.field_res_users_image_small
 msgid "Small-sized image"
@@ -14420,7 +16749,7 @@ msgid ""
 "Small-sized image of this contact. It is automatically resized as a 64x64px "
 "image, with aspect ratio preserved. Use this field anywhere a small image is"
 " required."
-msgstr "联系人小尺寸图像。自动缩放为64x64px ，保留纵横比。此字段用于任何需要小图像的场合"
+msgstr "联系人小尺寸图像。自动缩放为64x64px ，保留纵横比。此字段用于任何需要小图像的场合。"
 
 #. module: base
 #: model:res.country,name:base.sb
@@ -14443,25 +16772,25 @@ msgstr "有时也叫 BIC 或 Swift。"
 #: code:addons/base/ir/ir_model.py:879
 #, python-format
 msgid "Sorry, you are not allowed to access this document."
-msgstr "对不起，你没权限访问此文档"
+msgstr "对不起，您没有访问此文档的权限。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:881
 #, python-format
 msgid "Sorry, you are not allowed to create this kind of document."
-msgstr "对不起，你不允许创建这种类型的文档。"
+msgstr "对不起，你没有创建这种类型的文档的权限。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:882
 #, python-format
 msgid "Sorry, you are not allowed to delete this document."
-msgstr "对不起，你不允许删除这个文档！"
+msgstr "对不起，你没有删除这个文档的权限。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:880
 #, python-format
 msgid "Sorry, you are not allowed to modify this document."
-msgstr "对不起，你未被允许修改此文档。"
+msgstr "对不起，你没有修改此文档的权限。"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_filters_sort
@@ -14537,6 +16866,11 @@ msgid "Spain - Accounting (PGCE 2008)"
 msgstr "西班牙 － 会计(PGCE 2008)"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_es_reports
+msgid "Spain - Accounting (PGCE 2008) Reports"
+msgstr "西班牙 － 会计(PGCE 2008)报表"
+
+#. module: base
 #: model:ir.module.category,name:base.module_category_specific_industry_applications
 msgid "Specific Industry Applications"
 msgstr "指定行业应用"
@@ -14591,7 +16925,7 @@ msgstr "开始配置"
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "State"
-msgstr "省/ 州"
+msgstr "状态"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_code
@@ -14648,6 +16982,16 @@ msgid "Stock"
 msgstr "库存"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_stock_barcode_mobile
+msgid "Stock Barcode in Mobile"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_stock_barcode_mobile
+msgid "Stock Barcode scan in Mobile"
+msgstr ""
+
+#. module: base
 #: selection:workflow.activity,kind:0
 msgid "Stop All"
 msgstr "全部停止"
@@ -14698,6 +17042,11 @@ msgstr "街道 2"
 #: model:ir.module.module,description:base.module_payment_stripe
 #: model:ir.module.module,shortdesc:base.module_payment_stripe
 msgid "Stripe Payment Acquirer"
+msgstr "Stripe付款"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_web_studio
+msgid "Studio"
 msgstr ""
 
 #. module: base
@@ -14727,6 +17076,21 @@ msgstr "主题"
 #: model:ir.ui.view,arch_db:base.edit_menu_access
 msgid "Submenus"
 msgstr "子菜单"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_contract
+msgid "Subscription Management"
+msgstr "订阅管理"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_sale_contract
+msgid "Subscription Management (without frontend)"
+msgstr "订阅管理(前端除外)"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_contract
+msgid "Subscriptions Management Frontend for your customers"
+msgstr "你的客户订阅管理界面"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence_date_range_ids
@@ -14761,7 +17125,7 @@ msgstr "补充参数"
 #. module: base
 #: model:ir.module.module,summary:base.module_theme_bootswatch
 msgid "Support for Bootswatch themes in master"
-msgstr "主权支持Bootswatch模板"
+msgstr "主题支持Bootswatch模板"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_issue
@@ -14782,7 +17146,7 @@ msgstr "问卷"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_survey_crm
 msgid "Survey CRM"
-msgstr "调查CRM"
+msgstr "CRM客户关系调查"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_recruitment_survey
@@ -14815,6 +17179,11 @@ msgid "Switzerland - Accounting"
 msgstr "瑞士 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_ch_reports
+msgid "Switzerland - Accounting Reports"
+msgstr "瑞士 - 会计报告"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_symbol
 msgid "Symbol"
 msgstr "货币符号"
@@ -14823,6 +17192,11 @@ msgstr "货币符号"
 #: model:ir.model.fields,field_description:base.field_res_currency_position
 msgid "Symbol Position"
 msgstr "符号位置"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_project_timesheet_synchro
+msgid "Synchronization with the external timesheet application"
+msgstr "与外部的工时单应用同步"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_wizard_update_translations
@@ -14964,6 +17338,11 @@ msgid ""
 msgstr ""
 
 #. module: base
+#: model:ir.module.module,summary:base.module_account_taxcloud
+msgid "TaxCloud make it easy for business to comply with sales tax law"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr
 msgid "Team Page"
 msgstr "团队页面"
@@ -15008,6 +17387,11 @@ msgid "Technical guide"
 msgstr "技术指南"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_temando
+msgid "Temando Shipping"
+msgstr "Temando货运"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_report_name
 msgid "Template Name"
 msgstr "模板名称"
@@ -15036,7 +17420,7 @@ msgstr "测试"
 #. module: base
 #: model:ir.module.module,description:base.module_test_read_group
 msgid "Tests for read_group"
-msgstr ""
+msgstr "测试-只读组"
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_converter
@@ -15058,6 +17442,11 @@ msgstr "泰国"
 #: model:ir.module.module,shortdesc:base.module_l10n_th
 msgid "Thailand - Accounting"
 msgstr "泰国 - 会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_th_reports
+msgid "Thailand - Accounting Reports"
+msgstr "泰国 - 会计报表"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_code
@@ -15121,12 +17510,12 @@ msgstr "选择的公司不属于此用户允许访问的公司。"
 #. module: base
 #: sql_constraint:res.country:0
 msgid "The code of the country must be unique !"
-msgstr "国家代码须唯一"
+msgstr "国家代码须唯一 !"
 
 #. module: base
 #: sql_constraint:res.lang:0
 msgid "The code of the language must be unique !"
-msgstr "语言代码必须唯一"
+msgstr "语言代码必须唯一!"
 
 #. module: base
 #: sql_constraint:res.country.state:0
@@ -15141,7 +17530,7 @@ msgstr "公司名称必须唯一！"
 #. module: base
 #: model:ir.model.fields,help:base.field_res_users_company_id
 msgid "The company this user is currently working for."
-msgstr "该用户当前工作的公司"
+msgstr "该用户当前工作的公司。"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.act_ir_actions_todo_form
@@ -15163,7 +17552,7 @@ msgstr ""
 #. module: base
 #: sql_constraint:res.currency:0
 msgid "The currency code must be unique!"
-msgstr "币种代码必须唯一"
+msgstr "币种代码必须唯一！"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_attachment_res_model
@@ -15173,7 +17562,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,help:base.field_wkf_transition_act_to
 msgid "The destination activity."
-msgstr "目的地有效"
+msgstr "目的地有效。"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:438
@@ -15230,12 +17619,12 @@ msgstr "此对象的字段与目标对象的字段的关系(必须是 many2one, 
 #: code:addons/base/module/wizard/base_module_upgrade.py:69
 #, python-format
 msgid "The following modules are not installed or unknown: %s"
-msgstr "以下 模型没有安装 或未知: %s"
+msgstr "以下 模块没有安装 或未知: %s"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_name
 msgid "The full name of the country."
-msgstr "国家全名"
+msgstr "国家全名。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_wkf_transition_group_id
@@ -15293,7 +17682,7 @@ msgstr "该字段所属的模型"
 #. module: base
 #: sql_constraint:res.country:0
 msgid "The name of the country must be unique !"
-msgstr "国家名必须唯一"
+msgstr "国家名必须唯一！"
 
 #. module: base
 #: code:addons/base/res/res_users.py:150
@@ -15309,17 +17698,17 @@ msgstr "在一个应用中用户群组的名称必须唯一！"
 #. module: base
 #: sql_constraint:res.lang:0
 msgid "The name of the language must be unique !"
-msgstr "语言名称必须唯一"
+msgstr "语言名称必须唯一！"
 
 #. module: base
 #: sql_constraint:ir.module.module:0
 msgid "The name of the module must be unique!"
-msgstr "模型名称必须唯一"
+msgstr "模块名称必须唯一！"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_sequence_number_increment
 msgid "The next number of the sequence will be incremented by this number"
-msgstr "下一序列将以此数增加."
+msgstr "下一序列将以此数增加"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.wizard_lang_export
@@ -15333,12 +17722,25 @@ msgid "The only predefined variables are"
 msgstr "唯一预设的变量是"
 
 #. module: base
+#: code:addons/model.py:125
+#, python-format
+msgid ""
+"The operation cannot be completed, probably due to the following:\n"
+"- deletion: you may be trying to delete a record while other records still reference it\n"
+"- creation/update: a mandatory field is not correctly set"
+msgstr ""
+"该操作无法完成，可能是由于以下原因：\\n - 删除：您可能正试图删除一个记录，但是仍有其它记录引用到它 \\n - "
+"创建/更新：一个强制字段没有正确设置"
+
+#. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_domain
 msgid ""
 "The optional domain to restrict possible values for relationship fields, "
 "specified as a Python expression defining a list of triplets. For example: "
 "[('color','=','red')]"
-msgstr "过滤条件这个字段是可选输入的，用于在输入关系型字段时限制可选值的范围。格式为一个python列表，每个列表项由三个字符组成。"
+msgstr ""
+"过滤条件这个字段是可选输入的，用于在输入关系型字段时限制可选值的范围。格式为一个python列表，每个列表项由三个字符组成。.例如: "
+"[('color','=','red')]"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_partner_tz
@@ -15374,12 +17776,12 @@ msgstr "用整数表示的工作优先级：0表示高优先级，10表示低优
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency_rate_rate
 msgid "The rate of the currency to the currency of rate 1"
-msgstr "货币与货币之间的汇兑比率（中国国内企业应将其设置为本位币，本位币的汇率为1比1）"
+msgstr "币别到其他币别的比率为 1"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_currency_rate
 msgid "The rate of the currency to the currency of rate 1."
-msgstr "币别到其他币别的汇率为 1"
+msgstr "币别到其他币别的比率为 1"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_attachment_res_id
@@ -15404,20 +17806,30 @@ msgstr ""
 msgid ""
 "The selected language has been successfully installed. You must change the "
 "preferences of the user and open a new menu to view the changes."
-msgstr "所选的语言包已经成功安装。你需要修改用户使用语言并重新打开新菜单以查看改变内容"
+msgstr "所选的语言包已经成功安装。你需要修改用户使用语言并重新打开新菜单以查看改变内容。"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 msgid "The selected modules have been updated / installed !"
-msgstr "选择的模块将被更新/安装"
+msgstr "选择的模块将被更新/安装！"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_code
 msgid "The state code."
-msgstr "州/省代码"
+msgstr "州/省代码。"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:393
+#: code:addons/custom.py:518
+#, python-format
+msgid ""
+"The sum of the data (2nd field) is null.\n"
+"We can't draw a pie chart !"
+msgstr ""
+"这些数据的总和(第2个字段)为空。\n"
+"我们无法绘制饼图！"
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:419
 #, python-format
 msgid "The table %r if used for other, possibly incompatible fields."
 msgstr ""
@@ -15457,7 +17869,7 @@ msgstr "这是一个%(model)s的共享筛选，请在上处或者修改前设置
 #: code:addons/models.py:2507
 #, python-format
 msgid "There is no reference available for %s"
-msgstr "没有编号为 %s 的单据"
+msgstr " %s 没有可用的参照"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_lang_iso_code
@@ -15467,7 +17879,7 @@ msgstr ".PO 文件翻译使用的 ISO 国家代码"
 #. module: base
 #: selection:ir.actions.act_url,target:0
 msgid "This Window"
-msgstr "此窗口"
+msgstr "本窗口"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:449
@@ -15504,7 +17916,7 @@ msgid ""
 " and reference view. The result is returned as an ordered list of pairs "
 "(view_id,view_mode)."
 msgstr ""
-"这个函数字段返回在显示某个动作的结果时可供选择的视图，是视图模式、视图或相关视图的组合。返回的结果是一个已排序的(视图, 视图模式)元组列表"
+"这个函数字段返回在显示某个动作的结果时可供选择的视图，是视图模式、视图或相关视图的组合。返回的结果是一个已排序的(视图, 视图模式)元组列表。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_report_xml_attachment
@@ -15526,6 +17938,12 @@ msgstr ""
 "Updated for Odoo 9 by Bringsvor Consulting AS <www.bringsvor.com>\n"
 
 #. module: base
+#: model:ir.module.module,description:base.module_mrp_barcode
+msgid ""
+"This module adds support for barcodes scanning to the manufacturing system."
+msgstr ""
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
 msgid "This module will trigger the uninstallation of below modules."
 msgstr "该模块将触发以下模块卸载。"
@@ -15543,14 +17961,34 @@ msgid "Thousands Separator"
 msgstr "千位分隔符"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_helpdesk
+msgid "Ticketing, Support, Issues"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_helpdesk_livechat
+msgid "Ticketing, Support, Livechat"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,summary:base.module_website_helpdesk_slides
+msgid "Ticketing, Support, Slides"
+msgstr ""
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang_time_format
 msgid "Time Format"
 msgstr "时间格式"
 
 #. module: base
+#: model:ir.module.module,summary:base.module_timesheet_grid
+msgid "Timesheet grid view definition"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_project_timesheet
 msgid "Timesheet in Website Portal"
-msgstr ""
+msgstr "网站门户工时表"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_issue_sheet
@@ -15642,6 +18080,13 @@ msgid "To be upgraded"
 msgstr "将要升级的"
 
 #. module: base
+#: code:addons/base/module/module.py:651
+#, python-format
+msgid ""
+"To enable it, make sure this directory exists and is writable on the server:"
+msgstr ""
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.ir_actions_todo_tree
 msgid "Todo"
 msgstr "待办"
@@ -15685,7 +18130,7 @@ msgstr "培训，研讨会，会议，展览，登记"
 #: model:ir.module.module,description:base.module_payment_transfer
 #: model:ir.module.module,shortdesc:base.module_payment_transfer
 msgid "Transfer Payment Acquirer"
-msgstr "转账付款收单方"
+msgstr "转账付款"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_search
@@ -15779,7 +18224,7 @@ msgstr "翻译备注"
 #, python-format
 msgid ""
 "Translation features are unavailable until you install an extra translation."
-msgstr "翻译功能不可用，直到你安装了额外的翻译。"
+msgstr "翻译功能在安装了额外的翻译之前不可用。"
 
 #. module: base
 #: selection:ir.translation,state:0
@@ -15793,6 +18238,8 @@ msgid ""
 "Translation is not valid:\n"
 "%s"
 msgstr ""
+"翻译无效：\n"
+"%s"
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_translation
@@ -15927,11 +18374,26 @@ msgid "UK - Accounting"
 msgstr "英国 - 会计"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_uk_reports
+msgid "UK - Accounting Reports"
+msgstr "英国 - 会计报告"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_ups
+msgid "UPS Shipping"
+msgstr "UPS 发货"
+
+#. module: base
 #: selection:ir.attachment,type:0
 #: model:ir.model.fields,field_description:base.field_ir_module_module_url
 #: model:ir.ui.view,arch_db:base.view_attachment_search
 msgid "URL"
-msgstr "URL"
+msgstr "URL网址"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_us_check_printing
+msgid "US Check Printing"
+msgstr "美式支票打印"
 
 #. module: base
 #: selection:res.company,rml_paper_format:0
@@ -15968,7 +18430,7 @@ msgstr "乌克兰"
 #, python-format
 msgid ""
 "Unable to delete this document because it is used as a default property"
-msgstr "不能删除该单据，因为它被作为默认属性使用"
+msgstr "不能删除该单据，因为它被用作默认属性"
 
 #. module: base
 #: code:addons/base/module/module.py:312
@@ -16033,33 +18495,44 @@ msgid "United States - Accounting"
 msgstr "美国 - 科目表"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_delivery_usps
+msgid "United States Postal Service (USPS) Shipping"
+msgstr "美国邮政(USPS)货运"
+
+#. module: base
 #: selection:ir.module.module.dependency,state:0
 msgid "Unknown"
 msgstr "未知"
 
 #. module: base
-#: code:addons/models.py:1023
+#: code:addons/models.py:1037
 #, python-format
 msgid "Unknown database identifier '%s'"
 msgstr "未知的数据库标识符 '%s'"
 
 #. module: base
-#: code:addons/models.py:884
+#: code:addons/models.py:898
 #, python-format
 msgid "Unknown error during import:"
 msgstr "导入时发生未知错误:"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:338
+#: code:addons/base/ir/ir_model.py:364
 #, python-format
 msgid "Unknown field %r in dependency %r"
 msgstr "未知字段 %s 在依赖%s "
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:295
+#: code:addons/base/ir/ir_model.py:321
 #, python-format
 msgid "Unknown field name '%s' in related field '%s'"
 msgstr "非关系字段名 '%s' 在关联字段 '%s'"
+
+#. module: base
+#: code:addons/report_sxw.py:370
+#, python-format
+msgid "Unknown report type: %s"
+msgstr "未知报表类型：%s"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:349
@@ -16072,6 +18545,13 @@ msgstr "未知的子字段 '%s'"
 #, python-format
 msgid "Unknown value '%s' for boolean field '%%(field)s', assuming '%s'"
 msgstr "'%s'对于布尔字段'%%(field)s'是未知的值，期望 '%s'"
+
+#. module: base
+#: code:addons/translate.py:690
+#, python-format
+msgid ""
+"Unrecognized extension: must be one of .csv, .po, or .tgz (received .%s)."
+msgstr "无法识别的扩展名后缀名: 规定为 .csv, 或.po, 或 .tgz格式的后续名扩展名 (公认的 .%s)."
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_translation_search
@@ -16150,7 +18630,7 @@ msgstr "升级"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment_url
 msgid "Url"
-msgstr "Url"
+msgstr "Url网址"
 
 #. module: base
 #: model:res.country,name:base.uy
@@ -16158,9 +18638,14 @@ msgid "Uruguay"
 msgstr "乌拉圭"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_uy_reports
+msgid "Uruguay - Accounts Reports"
+msgstr "乌拉圭－财务报告"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uy
 msgid "Uruguay - Chart of Accounts"
-msgstr "乌拉圭会计模块"
+msgstr "乌拉圭-会计科目表"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:166
@@ -16176,7 +18661,7 @@ msgstr "在基础模型中使用关系字段"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence_use_date_range
 msgid "Use subsequences per date_range"
-msgstr ""
+msgstr "每个日期范围使用不同序号"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_gamification
@@ -16314,6 +18799,11 @@ msgid "VAT Number Validation"
 msgstr "增值税号码验证"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_voip
+msgid "VOIP Core"
+msgstr "VOIP 核心"
+
+#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_config_parameter_value
 #: model:ir.model.fields,field_description:base.field_ir_server_object_lines_value
 #: model:ir.model.fields,field_description:base.field_ir_values_value
@@ -16356,7 +18846,7 @@ msgstr "正数值"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_property_value_reference
 msgid "Value reference"
-msgstr "参照值"
+msgstr "值参照"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_property_value_text
@@ -16414,7 +18904,12 @@ msgstr "越南"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_vn
 msgid "Vietnam - Accounting"
-msgstr "越南－会计科目表"
+msgstr "越南－会计"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_l10n_vn_reports
+msgid "Vietnam - Accounting Reports"
+msgstr "越南－会计科目报表"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_view_id
@@ -16445,7 +18940,7 @@ msgstr "视图名称"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_form
 msgid "View Rates"
-msgstr "查看汇率"
+msgstr "查看比率"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_id
@@ -16459,6 +18954,11 @@ msgstr "视图引用"
 #: model:ir.ui.view,arch_db:base.view_window_action_search
 msgid "View Type"
 msgstr "视图类型"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_account_reports
+msgid "View and create reports"
+msgstr "视图和创建的报表"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_view_mode
@@ -16476,6 +18976,12 @@ msgid ""
 "View type: Tree type to use for the tree view, set to 'tree' for a "
 "hierarchical tree view, or 'form' for a regular list view"
 msgstr "视图类型：'树形'用于里列表类型并显示为树形结构，而'表单'用于一般的列表视图"
+
+#. module: base
+#: code:addons/base/ir/ir_model.py:488
+#, python-format
+msgid "View:"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ui_view
@@ -16542,6 +19048,11 @@ msgid "Warehouse"
 msgstr "仓库"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_stock_barcode
+msgid "Warehouse Management Barcode Scanning"
+msgstr "仓库管理条码扫描"
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_picking_wave
 msgid "Warehouse Management: Waves"
 msgstr "仓库管理：波次"
@@ -16570,7 +19081,7 @@ msgstr "警告"
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 msgid ""
 "We suggest to reload the menu tab to see the new menus (Ctrl+T then Ctrl+R)."
-msgstr "我们提议重载菜单来查看新菜单（Ctrl+T then Ctrl+R）"
+msgstr "我们提议重载菜单来查看新菜单(Ctrl+T 然后 Ctrl+R)。"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web
@@ -16587,6 +19098,16 @@ msgstr "网页日历"
 #: model:ir.module.module,shortdesc:base.module_web_editor
 msgid "Web Editor"
 msgstr "网页编辑器"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_web_enterprise
+msgid "Web Enterprise"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_web_gantt
+msgid "Web Gantt"
+msgstr "网页甘特"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_ui_menu_web_icon
@@ -16625,6 +19146,26 @@ msgid "Website Builder"
 msgstr "网站生成器"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_website_enterprise
+msgid "Website Enterprise"
+msgstr "网站企业版"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_portal_followup
+msgid "Website Followup"
+msgstr "网站关注"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_form_editor
+msgid "Website Form Builder"
+msgstr "网站表单生成器"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk_form
+msgid "Website Form Helpdesk"
+msgstr ""
+
+#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_gengo
 msgid "Website Gengo Translator"
 msgstr "网站Gengo翻译"
@@ -16633,6 +19174,16 @@ msgstr "网站Gengo翻译"
 #: model:ir.module.module,shortdesc:base.module_website_google_map
 msgid "Website Google Map"
 msgstr "网站谷歌地图"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk
+msgid "Website Helpdesk"
+msgstr ""
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
+msgid "Website IM Livechat Helpdesk"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_links
@@ -16682,7 +19233,7 @@ msgstr "网站门户"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_portal_sale
 msgid "Website Portal for Sales"
-msgstr "销售网站门户"
+msgstr "销售门户网站"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_project
@@ -16707,12 +19258,22 @@ msgstr "网站数字化的销售 - 销售数码产品"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_stock
 msgid "Website Sale Stock - Website Delivery Information"
+msgstr "网站销售库存-网站配送信息"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_helpdesk_slides
+msgid "Website Slides Helpdesk"
 msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_theme_install
 msgid "Website Theme Install"
-msgstr ""
+msgstr "网站主题安装"
+
+#. module: base
+#: model:ir.module.module,shortdesc:base.module_website_version
+msgid "Website Versioning"
+msgstr "网站版本"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company_website
@@ -16734,7 +19295,7 @@ msgstr "周"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_scale
 msgid "Weighing Scale Hardware Driver"
-msgstr ""
+msgstr "电子称的硬件驱动"
 
 #. module: base
 #: model:res.country,name:base.eh
@@ -16800,12 +19361,12 @@ msgstr "当转换操作来源于客户端表单上的一个按钮，信号测试
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_copy
 msgid "Whether the value is copied when duplicating a record."
-msgstr "值在复制过程中是否拷贝"
+msgstr "值在复制过程中是否拷贝。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_store
 msgid "Whether the value is stored in the database."
-msgstr "值是否存储在数据库"
+msgstr "值是否存储在数据库。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_translate
@@ -16844,6 +19405,11 @@ msgstr "工作流信号"
 #: selection:ir.cron,interval_type:0
 msgid "Work Days"
 msgstr "工作日"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_mrp_workorder
+msgid "Work Orders, Planing, Stock Reports."
+msgstr "工单，规划，仓库报告"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_wkf_activity_wkf_id
@@ -16907,18 +19473,18 @@ msgstr "工作项"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_sips
 msgid "Worldline SIPS"
-msgstr ""
+msgstr "Worldline SIPS"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_access_perm_write
 #: model:ir.ui.view,arch_db:base.ir_access_view_search
 msgid "Write Access"
-msgstr "写入访问"
+msgstr "写访问"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_rule_search
 msgid "Write Access Right"
-msgstr "写入访问 权限"
+msgstr "写访问权限"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_server_code
@@ -16930,11 +19496,9 @@ msgstr "编写将运行的Python代码。可以使用有限的特定变量，详
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid ""
-"Write a python expression, beginning with object, that gives the record to "
+"Write a python expression, beginning with record, that gives the record to "
 "update. An expression builder is available in the help tab. Examples:"
 msgstr ""
-"Write a python expression, beginning with object, that gives the record to "
-"update. An expression builder is available in the help tab. Examples:"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_report_xml
@@ -16963,6 +19527,16 @@ msgid "Yemen"
 msgstr "也门"
 
 #. module: base
+#: model:ir.module.module,shortdesc:base.module_account_yodlee
+msgid "Yodlee"
+msgstr "Yodlee公司"
+
+#. module: base
+#: model:ir.module.module,summary:base.module_account_yodlee
+msgid "Yodlee Finance"
+msgstr "Yodlee 财务"
+
+#. module: base
 #: model:ir.ui.view,arch_db:base.view_users_simple_form
 msgid ""
 "You are creating a new user. After saving, the user will receive an invite "
@@ -16979,6 +19553,11 @@ msgid ""
 "Please uninstall your current theme before installing another one.\n"
 "Warning: switching themes may significantly alter the look of your current website pages!"
 msgstr ""
+"你正在试图安装一个不兼容的主题：\n"
+"%s\n"
+"\n"
+"请在安装这个主题之前卸载当前使用的主题。\n"
+"警告：更换主题可能会影响你当前网站页面。"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_attachment_type
@@ -17044,13 +19623,19 @@ msgstr ""
 #: code:addons/base/res/res_partner.py:320
 #, python-format
 msgid "You cannot create recursive Partner hierarchies."
-msgstr "你不能创建递归的合作伙伴层级"
+msgstr "你不能创建递归的合作伙伴层级。"
+
+#. module: base
+#: code:addons/base/ir/ir_ui_view.py:314
+#, python-format
+msgid "You cannot create recursive inherited views."
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_users.py:340
 #, python-format
 msgid "You cannot deactivate the admin user."
-msgstr "不能禁用admin用户"
+msgstr "不能禁用admin用户。"
 
 #. module: base
 #: code:addons/base/res/res_users.py:342
@@ -17072,18 +19657,18 @@ msgstr ""
 #: code:addons/base/res/res_lang.py:230
 #, python-format
 msgid "You cannot delete the language which is User's Preferred Language!"
-msgstr "不能删除用户的默认语言."
+msgstr "不能删除用户的默认语言！"
 
 #. module: base
 #: code:addons/base/ir/ir_values.py:412
 #, python-format
 msgid "You do not have the permission to perform this operation!!!"
-msgstr "你没有权限执行这个操作!!!"
+msgstr "你没有许可执行这个操作!!!"
 
 #. module: base
 #: model:ir.actions.act_window,help:base.open_module_tree
 msgid "You should try other search criteria."
-msgstr "你可以尝试其他搜索条件"
+msgstr "你可以尝试其他搜索条件。"
 
 #. module: base
 #: code:addons/base/module/module.py:332
@@ -17091,7 +19676,7 @@ msgstr "你可以尝试其他搜索条件"
 msgid ""
 "You try to install module '%s' that depends on module '%s'.\n"
 "But the latter module is not available in your system."
-msgstr "你要安装的模块'%s'依赖于‘%s’,但后者在你系统中不可用."
+msgstr "你要安装的模块'%s'依赖于‘%s’,但后者在你系统中不可用。"
 
 #. module: base
 #: code:addons/base/module/module.py:284
@@ -17112,7 +19697,7 @@ msgstr "你试图升级的模块 %s 依赖模块： %s. 但该模块在你的系
 msgid ""
 "You will be able to define additional access rights by editing the newly "
 "created user under the Settings / Users menu."
-msgstr "通过编辑在设置/用户菜单下的新建用户，你将能够定义额外的进入权限"
+msgstr "通过编辑在设置/用户菜单下的新建用户，你将能够定义额外的访问权。"
 
 #. module: base
 #: code:addons/base/ir/ir_mail_server.py:206
@@ -17173,12 +19758,12 @@ msgstr "邮政编码"
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
 #: model:ir.ui.view,arch_db:base.view_model_form
 msgid "[('blue', 'Blue'),('yellow', 'Yellow')]"
-msgstr ""
+msgstr "[('blue', 'Blue'),('yellow', 'Yellow')]"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_import_language
 msgid "_Import"
-msgstr "_导入"
+msgstr "_Import"
 
 #. module: base
 #: model:ir.model,name:base.model__unknown
@@ -17223,22 +19808,12 @@ msgstr "选取"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid "condition: True"
-msgstr "condition: True"
+msgstr "条件：真"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "condition: object.list_price &gt; 5000"
+msgid "condition: record.list_price &gt; 5000"
 msgstr ""
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "context: current context"
-msgstr "context：当前上下文"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "cr: database cursor"
-msgstr "cr：数据库游标"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:314
@@ -17316,6 +19891,11 @@ msgid "email@yourcompany.com"
 msgstr "email@yourcompany.com"
 
 #. module: base
+#: model:ir.ui.view,arch_db:base.view_server_action_form
+msgid "env: Odoo Environement on which the action is triggered"
+msgstr ""
+
+#. module: base
 #: code:addons/base/ir/ir_fields.py:328
 #, python-format
 msgid "external id"
@@ -17341,12 +19921,12 @@ msgstr ""
 #: code:addons/base/res/res_lang.py:242
 #, python-format
 msgid "format() must be given exactly one %char format specifier"
-msgstr ""
+msgstr "格式()必须是严格的 %char格式。"
 
 #. module: base
 #: selection:base.language.export,state:0
 msgid "get"
-msgstr "get"
+msgstr "获得"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.action_view_company_form_link_2_currencies
@@ -17357,7 +19937,7 @@ msgstr "这里"
 #: selection:base.language.install,state:0
 #: selection:base.module.update,state:0
 msgid "init"
-msgstr "init"
+msgstr "初始化"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
@@ -17629,20 +20209,10 @@ msgid "no"
 msgstr "no"
 
 #. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid ""
-"object or obj: browse_record of the record on which the action is triggered"
-msgstr "object或obj：触发动作的记录的browse_record"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "object.partner_id"
-msgstr "object.partner_id"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "object.partner_id.currency_id"
-msgstr "object.partner_id.currency_id"
+#: code:addons/amount_to_text_en.py:98
+#, python-format
+msgid "no translation function found for lang: '%s'"
+msgstr "待译术语: '%s'"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_attachment_form
@@ -17650,14 +20220,24 @@ msgid "on"
 msgstr "在"
 
 #. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "pool: ORM model pool (i.e. self.pool)"
-msgstr "pool：ORM 模型池 (例如：self.pool)"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_cache
 msgid "pos_cache"
 msgstr "pos_cache"
+
+#. module: base
+#: model:ir.ui.view,arch_db:base.view_server_action_form
+msgid "record.partner_id"
+msgstr ""
+
+#. module: base
+#: model:ir.ui.view,arch_db:base.view_server_action_form
+msgid "record.partner_id.currency_id"
+msgstr ""
+
+#. module: base
+#: model:ir.ui.view,arch_db:base.view_server_action_form
+msgid "record: browse_record of the record on which the action is triggered"
+msgstr ""
 
 #. module: base
 #: model:ir.model,name:base.model_report_base_report_irmodulereference
@@ -17695,34 +20275,29 @@ msgid "res.users.log"
 msgstr "res.users.log"
 
 #. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "self: ORM model of the record on which the action is triggered"
-msgstr "self：触发动作的记录的ORM模型"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_mimetypes
 msgid "test mimetypes-guessing"
-msgstr ""
+msgstr "测试mimetypes-guessing"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_access_rights
 msgid "test of access rights and rules"
-msgstr "访问权限和规则的测试 "
+msgstr "访问权和访问规则的测试 "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_read_group
 msgid "test read_group"
-msgstr ""
+msgstr "测试-只读组"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_assetsbundle
 msgid "test-assetsbundle"
-msgstr ""
+msgstr "测试-assetsbundle"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_pylint
 msgid "test-eval"
-msgstr ""
+msgstr "测试-eval"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_exceptions
@@ -17770,32 +20345,20 @@ msgid "test_convert"
 msgstr "test_convert"
 
 #. module: base
-#: model:res.groups,comment:base.group_user
-msgid ""
-"the user will be able to manage his own human resources stuff (leave "
-"request, timesheets, ...), if he is linked to an employee in the system."
-msgstr "如果在系统中管理到一个员工，用户能管理自己的人力资源资料(休假请求，工时表，... ... )"
-
-#. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "time: Python time module"
-msgstr "time：Python时间模块。"
+msgid "time, datetime, timezone: Python module"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_installer
 msgid "title"
-msgstr "title"
+msgstr "标题"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:143
 #, python-format
 msgid "true"
 msgstr "true"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "uid: current user id"
-msgstr "uid：当前用户id"
 
 #. module: base
 #: model:ir.model,name:base.model_wizard_ir_model_menu_create
@@ -17805,7 +20368,7 @@ msgstr "wizard.ir.model.menu.create"
 #. module: base
 #: model:ir.model,name:base.model_workflow
 msgid "workflow"
-msgstr "workflow"
+msgstr "工作流"
 
 #. module: base
 #: model:ir.model,name:base.model_workflow_activity
@@ -17831,11 +20394,6 @@ msgstr "workflow.triggers"
 #: model:ir.model,name:base.model_workflow_workitem
 msgid "workflow.workitem"
 msgstr "workflow.workitem"
-
-#. module: base
-#: model:ir.ui.view,arch_db:base.view_server_action_form
-msgid "workflow: Workflow engine"
-msgstr "workflow: Workflow engine"
 
 #. module: base
 #: code:addons/base/ir/ir_fields.py:143

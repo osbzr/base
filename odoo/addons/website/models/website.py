@@ -392,9 +392,10 @@ class Website(models.Model):
 
     @api.model
     def get_current_website(self):
-        domain_name = request.httprequest.environ.get('HTTP_HOST', '').split(':')[0]
+        domain_name = request and request.httprequest.environ.get('HTTP_HOST', '').split(':')[0] or None
         website_id = self._get_current_website_id(domain_name)
-        request.context = dict(request.context, website_id=website_id)
+        if request:
+            request.context = dict(request.context, website_id=website_id)
         return self.browse(website_id)
 
     @tools.cache('domain_name')
@@ -526,6 +527,7 @@ class Website(models.Model):
                       of the same.
             :rtype: list({name: str, url: str})
         """
+        request.context = dict(request.context, **self.env.context)
         router = request.httprequest.app.get_db_router(request.db)
         # Force enumeration to be performed as public user
         url_set = set()

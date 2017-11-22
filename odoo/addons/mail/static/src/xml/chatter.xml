@@ -52,7 +52,7 @@
     -->
     <t t-name="mail.Chatter">
         <div class="o_chatter">
-            <div class="o_chatter_topbar hidden-print">
+            <div class="o_chatter_topbar">
                 <button type="button" class="btn btn-sm btn-primary o_chatter_button_new_message" title="Send a message">
                     New message
                 </button>
