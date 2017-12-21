@@ -658,6 +658,16 @@ var FormView = View.extend(common.FieldManagerMixin, {
                     }
                 }
             }
+            
+            var input_widgets = $(':input')
+            for (var i = 0; i < input_widgets.length; i += 1){
+                var input_widget = input_widgets[i]
+                if (input_widget.autofocus) {
+                    if (input_widget.focus() !== false) {
+                        break;
+                    }
+                }
+            }
         }
     },
     disable_button: function () {
