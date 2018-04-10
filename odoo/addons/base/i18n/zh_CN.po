@@ -292,7 +292,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"[object with reference: %s - %s]"
+"[引用对象: %s - %s]"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_invoice_bba
@@ -17729,7 +17729,7 @@ msgid ""
 "- deletion: you may be trying to delete a record while other records still reference it\n"
 "- creation/update: a mandatory field is not correctly set"
 msgstr ""
-"该操作无法完成，可能是由于以下原因：\\n - 删除：您可能正试图删除一个记录，但是仍有其它记录引用到它 \\n - "
+"该操作无法完成，可能是由于以下原因：<br/> - 删除：您可能正试图删除一个记录，但是仍有其它记录引用到它 <br/> - "
 "创建/更新：一个强制字段没有正确设置"
 
 #. module: base
