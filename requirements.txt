@@ -44,3 +44,4 @@ xlutils==1.7.1
 docxtpl==0.4.6
 python-ooxml==0.13
 pdfkit==0.5.0
+xmltodict==0.11.0
